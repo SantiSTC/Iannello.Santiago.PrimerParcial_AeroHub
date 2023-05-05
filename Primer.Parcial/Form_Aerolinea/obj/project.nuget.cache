@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ttXJ2nU4gssKyARBpK2LHoccaRYFzCJzToHzvtCROIfw0Hfb6OGaMIzSWlblS6gSmoRqCf9HUGwkVODTbiMG5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Santiago\\source\\repos\\Primer.Parcial\\Form_Aerolinea\\Form_Aerolinea.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Santiago\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
