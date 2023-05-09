@@ -13,6 +13,8 @@ namespace Form_Aerolinea
 {
     public partial class FrmAgregarViaje : FrmAgregar
     {
+        private bool flag;
+
         public FrmAgregarViaje()
         {
             InitializeComponent();
@@ -27,9 +29,9 @@ namespace Form_Aerolinea
 
         protected virtual void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (this.cmbAvion.SelectedIndex == -1 || this.cmbDestino.SelectedIndex == -1 || this.cmbPartida.SelectedIndex == -1 || this.txtCantidad is not null || this.mthFecha.SelectionStart >= DateTime.Today)
+            if (this.cmbAvion.SelectedIndex == -1 || this.cmbDestino.SelectedIndex == -1 || this.cmbPartida.SelectedIndex == -1 || this.mthFecha.SelectionStart >= DateTime.Today)
             {
-                Viaje.AgregarViaje(Listas.viajes, this.cmbPartida.SelectedItem.ToString(), this.cmbDestino.SelectedItem.ToString(), this.mthFecha.SelectionStart, (Aeronave)this.cmbAvion.SelectedItem, int.Parse(this.txtCantidad.Text), Listas.pasajeros);
+                Viaje.AgregarViaje(Listas.viajes, this.cmbPartida.SelectedItem.ToString(), this.cmbDestino.SelectedItem.ToString(), this.mthFecha.SelectionStart, (Aeronave)this.cmbAvion.SelectedItem, Listas.pasajeros);
                 this.DialogResult = DialogResult.OK;
             }
             else
@@ -45,26 +47,62 @@ namespace Form_Aerolinea
 
         private void CargarComboBoxes()
         {
-            foreach (Aeronave avion in Listas.aviones)
+            this.cmbAvion.DataSource = Listas.aviones;
+            foreach (EDestinoNacional destino in Enum.GetValues(typeof(EDestinoNacional)))
             {
-                this.cmbAvion.Items.Add(avion);
+                this.cmbPartida.Items.Add(destino.ToString().Replace("_", " "));
             }
 
-            this.cmbPartida.DataSource = (Enum.GetValues(typeof(EDestinoNacional)));
+            this.cmbPartida.SelectedItem = EDestinoNacional.Buenos_Aires.ToString().Replace("_", " ");
 
-            if (this.cmbPartida.SelectedItem is EDestinoNacional.BuenosAires)
+            foreach (EDestinoNacional destino in Enum.GetValues(typeof(EDestinoNacional)))
             {
-                Array nacionales = Enum.GetValues(typeof(EDestinoNacional));
-                Array internacionales = Enum.GetValues(typeof(EDestinoInternacional));
-
-                List<Object> destinos = new List<Object>((IEnumerable<object>)nacionales);
-                destinos.AddRange((IEnumerable<object>)internacionales);
-
-                this.cmbDestino.DataSource = destinos;
+                if (destino.ToString().Replace("_", " ") != cmbPartida.SelectedItem.ToString().Replace("_", " "))
+                {
+                    this.cmbDestino.Items.Add(destino.ToString().Replace("_", " "));
+                }
             }
 
-            this.cmbAvion.SelectionStart = 0;
+            this.cmbDestino.SelectedIndex = 0;
+            this.flag = true;
+        }
 
+        private void cmbPartida_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //this.cmbPartida.Items.Clear();
+            this.cmbDestino.Items.Clear();
+
+            if (this.cmbPartida.SelectedItem.ToString() == EDestinoNacional.Buenos_Aires.ToString().Replace("_", " "))
+            {
+                if (this.flag)
+                {
+                    foreach (EDestinoNacional destino in Enum.GetValues(typeof(EDestinoNacional)))
+                    {
+                        if (destino.ToString().Replace("_", " ") != cmbPartida.SelectedItem.ToString())
+                        {
+                            this.cmbDestino.Items.Add(destino.ToString().Replace("_", " "));
+                        }
+                    }
+
+                }
+
+                foreach (EDestinoInternacional destino in Enum.GetValues(typeof(EDestinoInternacional)))
+                {
+                    this.cmbDestino.Items.Add(destino);
+                }
+            }
+            else
+            {
+                foreach (EDestinoNacional destino in Enum.GetValues(typeof(EDestinoNacional)))
+                {
+                    if (destino.ToString().Replace("_", " ") != cmbPartida.SelectedItem.ToString())
+                    {
+                        this.cmbDestino.Items.Add(destino.ToString().Replace("_", " "));
+                    }
+                }
+            }
+
+            this.cmbDestino.Items.Remove(EDestinoNacional.Buenos_Aires.ToString().Replace("_", " "));
         }
     }
 }

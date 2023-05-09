@@ -21,7 +21,7 @@ public enum EDestinoInternacional
 
 public enum EDestinoNacional 
 {
-    SantaRosa,
+    Santa_Rosa,
     Bariloche,
     Corrientes,
     Cordoba,
@@ -31,10 +31,10 @@ public enum EDestinoNacional
     Posadas,
     Iguazu,
     Salta,
-    SantiagoDelEstero,
+    Santiago_Del_Estero,
     Trelew,
     Tucuman,
-    PuertoMadryn,
+    Puerto_Madryn,
     Ushuahia,
-    BuenosAires
+    Buenos_Aires
 }

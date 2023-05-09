@@ -11,6 +11,8 @@ namespace Entidades
         public static List<Aeronave> aviones;
         public static List<Viaje> viajes;
         public static List<Pasajero> pasajeros;
+        public static List<Pasajero> pasajeros1;
+        public static List<Pasajero> pasajeros2;
 
         static Listas()
         {
@@ -18,7 +20,7 @@ namespace Entidades
             viajes = new List<Viaje>();
             pasajeros = new List<Pasajero>();
 
-            aviones.Add(new Aeronave("sas222ss",222,2,true,true,2222));
+            aviones.Add(new Aeronave("sas222ss",222,2,true,true,2222, pasajeros1));
             aviones.Add(new Aeronave("sas333ss", 333, 3, true, true, 3333));
         }
     }

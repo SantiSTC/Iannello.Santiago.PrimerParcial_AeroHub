@@ -14,6 +14,7 @@ namespace Entidades
         protected bool internet;
         protected bool comida;
         protected float capacidadBodega;
+        protected List<Pasajero> pasajeros;
 
         public string Matricula { get { return this.matricula; } set { this.matricula = value; } }
         public int CantidadAsientos { get { return this.cantAsientos; } set { this.cantAsientos = value; } }
@@ -21,6 +22,8 @@ namespace Entidades
         public bool Internet { get { return this.internet; } set { this.internet = value; } }
         public bool Comida { get { return this.comida; } set { this.comida = value; } }
         public float CapacidadBodega { get { return this.capacidadBodega; } set { this.capacidadBodega = value; } }
+
+        public List<Pasajero> Pasajeros { get { return this.pasajeros; } }
 
         public Aeronave() 
         {
@@ -30,8 +33,20 @@ namespace Entidades
             this.internet = false;
             this.comida = false;
             this.capacidadBodega = 0;
+            this.pasajeros = new List<Pasajero>();
         }
-        public Aeronave (string matricula, int cantAsientos, int cantBanios, bool internet, bool comida, float capacidadBodega) 
+
+        public Aeronave(string matricula, int cantAsientos, int cantBanios, bool internet, bool comida, float capacidadBodega) : this()
+        {
+            this.matricula = matricula;
+            this.cantAsientos = cantAsientos;
+            this.cantBanios = cantBanios;
+            this.internet = internet;
+            this.comida = comida;
+            this.capacidadBodega = capacidadBodega;
+        }
+
+        public Aeronave (string matricula, int cantAsientos, int cantBanios, bool internet, bool comida, float capacidadBodega, List<Pasajero>? lista) : this()
         {
             this.matricula = matricula;
             this.cantAsientos = cantAsientos;
@@ -68,12 +83,22 @@ namespace Entidades
 
         private string Mostrar() 
         {
-            return $"Mat.: {this.matricula} - Capacidad: {this.cantAsientos}";
+            return $"{this.matricula}";
         }
 
         public override string ToString()
         {
             return this.Mostrar();
+        }
+
+        public static bool operator ==(Aeronave a1, Aeronave a2)
+        {
+            return a1.matricula == a2.matricula;
+        }
+
+        public static bool operator !=(Aeronave a1, Aeronave a2)
+        {
+            return !(a1 == a2);
         }
     }
 

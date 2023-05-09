@@ -19,24 +19,24 @@ namespace Form_Aerolinea
         {
             InitializeComponent();
 
-            switch (option) 
+            switch (option)
             {
                 case 1:
                     this.obj = new Aeronave();
-                break;
+                    break;
                 case 2:
                     this.obj = new Viaje();
-                break;
+                    break;
                 case 3:
                     this.obj = new Pasajero();
-                break;
+                    break;
             }
         }
 
         private void FrmCRUD_Load(object sender, EventArgs e)
         {
             CrearGrid();
-            dvgLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -61,12 +61,12 @@ namespace Form_Aerolinea
 
         private void CrearGrid()
         {
-            dvgLista.Rows.Clear();
+            dgvLista.Rows.Clear();
 
             for (int i = 0; i < this.obj.GetType().GetProperties().Length; i++)
             {
                 string columna = this.obj.GetType().GetProperties()[i].Name;
-                dvgLista.Columns.Add(columna, columna);
+                dgvLista.Columns.Add(columna, columna);
             }
 
             ActualizarGrid();
@@ -74,59 +74,71 @@ namespace Form_Aerolinea
 
         private void ActualizarGrid()
         {
-            dvgLista.Rows.Clear();
+            dgvLista.Rows.Clear();
 
-            switch (this.obj.GetType().Name) 
+            switch (this.obj.GetType().Name)
             {
                 case "Aeronave":
                     foreach (Aeronave item in Listas.aviones)
                     {
-                        string[] fila = new string[dvgLista.Columns.Count];
+                        string[] fila = new string[dgvLista.Columns.Count];
 
-                        for (int i = 0; i < dvgLista.Columns.Count; i++)
+                        for (int i = 0; i < dgvLista.Columns.Count; i++)
                         {
-                            fila[i] = (item.GetType().GetProperty(dvgLista.Columns[i].Name).GetValue(item)).ToString();
+                            if (dgvLista.Columns[i].Name is not "Pasajeros")
+                            {
+                                fila[i] = (item.GetType().GetProperty(dgvLista.Columns[i].Name).GetValue(item)).ToString();
+                            }
+                            else 
+                            {
+                                dgvLista.Columns.RemoveAt(i);
+                            }
                         }
 
-                        dvgLista.Rows.Add(fila);
+                        dgvLista.Rows.Add(fila);
                     }
-                break;
+                    break;
                 case "Viaje":
                     foreach (Viaje item in Listas.viajes)
                     {
-                        string[] fila = new string[dvgLista.Columns.Count];
+                        string[] fila = new string[dgvLista.Columns.Count];
 
-                        for (int i = 0; i < dvgLista.Columns.Count; i++)
+                        for (int i = 0; i < dgvLista.Columns.Count; i++)
                         {
-                            fila[i] = (item.GetType().GetProperty(dvgLista.Columns[i].Name).GetValue(item)).ToString();
+                            if (dgvLista.Columns[i].Name is "Fecha")
+                            {
+                                fila[i] = $"{((DateTime)item.GetType().GetProperty(dgvLista.Columns[i].Name).GetValue(item)).Day}/{((DateTime)item.GetType().GetProperty(dgvLista.Columns[i].Name).GetValue(item)).Month}/{((DateTime)item.GetType().GetProperty(dgvLista.Columns[i].Name).GetValue(item)).Year}";
+                            }
+                            else
+                            {
+                                fila[i] = (item.GetType().GetProperty(dgvLista.Columns[i].Name).GetValue(item)).ToString();
+                            }
                         }
 
-                        dvgLista.Rows.Add(fila);
+                        dgvLista.Rows.Add(fila);
                     }
-                break;
+                    break;
                 case "Pasajero":
                     foreach (Pasajero item in Listas.pasajeros)
                     {
-                        string[] fila = new string[dvgLista.Columns.Count];
+                        string[] fila = new string[dgvLista.Columns.Count];
 
-                        for (int i = 0; i < dvgLista.Columns.Count; i++)
+                        for (int i = 0; i < dgvLista.Columns.Count; i++)
                         {
-                            fila[i] = (item.GetType().GetProperty(dvgLista.Columns[i].Name).GetValue(item)).ToString();
+                            fila[i] = (item.GetType().GetProperty(dgvLista.Columns[i].Name).GetValue(item)).ToString();
                         }
 
-                        dvgLista.Rows.Add(fila);
+                        dgvLista.Rows.Add(fila);
                     }
-                break;
+                    break;
             }
-
-
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (dvgLista.SelectedRows.Count > 0)
+            if (dgvLista.SelectedRows.Count > 0)
             {
-                DataGridViewRow fila = dvgLista.SelectedRows[0];
+                DataGridViewRow fila = dgvLista.SelectedRows[0];
                 string? matricula = fila.Cells["Matricula"].Value.ToString();
 
                 foreach (Aeronave avion in Listas.aviones)
@@ -148,19 +160,46 @@ namespace Form_Aerolinea
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (dvgLista.SelectedRows.Count > 0)
+            switch (this.obj.GetType().Name)
             {
-                DataGridViewRow fila = dvgLista.SelectedRows[0];
-                string? matricula = fila.Cells["Matricula"].Value.ToString();
+                case "Aeronave":
+                    if (dgvLista.SelectedRows.Count > 0)
+                    {
+                        DataGridViewRow fila = dgvLista.SelectedRows[0];
+                        string matricula = fila.Cells["Matricula"].Value.ToString();
 
-                FrmModificarAvion fm = new FrmModificarAvion(matricula);
-                fm.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Se debera elegir una fila a modificar...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+                        FrmModificarAvion fm = new FrmModificarAvion(matricula);
+                        fm.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Se debera elegir una fila a modificar...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    break;
+                case "Viaje":
+                    if (dgvLista.SelectedRows.Count > 0) 
+                    {
+                        DataGridViewRow fila = dgvLista.SelectedRows[0];
+                        Aeronave avion = new Aeronave();
+                        foreach (Aeronave item in Listas.aviones)
+                        {
+                            if (item.Matricula == fila.Cells["Avion"].Value.ToString()) 
+                            {
+                                avion = item;
+                            }
+                        }
+                        string[] fecha = fila.Cells["Fecha"].Value.ToString().Split('/');
 
+                        Viaje viaje = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])) , avion, avion.CantidadAsientos, avion.Pasajeros);
+
+                        FrmModificarViaje fm = new FrmModificarViaje(viaje);
+                        fm.ShowDialog();
+                    }
+                    break;
+                case "Pasajero":
+
+                    break;
+            }
 
             ActualizarGrid();
         }

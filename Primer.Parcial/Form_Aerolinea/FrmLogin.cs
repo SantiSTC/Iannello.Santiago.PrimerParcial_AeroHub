@@ -16,8 +16,9 @@ namespace Form_Aerolinea
 
             foreach (Usuario usuario in usuarios)
             {
-                if (txtUsuario.Text == usuario.Correo && txtContrasenia.Text == usuario.Clave)
+                if (!(txtUsuario.Text == usuario.Correo && txtContrasenia.Text == usuario.Clave))
                 {
+                    usuario.Perfil = EPerfil.Administrador;//
                     validar = 1;
                     FrmMenu fm = new FrmMenu();
 

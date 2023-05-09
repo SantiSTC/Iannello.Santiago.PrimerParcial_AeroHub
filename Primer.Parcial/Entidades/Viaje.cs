@@ -14,50 +14,44 @@ namespace Entidades
         protected Aeronave avion;
         protected int asientos;
         protected List<Pasajero> pasajeros;
+        private float costo;
+        private int duracion;
 
         public string CiudadDePartida { get { return this.ciudadDePartida; } }
         public string CiudadDeDestino { get { return this.ciudadDeDestino; } }
-        public DateTime Fecha { get { return this.fecha; } }
+        public DateTime Fecha { get { return this.fecha; } set { this.fecha = value; } }
         public Aeronave Avion { get { return this.avion; } }
-        public int AsientosPremium { get { return this.asientos * (int)0.2; } }
+        public int AsientosPremium { get { return (int)(this.asientos * (float)0.2); } }
         public int AsientosTurista { get { return this.asientos - AsientosPremium; } }
-        public float CostoPremium { get { return CostoTurista * (float)1.35; } }
+
+        public int Duracion
+        {
+            get
+            {
+                return this.duracion;
+            }
+        }
 
         public float CostoTurista
         {
             get 
             {
-                if (this.ciudadDeDestino != EDestinoInternacional.Acapulco.ToString() || this.ciudadDeDestino != EDestinoInternacional.Miami.ToString() || this.ciudadDeDestino != EDestinoInternacional.Recife.ToString() || this.ciudadDeDestino != EDestinoInternacional.Roma.ToString())
+                if (this.ciudadDeDestino != EDestinoInternacional.Acapulco.ToString() && this.ciudadDeDestino != EDestinoInternacional.Miami.ToString() && this.ciudadDeDestino != EDestinoInternacional.Recife.ToString() && this.ciudadDeDestino != EDestinoInternacional.Roma.ToString())
                 {
-                    return 50 * this.Duracion;
+                    this.costo = 50 * this.duracion;
                 }
                 else 
                 {
-                    return 100 * this.Duracion;
+                    this.costo = 100 * this.duracion;
                 }
-                
+
+                return this.costo;
             }
         }
-        public int Duracion 
-        { 
-            get 
-            {
-                Random rand = new Random();
-                int horas;
 
-                if (this.ciudadDeDestino != EDestinoInternacional.Acapulco.ToString() || this.ciudadDeDestino != EDestinoInternacional.Miami.ToString() || this.ciudadDeDestino != EDestinoInternacional.Recife.ToString() || this.ciudadDeDestino != EDestinoInternacional.Roma.ToString())
-                {
-                    horas = rand.Next(2, 5);
-                }
-                else 
-                {
-                    horas = rand.Next(8, 13);
-                }
+        public float CostoPremium { get { return (this.costo * (float)0.35) + this.costo; } }
 
-                return horas; 
-            } 
-        }
-        public List<Pasajero> Pasajeros { get { return this.pasajeros; } }
+        //public List<Pasajero> Pasajeros { get { return this.pasajeros; } }
 
         public Viaje() 
         {
@@ -77,13 +71,22 @@ namespace Entidades
             this.avion = avion;
             this.asientos = asientos;
             this.pasajeros = pasajeros;
+
+            if (this.ciudadDeDestino != EDestinoInternacional.Acapulco.ToString() && this.ciudadDeDestino != EDestinoInternacional.Miami.ToString() && this.ciudadDeDestino != EDestinoInternacional.Recife.ToString() && this.ciudadDeDestino != EDestinoInternacional.Roma.ToString())
+            {
+                this.duracion = (new Random()).Next(2, 5);
+            }
+            else
+            {
+                this.duracion = (new Random()).Next(8, 13);
+            }
         }
 
-        public static List<Viaje> AgregarViaje(List<Viaje> lista, string partida, string destino, DateTime fecha, Aeronave avion, int asientos, List<Pasajero> pasajeros) 
+        public static List<Viaje> AgregarViaje(List<Viaje> lista, string partida, string destino, DateTime fecha, Aeronave avion, List<Pasajero> pasajeros) 
         {
             if (lista != null)
             {
-                Viaje viaje = new Viaje(partida, destino, fecha, avion, asientos, pasajeros);
+                Viaje viaje = new Viaje(partida, destino, fecha, avion, avion.CantidadAsientos, pasajeros);
                 lista.Add(viaje);
             }
             else 
@@ -100,6 +103,14 @@ namespace Entidades
             return lista;
         }
 
+        public static bool operator==(Viaje v1, Viaje v2) 
+        {
+            return v1.avion == v2.avion && v1.fecha == v2.fecha;
+        }
 
+        public static bool operator !=(Viaje v1, Viaje v2) 
+        {
+            return !(v1 == v2);
+        }
     }
 }

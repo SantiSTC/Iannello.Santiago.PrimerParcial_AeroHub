@@ -28,28 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dvgLista = new DataGridView();
+            dgvLista = new DataGridView();
             btnAgregar = new Button();
             btnModificar = new Button();
             btnEliminar = new Button();
-            ((System.ComponentModel.ISupportInitialize)dvgLista).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvLista).BeginInit();
             SuspendLayout();
             // 
-            // dvgLista
+            // dgvLista
             // 
-            dvgLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dvgLista.BackgroundColor = SystemColors.ControlLightLight;
-            dvgLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dvgLista.Location = new Point(12, 12);
-            dvgLista.Name = "dvgLista";
-            dvgLista.ReadOnly = true;
-            dvgLista.RowTemplate.Height = 25;
-            dvgLista.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dvgLista.Size = new Size(645, 344);
-            dvgLista.TabIndex = 0;
+            dgvLista.AllowUserToResizeColumns = false;
+            dgvLista.AllowUserToResizeRows = false;
+            dgvLista.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dgvLista.BackgroundColor = SystemColors.ControlLightLight;
+            dgvLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvLista.Location = new Point(12, 12);
+            dgvLista.Name = "dgvLista";
+            dgvLista.ReadOnly = true;
+            dgvLista.RowTemplate.Height = 25;
+            dgvLista.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvLista.Size = new Size(645, 344);
+            dgvLista.TabIndex = 0;
             // 
             // btnAgregar
             // 
+            btnAgregar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnAgregar.Location = new Point(400, 381);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(75, 23);
@@ -60,6 +64,7 @@
             // 
             // btnModificar
             // 
+            btnModificar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnModificar.Location = new Point(492, 381);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(75, 23);
@@ -70,6 +75,7 @@
             // 
             // btnEliminar
             // 
+            btnEliminar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnEliminar.Location = new Point(583, 381);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(75, 23);
@@ -86,17 +92,17 @@
             Controls.Add(btnEliminar);
             Controls.Add(btnModificar);
             Controls.Add(btnAgregar);
-            Controls.Add(dvgLista);
+            Controls.Add(dgvLista);
             Name = "FrmCRUD";
             Text = "FrmCRUD";
             Load += FrmCRUD_Load;
-            ((System.ComponentModel.ISupportInitialize)dvgLista).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvLista).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private DataGridView dvgLista;
+        private DataGridView dgvLista;
         private Button btnAgregar;
         private Button btnModificar;
         private Button btnEliminar;
