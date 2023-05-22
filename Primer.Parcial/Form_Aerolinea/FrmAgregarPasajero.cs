@@ -27,7 +27,7 @@ namespace Form_Aerolinea
 
         protected virtual void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (this.txtNombre is not null && this.txtApellido is not null && this.txtDni is not null && this.txtEdad is not null && this.txtPeso is not null)
+            if (!string.IsNullOrWhiteSpace(this.txtNombre.Text) && !string.IsNullOrWhiteSpace(this.txtApellido.Text) && !string.IsNullOrWhiteSpace(this.txtDni.Text) && !string.IsNullOrWhiteSpace(this.txtEdad.Text) && !string.IsNullOrWhiteSpace(this.txtPeso.Text))
             {
                 ETipoEquipaje aux = ETipoEquipaje.Ninguno;
                 if (this.chkBodega.Checked && this.chkDeMano.Checked)
@@ -49,7 +49,28 @@ namespace Form_Aerolinea
                     }
                 }
 
-                Listas.pasajeros.Add(new Pasajero(this.txtNombre.Text, this.txtApellido.Text, int.Parse(this.txtDni.Text), int.Parse(this.txtEdad.Text), aux, float.Parse(this.txtPeso.Text)));
+                int dni;
+                if (!int.TryParse(this.txtDni.Text, out dni))
+                {
+                    MessageBox.Show("El campo DNI debe ser un valor numérico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                int edad;
+                if (!int.TryParse(this.txtEdad.Text, out edad))
+                {
+                    MessageBox.Show("El campo Edad debe ser un valor numérico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                float peso;
+                if (!float.TryParse(this.txtPeso.Text, out peso))
+                {
+                    MessageBox.Show("El campo Peso debe ser un valor numérico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                Listas.pasajeros.Add(new Pasajero(this.txtNombre.Text, this.txtApellido.Text, dni, edad, aux, peso));
                 this.DialogResult = DialogResult.OK;
             }
             else

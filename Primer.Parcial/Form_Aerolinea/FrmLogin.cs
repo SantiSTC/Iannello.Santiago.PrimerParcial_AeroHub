@@ -18,7 +18,7 @@ namespace Form_Aerolinea
             {
                 if (!(txtUsuario.Text == usuario.Correo && txtContrasenia.Text == usuario.Clave))
                 {
-                    usuario.Perfil = EPerfil.Vendedor;//
+                    usuario.Perfil = EPerfil.Administrador;//
                     validar = true;
                     FrmMenu fm = new FrmMenu();
 

@@ -52,3 +52,4 @@ C:\Users\Santiago\source\repos\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-wi
 C:\Users\Santiago\source\repos\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.FrmAgregarPasajero.resources
 C:\Users\Santiago\source\repos\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.FrmListar.resources
 C:\Users\Santiago\source\repos\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.FrmModificarPasajero.resources
+C:\Users\Santiago\source\repos\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.FrmVenderViaje.resources

@@ -38,10 +38,14 @@
             // 
             // dgvLista
             // 
+            dgvLista.AllowUserToResizeColumns = false;
+            dgvLista.AllowUserToResizeRows = false;
+            dgvLista.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvLista.BackgroundColor = SystemColors.Control;
             dgvLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvLista.Location = new Point(35, 71);
             dgvLista.Name = "dgvLista";
+            dgvLista.ReadOnly = true;
             dgvLista.RowTemplate.Height = 25;
             dgvLista.Size = new Size(731, 346);
             dgvLista.TabIndex = 1;
@@ -82,6 +86,7 @@
             txtBuscador.PlaceholderText = " Ingresar Destino";
             txtBuscador.Size = new Size(218, 23);
             txtBuscador.TabIndex = 3;
+            txtBuscador.TextChanged += txtBuscador_TextChanged;
             // 
             // FrmListar
             // 

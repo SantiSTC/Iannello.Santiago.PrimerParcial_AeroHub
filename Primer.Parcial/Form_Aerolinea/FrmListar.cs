@@ -15,6 +15,7 @@ namespace Form_Aerolinea
     {
         private int option;
         private List<Pasajero>? lista;
+        
 
         public FrmListar()
         {
@@ -93,6 +94,8 @@ namespace Form_Aerolinea
 
         private void ActualizarGrid(List<Pasajero> lista)
         {
+            dgvLista.Rows.Clear();
+
             foreach (Pasajero item in lista)
             {
                 string[] fila = new string[dgvLista.Columns.Count];
@@ -120,9 +123,9 @@ namespace Form_Aerolinea
                         break;
                     }
                 }
-                //pasajeros.Add(new Pasajero("Santiago", "Ianello", 43212312, 22, ETipoEquipaje.Ambos, 12));//string nombre, string apellido, int dni, int edad, ETipoEquipaje tipoEquipaje, float pesoEquipaje
 
-                avion.Pasajeros.Add(new Pasajero("Santiago", "Ianello", 43212312, 22, ETipoEquipaje.Ambos, 12));
+                //avion.Pasajeros.Add(new Pasajero("Santiago", "Ianello", 43212312, 22, ETipoEquipaje.Ambos, 12));
+
                 FrmListar fm2 = new FrmListar(1, avion.Pasajeros);
                 fm2.btnVerPasajeros.Visible = false;
                 fm2.label1.Text = "";
@@ -143,5 +146,19 @@ namespace Form_Aerolinea
             this.DialogResult = DialogResult.Cancel;
         }
 
+        private void txtBuscador_TextChanged(object sender, EventArgs e)
+        {
+            List<Viaje> aux = new List<Viaje>();
+
+            foreach (Viaje item in Listas.viajes)
+            {
+                if (item.CiudadDeDestino.ToLower().Contains(txtBuscador.Text.ToLower()))
+                {
+                    aux.Add(item);
+                }
+            }
+
+            ActualizarGrid(aux);
+        }
     }
 }

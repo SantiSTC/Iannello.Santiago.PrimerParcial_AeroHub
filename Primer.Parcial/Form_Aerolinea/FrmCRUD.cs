@@ -135,6 +135,17 @@ namespace Form_Aerolinea
                     }
                     break;
             }
+
+            if (this.dgvLista.Rows.Count <= 1)
+            {
+                this.btnEliminar.Enabled = false;
+                this.btnModificar.Enabled = false;
+            }
+            else
+            {
+                this.btnEliminar.Enabled = true;
+                this.btnModificar.Enabled = true;
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
