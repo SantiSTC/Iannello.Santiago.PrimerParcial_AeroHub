@@ -51,8 +51,6 @@ namespace Entidades
 
         public float CostoPremium { get { return (this.costo * (float)0.35) + this.costo; } }
 
-        //public List<Pasajero> Pasajeros { get { return this.pasajeros; } }
-
         public Viaje() 
         {
             this.ciudadDePartida = " ";
@@ -97,13 +95,12 @@ namespace Entidades
             return lista;
         }
 
-        public List<Viaje> EliminarViaje(List<Viaje> lista, Viaje viaje) 
+        public override string ToString()
         {
-            lista.Remove(viaje);
-            return lista;
+            return $"{this.ciudadDePartida} a {this.ciudadDeDestino} - {this.fecha.Date.ToShortDateString()}";
         }
 
-        public static bool operator==(Viaje v1, Viaje v2) 
+        public static bool operator ==(Viaje v1, Viaje v2) 
         {
             return v1.avion == v2.avion && v1.fecha == v2.fecha;
         }
@@ -111,6 +108,18 @@ namespace Entidades
         public static bool operator !=(Viaje v1, Viaje v2) 
         {
             return !(v1 == v2);
+        }
+
+        public override bool Equals(object? obj)
+        {
+            bool rta = false;
+
+            if (obj is Viaje)
+            {
+                rta = (Viaje)obj == this;
+            }
+
+            return rta;
         }
     }
 }

@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public static class Serializacion <T>
+    public static class Serializacion<T>
     {
         private static StreamReader? reader;
         private static StreamWriter? writer;
 
-        public static bool Serializar(List<Usuario> lista, string path) 
+        public static bool Serializar(List<T> lista, string path)
         {
             bool retorno = false;
 

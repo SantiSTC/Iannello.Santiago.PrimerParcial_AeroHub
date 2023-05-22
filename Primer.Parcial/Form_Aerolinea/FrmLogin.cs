@@ -11,15 +11,15 @@ namespace Form_Aerolinea
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            int validar = 0;
+            bool validar = false;
             List<Usuario> usuarios = Serializacion<Usuario>.Deserializar(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\MOCK_DATA.json");
 
             foreach (Usuario usuario in usuarios)
             {
                 if (!(txtUsuario.Text == usuario.Correo && txtContrasenia.Text == usuario.Clave))
                 {
-                    usuario.Perfil = EPerfil.Administrador;//
-                    validar = 1;
+                    usuario.Perfil = EPerfil.Vendedor;//
+                    validar = true;
                     FrmMenu fm = new FrmMenu();
 
                     switch (usuario.Perfil)
@@ -43,7 +43,7 @@ namespace Form_Aerolinea
                     }
                 }
             }
-            if (validar == 0)
+            if (!validar)
             {
                 MessageBox.Show("El usuario o la contraseña son incorrectos...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

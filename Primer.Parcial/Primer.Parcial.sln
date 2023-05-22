@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{666B20B9-6D7D-48F2-A950-1CC09DC28929}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entidades", "Entidades\Entidades.csproj", "{666B20B9-6D7D-48F2-A950-1CC09DC28929}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Form_Aerolinea", "Form_Aerolinea\Form_Aerolinea.csproj", "{43EE3485-70A6-4E63-964D-3CB41B2D7BCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Form_Aerolinea", "Form_Aerolinea\Form_Aerolinea.csproj", "{43EE3485-70A6-4E63-964D-3CB41B2D7BCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

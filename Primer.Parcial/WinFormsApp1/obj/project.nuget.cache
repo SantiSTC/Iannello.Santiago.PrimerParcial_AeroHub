@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "TKrodAPFj765R8dUON0XkPHIy6Rj8Ue1t2yj9LNdSSw+36IpPYXOWtg7bpLzYden3hZCXrI+cxC0tgDtbVaF5g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Santiago\\source\\repos\\Primer.Parcial\\WinFormsApp1\\WinFormsApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Santiago\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Santiago\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

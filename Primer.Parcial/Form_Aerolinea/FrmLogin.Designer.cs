@@ -30,8 +30,6 @@
         {
             btnAceptar = new Button();
             txtUsuario = new TextBox();
-            lblUsuario = new Label();
-            lblContrasenia = new Label();
             txtContrasenia = new TextBox();
             lblLogin = new Label();
             SuspendLayout();
@@ -50,35 +48,19 @@
             // txtUsuario
             // 
             txtUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtUsuario.Location = new Point(192, 122);
+            txtUsuario.Location = new Point(117, 122);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new Size(154, 23);
+            txtUsuario.PlaceholderText = " Usuario";
+            txtUsuario.Size = new Size(280, 23);
             txtUsuario.TabIndex = 1;
-            // 
-            // lblUsuario
-            // 
-            lblUsuario.AutoSize = true;
-            lblUsuario.Location = new Point(133, 125);
-            lblUsuario.Name = "lblUsuario";
-            lblUsuario.Size = new Size(53, 15);
-            lblUsuario.TabIndex = 3;
-            lblUsuario.Text = "Usuario: ";
-            // 
-            // lblContrasenia
-            // 
-            lblContrasenia.AutoSize = true;
-            lblContrasenia.Location = new Point(113, 168);
-            lblContrasenia.Name = "lblContrasenia";
-            lblContrasenia.Size = new Size(73, 15);
-            lblContrasenia.TabIndex = 5;
-            lblContrasenia.Text = "Contraseña: ";
             // 
             // txtContrasenia
             // 
             txtContrasenia.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtContrasenia.Location = new Point(192, 165);
+            txtContrasenia.Location = new Point(117, 165);
             txtContrasenia.Name = "txtContrasenia";
-            txtContrasenia.Size = new Size(154, 23);
+            txtContrasenia.PlaceholderText = " Contraseña";
+            txtContrasenia.Size = new Size(280, 23);
             txtContrasenia.TabIndex = 4;
             txtContrasenia.UseSystemPasswordChar = true;
             // 
@@ -99,9 +81,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(519, 352);
             Controls.Add(lblLogin);
-            Controls.Add(lblContrasenia);
             Controls.Add(txtContrasenia);
-            Controls.Add(lblUsuario);
             Controls.Add(txtUsuario);
             Controls.Add(btnAceptar);
             MaximumSize = new Size(1142, 391);
@@ -117,8 +97,6 @@
 
         private Button btnAceptar;
         private TextBox txtUsuario;
-        private Label lblUsuario;
-        private Label lblContrasenia;
         private TextBox txtContrasenia;
         private Label lblLogin;
     }

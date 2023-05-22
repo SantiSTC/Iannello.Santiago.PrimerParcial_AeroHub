@@ -8,7 +8,9 @@
 public enum ETipoEquipaje 
 {
     DeMano,
-    DeBodega
+    DeBodega,
+    Ambos,
+    Ninguno
 }
 
 public enum EDestinoInternacional 

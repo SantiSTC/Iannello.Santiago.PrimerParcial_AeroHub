@@ -21,5 +21,18 @@ namespace Form_Aerolinea
         {
 
         }
+
+        private void lnkPasajeros_Click(object sender, EventArgs e)
+        {
+            FrmCRUD fm = new FrmCRUD(3);
+            fm.ShowDialog();
+        }
+
+        private void lnkListaViajes_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmListar fm = new FrmListar();
+
+            fm.ShowDialog();
+        }
     }
 }

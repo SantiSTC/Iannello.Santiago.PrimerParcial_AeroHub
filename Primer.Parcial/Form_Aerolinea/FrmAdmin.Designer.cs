@@ -28,32 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            linkLabel1 = new LinkLabel();
-            linkLabel2 = new LinkLabel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdmin));
+            lnkViajes = new LinkLabel();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // linkLabel1
+            // lnkViajes
             // 
-            linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(193, 258);
-            linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(37, 15);
-            linkLabel1.TabIndex = 0;
-            linkLabel1.TabStop = true;
-            linkLabel1.Text = "Viajes";
-            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
-            // 
-            // linkLabel2
-            // 
-            linkLabel2.AutoSize = true;
-            linkLabel2.Location = new Point(503, 258);
-            linkLabel2.Name = "linkLabel2";
-            linkLabel2.Size = new Size(62, 15);
-            linkLabel2.TabIndex = 1;
-            linkLabel2.TabStop = true;
-            linkLabel2.Text = "Aeronaves";
-            linkLabel2.LinkClicked += linkLabel2_LinkClicked;
+            lnkViajes.AutoSize = true;
+            lnkViajes.Location = new Point(193, 258);
+            lnkViajes.Name = "lnkViajes";
+            lnkViajes.Size = new Size(37, 15);
+            lnkViajes.TabIndex = 0;
+            lnkViajes.TabStop = true;
+            lnkViajes.Text = "Viajes";
+            lnkViajes.LinkClicked += linkLabel1_LinkClicked;
             // 
             // label1
             // 
@@ -64,25 +55,38 @@
             label1.TabIndex = 2;
             label1.Text = "Crear - Modificar - Eliminar";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox1.Location = new Point(511, 222);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(53, 51);
+            pictureBox1.TabIndex = 3;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // FrmAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
-            Controls.Add(linkLabel2);
-            Controls.Add(linkLabel1);
+            Controls.Add(lnkViajes);
             Name = "FrmAdmin";
             Text = "MenuAdmin";
             Load += MenuAdmin_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private LinkLabel linkLabel1;
-        private LinkLabel linkLabel2;
+        private LinkLabel lnkViajes;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }

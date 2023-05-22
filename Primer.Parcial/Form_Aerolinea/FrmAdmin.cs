@@ -28,7 +28,7 @@ namespace Form_Aerolinea
             fm.ShowDialog();
         }
 
-        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             FrmCRUD fm = new FrmCRUD(1);
             fm.ShowDialog();

@@ -23,6 +23,7 @@ namespace Form_Aerolinea
         private void FrmAgregarViaje_Load(object sender, EventArgs e)
         {
             this.lblTitulo.Text = "Agregar Viaje";
+            this.Text = "Agregar Viaje";
 
             CargarComboBoxes();
         }

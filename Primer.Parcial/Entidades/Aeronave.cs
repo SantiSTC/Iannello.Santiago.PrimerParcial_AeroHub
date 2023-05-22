@@ -100,6 +100,18 @@ namespace Entidades
         {
             return !(a1 == a2);
         }
+
+        public override bool Equals(object? obj)
+        {
+            bool rta = false;
+
+            if (obj is Aeronave)
+            {
+                rta = (Aeronave)obj == this;
+            }
+
+            return rta;
+        }
     }
 
     

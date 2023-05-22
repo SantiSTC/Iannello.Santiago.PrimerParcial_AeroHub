@@ -56,5 +56,17 @@ namespace Entidades
         {
             return !(a == b);
         }
+
+        public override bool Equals(object? obj)
+        {
+            bool rta = false;
+
+            if(obj is Usuario)
+            {
+                rta = (Usuario)obj == this;
+            }
+
+            return rta;
+        }
     }
 }

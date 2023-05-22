@@ -13,12 +13,15 @@ namespace Form_Aerolinea
 {
     public partial class FrmCRUD : Form
     {
-        private Object obj;
+        private Object? obj;
 
-        public FrmCRUD(int option)
+        public FrmCRUD()
         {
             InitializeComponent();
+        }
 
+        public FrmCRUD(int option) : this()
+        {
             switch (option)
             {
                 case 1:
@@ -41,7 +44,6 @@ namespace Form_Aerolinea
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
             switch (this.obj.GetType().Name)
             {
                 case "Aeronave":
@@ -53,7 +55,8 @@ namespace Form_Aerolinea
                     fm2.ShowDialog();
                     break;
                 case "Pasajero":
-
+                    FrmAgregarPasajero fm3 = new FrmAgregarPasajero();
+                    fm3.ShowDialog();
                     break;
             }
             ActualizarGrid();
@@ -136,26 +139,82 @@ namespace Form_Aerolinea
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (dgvLista.SelectedRows.Count > 0)
+            switch (this.obj.GetType().Name)
             {
-                DataGridViewRow fila = dgvLista.SelectedRows[0];
-                string? matricula = fila.Cells["Matricula"].Value.ToString();
-
-                foreach (Aeronave avion in Listas.aviones)
-                {
-                    if (avion.Matricula == matricula)
+                case "Aeronave":
+                    if (dgvLista.SelectedRows.Count > 0)
                     {
-                        Listas.aviones.Remove(avion);
-                        break;
-                    }
-                }
+                        DataGridViewRow fila = dgvLista.SelectedRows[0];
+                        string? matricula = fila.Cells["Matricula"].Value.ToString();
 
-                ActualizarGrid();
+                        foreach (Aeronave avion in Listas.aviones)
+                        {
+                            if (avion.Matricula == matricula)
+                            {
+                                Listas.aviones.Remove(avion);
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Se debera elegir una fila a eliminar...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    break;
+                case "Viaje":
+                    if (dgvLista.SelectedRows.Count > 0)
+                    {
+                        DataGridViewRow fila = dgvLista.SelectedRows[0];
+                        Aeronave avion = new Aeronave();
+                        foreach (Aeronave item in Listas.aviones)
+                        {
+                            if (item.Matricula == fila.Cells["Avion"].Value.ToString())
+                            {
+                                avion = item;
+                                break;
+                            }
+                        }
+                        string[] fecha = fila.Cells["Fecha"].Value.ToString().Split('/');
+
+                        Viaje viaje = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])), avion, avion.CantidadAsientos, avion.Pasajeros);
+
+                        foreach(Viaje item in Listas.viajes)
+                        {
+                            if(item == viaje)
+                            {
+                                Listas.viajes.Remove(viaje);
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Se debera elegir una fila a eliminar...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                    break;
+                case "Pasajero":
+                    if(dgvLista.SelectedRows.Count > 0) 
+                    {
+                        DataGridViewRow fila = dgvLista.SelectedRows[0];
+
+                        foreach (Pasajero item in Listas.pasajeros) 
+                        {
+                            if (item.Dni.ToString() == fila.Cells["Dni"].Value.ToString()) 
+                            {
+                                Listas.pasajeros.Remove(item);
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Se debera elegir una fila a eliminar...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+
+                    break;
             }
-            else
-            {
-                MessageBox.Show("Se debera elegir una fila a eliminar...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+
+            ActualizarGrid();
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
@@ -177,27 +236,42 @@ namespace Form_Aerolinea
                     }
                     break;
                 case "Viaje":
-                    if (dgvLista.SelectedRows.Count > 0) 
+                    if (dgvLista.SelectedRows.Count > 0)
                     {
                         DataGridViewRow fila = dgvLista.SelectedRows[0];
                         Aeronave avion = new Aeronave();
                         foreach (Aeronave item in Listas.aviones)
                         {
-                            if (item.Matricula == fila.Cells["Avion"].Value.ToString()) 
+                            if (item.Matricula == fila.Cells["Avion"].Value.ToString())
                             {
                                 avion = item;
                             }
                         }
                         string[] fecha = fila.Cells["Fecha"].Value.ToString().Split('/');
 
-                        Viaje viaje = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])) , avion, avion.CantidadAsientos, avion.Pasajeros);
+                        Viaje viaje = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])), avion, avion.CantidadAsientos, avion.Pasajeros);
 
                         FrmModificarViaje fm = new FrmModificarViaje(viaje);
                         fm.ShowDialog();
                     }
+                    else
+                    {
+                        MessageBox.Show("Se debera elegir una fila a modificar...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                     break;
                 case "Pasajero":
+                    if(dgvLista.SelectedRows.Count > 0) 
+                    {
+                        DataGridViewRow fila = dgvLista.SelectedRows[0];
+                        int dni = int.Parse(fila.Cells["Dni"].Value.ToString());
 
+                        FrmModificarPasajero fm = new FrmModificarPasajero(dni);
+                        fm.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Se debera elegir una fila a modificar...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                     break;
             }
 
