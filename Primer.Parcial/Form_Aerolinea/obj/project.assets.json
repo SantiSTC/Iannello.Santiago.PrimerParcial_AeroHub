@@ -368,19 +368,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Santiago\\.nuget\\packages\\": {}
+    "C:\\Users\\santi\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Santiago\\source\\repos\\Primer.Parcial\\Form_Aerolinea\\Form_Aerolinea.csproj",
+      "projectUniqueName": "C:\\Users\\santi\\Source\\Repos\\Iannello.Santiago.PrimerParcial\\Primer.Parcial\\Form_Aerolinea\\Form_Aerolinea.csproj",
       "projectName": "Form_Aerolinea",
-      "projectPath": "C:\\Users\\Santiago\\source\\repos\\Primer.Parcial\\Form_Aerolinea\\Form_Aerolinea.csproj",
-      "packagesPath": "C:\\Users\\Santiago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Santiago\\source\\repos\\Primer.Parcial\\Form_Aerolinea\\obj\\",
+      "projectPath": "C:\\Users\\santi\\Source\\Repos\\Iannello.Santiago.PrimerParcial\\Primer.Parcial\\Form_Aerolinea\\Form_Aerolinea.csproj",
+      "packagesPath": "C:\\Users\\santi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\santi\\source\\repos\\Iannello.Santiago.PrimerParcial\\Primer.Parcial\\Form_Aerolinea\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Santiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\santi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -394,8 +399,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Santiago\\source\\repos\\Primer.Parcial\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\Santiago\\source\\repos\\Primer.Parcial\\Entidades\\Entidades.csproj"
+            "C:\\Users\\santi\\Source\\Repos\\Iannello.Santiago.PrimerParcial\\Primer.Parcial\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\santi\\Source\\Repos\\Iannello.Santiago.PrimerParcial\\Primer.Parcial\\Entidades\\Entidades.csproj"
             }
           }
         }
@@ -428,7 +433,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

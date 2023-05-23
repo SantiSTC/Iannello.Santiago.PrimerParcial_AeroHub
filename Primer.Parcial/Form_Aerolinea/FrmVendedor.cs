@@ -31,7 +31,12 @@ namespace Form_Aerolinea
         private void lnkListaViajes_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FrmListar fm = new FrmListar();
+            fm.ShowDialog();
+        }
 
+        private void lnkVenta_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmVenderViaje fm = new FrmVenderViaje();
             fm.ShowDialog();
         }
     }

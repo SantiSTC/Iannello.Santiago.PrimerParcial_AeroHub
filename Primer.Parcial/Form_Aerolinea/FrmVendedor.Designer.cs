@@ -37,9 +37,10 @@
             // lnkPasajeros
             // 
             lnkPasajeros.AutoSize = true;
-            lnkPasajeros.Location = new Point(140, 114);
+            lnkPasajeros.Location = new Point(200, 190);
+            lnkPasajeros.Margin = new Padding(4, 0, 4, 0);
             lnkPasajeros.Name = "lnkPasajeros";
-            lnkPasajeros.Size = new Size(56, 15);
+            lnkPasajeros.Size = new Size(85, 25);
             lnkPasajeros.TabIndex = 0;
             lnkPasajeros.TabStop = true;
             lnkPasajeros.Text = "Pasajeros";
@@ -48,9 +49,10 @@
             // lnkListaViajes
             // 
             lnkListaViajes.AutoSize = true;
-            lnkListaViajes.Location = new Point(448, 114);
+            lnkListaViajes.Location = new Point(640, 190);
+            lnkListaViajes.Margin = new Padding(4, 0, 4, 0);
             lnkListaViajes.Name = "lnkListaViajes";
-            lnkListaViajes.Size = new Size(100, 15);
+            lnkListaViajes.Size = new Size(153, 25);
             lnkListaViajes.TabIndex = 1;
             lnkListaViajes.TabStop = true;
             lnkListaViajes.Text = "Viajes disponibles";
@@ -59,9 +61,10 @@
             // lnkEstadisticas
             // 
             lnkEstadisticas.AutoSize = true;
-            lnkEstadisticas.Location = new Point(140, 249);
+            lnkEstadisticas.Location = new Point(200, 415);
+            lnkEstadisticas.Margin = new Padding(4, 0, 4, 0);
             lnkEstadisticas.Name = "lnkEstadisticas";
-            lnkEstadisticas.Size = new Size(122, 15);
+            lnkEstadisticas.Size = new Size(184, 25);
             lnkEstadisticas.TabIndex = 2;
             lnkEstadisticas.TabStop = true;
             lnkEstadisticas.Text = "Estadisticas Historicas";
@@ -69,22 +72,25 @@
             // lnkVenta
             // 
             lnkVenta.AutoSize = true;
-            lnkVenta.Location = new Point(469, 249);
+            lnkVenta.Location = new Point(670, 415);
+            lnkVenta.Margin = new Padding(4, 0, 4, 0);
             lnkVenta.Name = "lnkVenta";
-            lnkVenta.Size = new Size(79, 15);
+            lnkVenta.Size = new Size(121, 25);
             lnkVenta.TabIndex = 3;
             lnkVenta.TabStop = true;
             lnkVenta.Text = "Venta de viaje";
+            lnkVenta.LinkClicked += lnkVenta_LinkClicked;
             // 
             // FrmVendedor
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(737, 450);
+            ClientSize = new Size(1053, 750);
             Controls.Add(lnkVenta);
             Controls.Add(lnkEstadisticas);
             Controls.Add(lnkListaViajes);
             Controls.Add(lnkPasajeros);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmVendedor";
             Text = "FrmVendedor";
             Load += FrmVendedor_Load;

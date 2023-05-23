@@ -28,234 +28,354 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            button2 = new Button();
+            btnAceptar = new Button();
+            btnCancelar = new Button();
             label1 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox6 = new CheckBox();
-            label2 = new Label();
+            chkInternet = new CheckBox();
+            chkComida = new CheckBox();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtDni = new TextBox();
+            txtApellido = new TextBox();
             label4 = new Label();
-            textBox3 = new TextBox();
+            txtEdad = new TextBox();
             label5 = new Label();
-            textBox4 = new TextBox();
+            txtNombre = new TextBox();
             label6 = new Label();
+            chkPremium = new CheckBox();
+            label2 = new Label();
+            lblDestino = new Label();
+            lblPartida = new Label();
+            cmbDestino = new ComboBox();
+            cmbPartida = new ComboBox();
+            label7 = new Label();
+            label8 = new Label();
+            lblFecha = new Label();
+            mthFecha = new MonthCalendar();
+            chkDeMano = new CheckBox();
+            chkBodega = new CheckBox();
+            label9 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // btnAceptar
             // 
-            button1.Location = new Point(584, 377);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnAceptar.Location = new Point(321, 615);
+            btnAceptar.Margin = new Padding(4, 5, 4, 5);
+            btnAceptar.Name = "btnAceptar";
+            btnAceptar.Size = new Size(107, 38);
+            btnAceptar.TabIndex = 0;
+            btnAceptar.Text = "Aceptar";
+            btnAceptar.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnCancelar
             // 
-            button2.Location = new Point(675, 377);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnCancelar.Location = new Point(451, 615);
+            btnCancelar.Margin = new Padding(4, 5, 4, 5);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(107, 38);
+            btnCancelar.TabIndex = 1;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(46, 274);
+            label1.Location = new Point(43, 386);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(64, 25);
             label1.TabIndex = 2;
-            label1.Text = "label1";
+            label1.Text = "Desea:";
             // 
-            // checkBox1
+            // chkInternet
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(62, 301);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(83, 19);
-            checkBox1.TabIndex = 3;
-            checkBox1.Text = "checkBox1";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkInternet.AutoSize = true;
+            chkInternet.Location = new Point(128, 386);
+            chkInternet.Margin = new Padding(4, 5, 4, 5);
+            chkInternet.Name = "chkInternet";
+            chkInternet.Size = new Size(99, 29);
+            chkInternet.TabIndex = 3;
+            chkInternet.Text = "Internet";
+            chkInternet.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkComida
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(62, 326);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(83, 19);
-            checkBox2.TabIndex = 4;
-            checkBox2.Text = "checkBox2";
-            checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(62, 351);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(83, 19);
-            checkBox3.TabIndex = 5;
-            checkBox3.Text = "checkBox3";
-            checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(200, 351);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(83, 19);
-            checkBox4.TabIndex = 9;
-            checkBox4.Text = "checkBox4";
-            checkBox4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(200, 326);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(83, 19);
-            checkBox5.TabIndex = 8;
-            checkBox5.Text = "checkBox5";
-            checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox6
-            // 
-            checkBox6.AutoSize = true;
-            checkBox6.Location = new Point(200, 301);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(83, 19);
-            checkBox6.TabIndex = 7;
-            checkBox6.Text = "checkBox6";
-            checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(184, 274);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 6;
-            label2.Text = "label2";
+            chkComida.AutoSize = true;
+            chkComida.Location = new Point(257, 382);
+            chkComida.Margin = new Padding(4, 5, 4, 5);
+            chkComida.Name = "chkComida";
+            chkComida.Size = new Size(100, 29);
+            chkComida.TabIndex = 4;
+            chkComida.Text = "Comida";
+            chkComida.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 39);
+            label3.Location = new Point(20, 77);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(47, 25);
             label3.TabIndex = 10;
-            label3.Text = "label3";
+            label3.Text = "DNI:";
             // 
-            // textBox1
+            // txtDni
             // 
-            textBox1.Location = new Point(56, 36);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 11;
+            txtDni.Location = new Point(75, 71);
+            txtDni.Margin = new Padding(4, 5, 4, 5);
+            txtDni.Name = "txtDni";
+            txtDni.Size = new Size(141, 31);
+            txtDni.TabIndex = 11;
+            txtDni.TextChanged += txtDni_TextChanged;
             // 
-            // textBox2
+            // txtApellido
             // 
-            textBox2.Location = new Point(234, 36);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 13;
+            txtApellido.Location = new Point(329, 71);
+            txtApellido.Margin = new Padding(4, 5, 4, 5);
+            txtApellido.Name = "txtApellido";
+            txtApellido.Size = new Size(141, 31);
+            txtApellido.TabIndex = 13;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(190, 39);
+            label4.Location = new Point(244, 75);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(82, 25);
             label4.TabIndex = 12;
-            label4.Text = "label4";
+            label4.Text = "Apellido:";
             // 
-            // textBox3
+            // txtEdad
             // 
-            textBox3.Location = new Point(586, 36);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 17;
+            txtEdad.Location = new Point(820, 71);
+            txtEdad.Margin = new Padding(4, 5, 4, 5);
+            txtEdad.Name = "txtEdad";
+            txtEdad.Size = new Size(35, 31);
+            txtEdad.TabIndex = 17;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(542, 39);
+            label5.Location = new Point(756, 74);
+            label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
-            label5.Size = new Size(38, 15);
+            label5.Size = new Size(56, 25);
             label5.TabIndex = 16;
-            label5.Text = "label5";
+            label5.Text = "Edad:";
             // 
-            // textBox4
+            // txtNombre
             // 
-            textBox4.Location = new Point(408, 36);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 15;
+            txtNombre.Location = new Point(576, 69);
+            txtNombre.Margin = new Padding(4, 5, 4, 5);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(141, 31);
+            txtNombre.TabIndex = 15;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(364, 39);
+            label6.Location = new Point(486, 77);
+            label6.Margin = new Padding(4, 0, 4, 0);
             label6.Name = "label6";
-            label6.Size = new Size(38, 15);
+            label6.Size = new Size(82, 25);
             label6.TabIndex = 14;
-            label6.Text = "label6";
+            label6.Text = "Nombre:";
+            // 
+            // chkPremium
+            // 
+            chkPremium.AutoSize = true;
+            chkPremium.Location = new Point(128, 434);
+            chkPremium.Margin = new Padding(4, 5, 4, 5);
+            chkPremium.Name = "chkPremium";
+            chkPremium.Size = new Size(22, 21);
+            chkPremium.TabIndex = 19;
+            chkPremium.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(20, 430);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(87, 25);
+            label2.TabIndex = 18;
+            label2.Text = "Premium:";
+            // 
+            // lblDestino
+            // 
+            lblDestino.AutoSize = true;
+            lblDestino.Location = new Point(30, 275);
+            lblDestino.Margin = new Padding(4, 0, 4, 0);
+            lblDestino.Name = "lblDestino";
+            lblDestino.Size = new Size(77, 25);
+            lblDestino.TabIndex = 23;
+            lblDestino.Text = "Destino:";
+            // 
+            // lblPartida
+            // 
+            lblPartida.AutoSize = true;
+            lblPartida.Location = new Point(37, 213);
+            lblPartida.Margin = new Padding(4, 0, 4, 0);
+            lblPartida.Name = "lblPartida";
+            lblPartida.Size = new Size(70, 25);
+            lblPartida.TabIndex = 22;
+            lblPartida.Text = "Partida:";
+            // 
+            // cmbDestino
+            // 
+            cmbDestino.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbDestino.FormattingEnabled = true;
+            cmbDestino.Location = new Point(115, 272);
+            cmbDestino.Margin = new Padding(4, 5, 4, 5);
+            cmbDestino.Name = "cmbDestino";
+            cmbDestino.Size = new Size(257, 33);
+            cmbDestino.TabIndex = 21;
+            // 
+            // cmbPartida
+            // 
+            cmbPartida.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbPartida.FormattingEnabled = true;
+            cmbPartida.Location = new Point(116, 210);
+            cmbPartida.Margin = new Padding(4, 5, 4, 5);
+            cmbPartida.Name = "cmbPartida";
+            cmbPartida.Size = new Size(257, 33);
+            cmbPartida.TabIndex = 20;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(381, 9);
+            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(160, 25);
+            label7.TabIndex = 24;
+            label7.Text = "Datos del pasajero";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(399, 145);
+            label8.Margin = new Padding(4, 0, 4, 0);
+            label8.Name = "label8";
+            label8.Size = new Size(128, 25);
+            label8.TabIndex = 25;
+            label8.Text = "Datos del viaje";
+            // 
+            // lblFecha
+            // 
+            lblFecha.AutoSize = true;
+            lblFecha.Location = new Point(420, 213);
+            lblFecha.Margin = new Padding(4, 0, 4, 0);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(61, 25);
+            lblFecha.TabIndex = 27;
+            lblFecha.Text = "Fecha:";
+            // 
+            // mthFecha
+            // 
+            mthFecha.Location = new Point(510, 213);
+            mthFecha.Margin = new Padding(13, 15, 13, 15);
+            mthFecha.Name = "mthFecha";
+            mthFecha.TabIndex = 26;
+            // 
+            // chkDeMano
+            // 
+            chkDeMano.AutoSize = true;
+            chkDeMano.Location = new Point(257, 338);
+            chkDeMano.Margin = new Padding(4, 5, 4, 5);
+            chkDeMano.Name = "chkDeMano";
+            chkDeMano.Size = new Size(111, 29);
+            chkDeMano.TabIndex = 30;
+            chkDeMano.Text = "De Mano";
+            chkDeMano.UseVisualStyleBackColor = true;
+            // 
+            // chkBodega
+            // 
+            chkBodega.AutoSize = true;
+            chkBodega.Location = new Point(128, 338);
+            chkBodega.Margin = new Padding(4, 5, 4, 5);
+            chkBodega.Name = "chkBodega";
+            chkBodega.Size = new Size(99, 29);
+            chkBodega.TabIndex = 29;
+            chkBodega.Text = "Bodega";
+            chkBodega.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(24, 338);
+            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Name = "label9";
+            label9.Size = new Size(83, 25);
+            label9.TabIndex = 28;
+            label9.Text = "Equipaje:";
             // 
             // FrmVenderViaje
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(764, 410);
-            Controls.Add(textBox3);
-            Controls.Add(label5);
-            Controls.Add(textBox4);
-            Controls.Add(label6);
-            Controls.Add(textBox2);
-            Controls.Add(label4);
-            Controls.Add(textBox1);
-            Controls.Add(label3);
-            Controls.Add(checkBox4);
-            Controls.Add(checkBox5);
-            Controls.Add(checkBox6);
+            ClientSize = new Size(905, 681);
+            Controls.Add(chkDeMano);
+            Controls.Add(chkBodega);
+            Controls.Add(label9);
+            Controls.Add(lblFecha);
+            Controls.Add(mthFecha);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(lblDestino);
+            Controls.Add(lblPartida);
+            Controls.Add(cmbDestino);
+            Controls.Add(cmbPartida);
+            Controls.Add(chkPremium);
             Controls.Add(label2);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
+            Controls.Add(txtEdad);
+            Controls.Add(label5);
+            Controls.Add(txtNombre);
+            Controls.Add(label6);
+            Controls.Add(txtApellido);
+            Controls.Add(label4);
+            Controls.Add(txtDni);
+            Controls.Add(label3);
+            Controls.Add(chkComida);
+            Controls.Add(chkInternet);
             Controls.Add(label1);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnAceptar);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmVenderViaje";
             Text = "FrmVenderViaje";
+            Load += FrmVenderViaje_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button button1;
-        private Button button2;
+        private Button btnAceptar;
+        private Button btnCancelar;
         private Label label1;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
-        private CheckBox checkBox4;
-        private CheckBox checkBox5;
-        private CheckBox checkBox6;
-        private Label label2;
+        private CheckBox chkInternet;
+        private CheckBox chkComida;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtDni;
+        private TextBox txtApellido;
         private Label label4;
-        private TextBox textBox3;
+        private TextBox txtEdad;
         private Label label5;
-        private TextBox textBox4;
+        private TextBox txtNombre;
         private Label label6;
+        private CheckBox chkPremium;
+        private Label label2;
+        private Label lblDestino;
+        private Label lblPartida;
+        protected ComboBox cmbDestino;
+        protected ComboBox cmbPartida;
+        private Label label7;
+        private Label label8;
+        private Label lblFecha;
+        protected MonthCalendar mthFecha;
+        private CheckBox chkDeMano;
+        private CheckBox chkBodega;
+        private Label label9;
     }
 }
