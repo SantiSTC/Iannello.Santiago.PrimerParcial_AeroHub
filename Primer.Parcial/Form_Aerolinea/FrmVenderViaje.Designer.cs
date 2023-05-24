@@ -54,6 +54,8 @@
             chkDeMano = new CheckBox();
             chkBodega = new CheckBox();
             label9 = new Label();
+            txtPeso = new TextBox();
+            label10 = new Label();
             SuspendLayout();
             // 
             // btnAceptar
@@ -65,6 +67,7 @@
             btnAceptar.TabIndex = 0;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // btnCancelar
             // 
@@ -75,11 +78,12 @@
             btnCancelar.TabIndex = 1;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(43, 386);
+            label1.Location = new Point(42, 397);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(64, 25);
@@ -89,7 +93,7 @@
             // chkInternet
             // 
             chkInternet.AutoSize = true;
-            chkInternet.Location = new Point(128, 386);
+            chkInternet.Location = new Point(127, 397);
             chkInternet.Margin = new Padding(4, 5, 4, 5);
             chkInternet.Name = "chkInternet";
             chkInternet.Size = new Size(99, 29);
@@ -100,7 +104,7 @@
             // chkComida
             // 
             chkComida.AutoSize = true;
-            chkComida.Location = new Point(257, 382);
+            chkComida.Location = new Point(256, 397);
             chkComida.Margin = new Padding(4, 5, 4, 5);
             chkComida.Name = "chkComida";
             chkComida.Size = new Size(100, 29);
@@ -184,7 +188,7 @@
             // chkPremium
             // 
             chkPremium.AutoSize = true;
-            chkPremium.Location = new Point(128, 434);
+            chkPremium.Location = new Point(127, 445);
             chkPremium.Margin = new Padding(4, 5, 4, 5);
             chkPremium.Name = "chkPremium";
             chkPremium.Size = new Size(22, 21);
@@ -194,7 +198,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(20, 430);
+            label2.Location = new Point(19, 441);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(87, 25);
@@ -240,6 +244,7 @@
             cmbPartida.Name = "cmbPartida";
             cmbPartida.Size = new Size(257, 33);
             cmbPartida.TabIndex = 20;
+            cmbPartida.SelectedIndexChanged += cmbPartida_SelectedIndexChanged;
             // 
             // label7
             // 
@@ -281,40 +286,62 @@
             // chkDeMano
             // 
             chkDeMano.AutoSize = true;
-            chkDeMano.Location = new Point(257, 338);
+            chkDeMano.Location = new Point(256, 350);
             chkDeMano.Margin = new Padding(4, 5, 4, 5);
             chkDeMano.Name = "chkDeMano";
             chkDeMano.Size = new Size(111, 29);
             chkDeMano.TabIndex = 30;
             chkDeMano.Text = "De Mano";
             chkDeMano.UseVisualStyleBackColor = true;
+            chkDeMano.CheckedChanged += chkDeMano_CheckedChanged;
             // 
             // chkBodega
             // 
             chkBodega.AutoSize = true;
-            chkBodega.Location = new Point(128, 338);
+            chkBodega.Location = new Point(127, 350);
             chkBodega.Margin = new Padding(4, 5, 4, 5);
             chkBodega.Name = "chkBodega";
             chkBodega.Size = new Size(99, 29);
             chkBodega.TabIndex = 29;
             chkBodega.Text = "Bodega";
             chkBodega.UseVisualStyleBackColor = true;
+            chkBodega.CheckedChanged += chkDeMano_CheckedChanged;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(24, 338);
+            label9.Location = new Point(23, 350);
             label9.Margin = new Padding(4, 0, 4, 0);
             label9.Name = "label9";
             label9.Size = new Size(83, 25);
             label9.TabIndex = 28;
             label9.Text = "Equipaje:";
             // 
+            // txtPeso
+            // 
+            txtPeso.Location = new Point(438, 347);
+            txtPeso.Margin = new Padding(4, 5, 4, 5);
+            txtPeso.Name = "txtPeso";
+            txtPeso.Size = new Size(35, 31);
+            txtPeso.TabIndex = 32;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(374, 350);
+            label10.Margin = new Padding(4, 0, 4, 0);
+            label10.Name = "label10";
+            label10.Size = new Size(53, 25);
+            label10.TabIndex = 31;
+            label10.Text = "Peso:";
+            // 
             // FrmVenderViaje
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(905, 681);
+            Controls.Add(txtPeso);
+            Controls.Add(label10);
             Controls.Add(chkDeMano);
             Controls.Add(chkBodega);
             Controls.Add(label9);
@@ -377,5 +404,7 @@
         private CheckBox chkDeMano;
         private CheckBox chkBodega;
         private Label label9;
+        private TextBox txtPeso;
+        private Label label10;
     }
 }

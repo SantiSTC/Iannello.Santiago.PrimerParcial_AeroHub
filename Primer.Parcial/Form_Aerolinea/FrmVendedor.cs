@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,7 +31,7 @@ namespace Form_Aerolinea
 
         private void lnkListaViajes_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            FrmListar fm = new FrmListar();
+            FrmListar fm = new FrmListar(Listas.viajes);
             fm.ShowDialog();
         }
 

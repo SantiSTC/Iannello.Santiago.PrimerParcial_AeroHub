@@ -14,35 +14,71 @@ namespace Form_Aerolinea
     public partial class FrmListar : Form
     {
         private int option;
-        private List<Pasajero>? lista;
-        
+        private List<Pasajero>? listaP;
+        private List<Viaje>? listaV;
 
         public FrmListar()
         {
             InitializeComponent();
+            this.btnAceptar.Visible = false;
+        }
+
+        public FrmListar(List<Viaje> lista) : this()
+        {
             this.option = 0;
+            this.listaV = lista;
         }
 
         public FrmListar(int option, List<Pasajero> lista) : this()
         {
             this.option = option;
-            this.lista = lista;
+            this.listaP = lista;
+        }
+
+        public Viaje ViajeDelForm
+        {
+            get
+            {
+                Viaje viaje = new Viaje();
+
+                if (dgvLista.SelectedRows.Count > 0)
+                {
+                    DataGridViewRow fila = dgvLista.SelectedRows[0];
+                    Aeronave avion = new Aeronave();
+                    foreach (Aeronave item in Listas.aviones)
+                    {
+                        if (item.Matricula == fila.Cells["Avion"].Value.ToString())
+                        {
+                            avion = item;
+                            break;
+                        }
+                    }
+                    string[] fecha = fila.Cells["Fecha"].Value.ToString().Split('/');
+
+                    viaje = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])), avion, avion.CantidadAsientos, avion.Pasajeros);
+                }
+                else
+                {
+                    MessageBox.Show("Se debera elegir una fila a eliminar...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
+                return viaje;
+            }
         }
 
         private void FrmListar_Load(object sender, EventArgs e)
         {
-
             if (this.option == 0)
             {
-                CrearGrid();
+                CrearGrid(this.listaV);
             }
             else
             {
-                CrearGrid(this.lista);
+                CrearGrid(this.listaP);
             }
         }
 
-        private void CrearGrid()
+        private void CrearGrid(List<Viaje> lista)
         {
             dgvLista.Rows.Clear();
 
@@ -52,7 +88,7 @@ namespace Form_Aerolinea
                 dgvLista.Columns.Add(columna, columna);
             }
 
-            ActualizarGrid(Listas.viajes);
+            ActualizarGrid(lista);
         }
 
         private void CrearGrid(List<Pasajero> lista)
@@ -159,6 +195,14 @@ namespace Form_Aerolinea
             }
 
             ActualizarGrid(aux);
+        }
+
+        private void btnAceptar_Click(object sender, EventArgs e)
+        {
+            if (this.dgvLista.SelectedRows.Count > 0)
+            {
+                this.DialogResult = DialogResult.OK;
+            }
         }
     }
 }
