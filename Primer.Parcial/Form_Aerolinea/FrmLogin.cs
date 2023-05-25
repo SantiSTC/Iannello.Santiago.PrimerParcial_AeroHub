@@ -51,7 +51,9 @@ namespace Form_Aerolinea
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
+            Listas.aviones = Serializacion<Aeronave>.Deserializar(Application.StartupPath + @"\Listas_Serializadas\aviones.json");
+            Listas.viajes = Serializacion<Viaje>.Deserializar(Application.StartupPath + @"\Listas_Serializadas\viajes.json");
+            Listas.pasajeros = Serializacion<Pasajero>.Deserializar(Application.StartupPath + @"\Listas_Serializadas\pasajeros.json");
         }
 
 

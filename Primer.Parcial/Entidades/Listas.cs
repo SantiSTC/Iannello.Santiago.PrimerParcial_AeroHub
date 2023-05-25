@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Entidades
 {
     public static class Listas
@@ -11,18 +12,14 @@ namespace Entidades
         public static List<Aeronave> aviones;
         public static List<Viaje> viajes;
         public static List<Pasajero> pasajeros;
+        public static List<Pasajero> pasajeros2;
 
-        static Listas()
-        {
-            aviones = new List<Aeronave>();
-            viajes = new List<Viaje>();
-            pasajeros = new List<Pasajero>();
-          
-            aviones.Add(new Aeronave("sas222ss",222,2,true,true,2222, pasajeros));
-            aviones.Add(new Aeronave("sas333ss", 333, 3, true, true, 3333, pasajeros));
-
-            viajes.Add(new Viaje("Bariloche", "Salta", new DateTime(2023, 9, 30), aviones[1], aviones[1].CantidadAsientos, aviones[1].Pasajeros));
-            viajes.Add(new Viaje("Buenos Aires", "Roma", new DateTime(2023,6,8), aviones[0], aviones[0].CantidadAsientos, aviones[0].Pasajeros));
-        }
+        //static Listas()
+        //{
+        //    pasajeros2 = new List<Pasajero>();
+        //    pasajeros2.Add(new Pasajero("sas","sos",44444444,23,ETipoEquipaje.Ninguno,0));
+        //    viajes = new List<Viaje>();
+        //    viajes.Add(new("Bariloche", "Salta", new DateTime(2023, 09, 30), new Aeronave("sas333sa", 200, 2, true, true, 30000, pasajeros2), 200, pasajeros2));
+        //}
     }
 }

@@ -94,6 +94,8 @@ namespace Form_Aerolinea
         private void CrearGrid(List<Pasajero> lista)
         {
             dgvLista.Rows.Clear();
+            dgvLista.DoubleClick -= dgvLista_DoubleClick;
+            label2.Visible = false;
 
             for (int i = 0; i < (new Pasajero()).GetType().GetProperties().Length; i++)
             {
@@ -145,38 +147,6 @@ namespace Form_Aerolinea
             }
         }
 
-        private void btnVerPasajeros_Click(object sender, EventArgs e)
-        {
-            if (this.dgvLista.SelectedRows.Count > 0)
-            {
-                DataGridViewRow fila = dgvLista.SelectedRows[0];
-                Aeronave avion = new Aeronave();
-                foreach (Aeronave item in Listas.aviones)
-                {
-                    if (item.Matricula == fila.Cells["Avion"].Value.ToString())
-                    {
-                        avion = item;
-                        break;
-                    }
-                }
-
-                //avion.Pasajeros.Add(new Pasajero("Santiago", "Ianello", 43212312, 22, ETipoEquipaje.Ambos, 12));
-
-                FrmListar fm2 = new FrmListar(1, avion.Pasajeros);
-                fm2.btnVerPasajeros.Visible = false;
-                fm2.label1.Text = "";
-                fm2.txtBuscador.Visible = false;
-                fm2.txtBuscador.Location = new Point(133, 25);
-                fm2.dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-                fm2.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Se debera elegir un viaje...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
@@ -202,6 +172,37 @@ namespace Form_Aerolinea
             if (this.dgvLista.SelectedRows.Count > 0)
             {
                 this.DialogResult = DialogResult.OK;
+            }
+        }
+
+        private void dgvLista_DoubleClick(object sender, EventArgs e)
+        {
+            if (this.dgvLista.SelectedRows.Count > 0)
+            {
+                DataGridViewRow fila = dgvLista.SelectedRows[0];
+                Aeronave avion = new Aeronave();
+                foreach (Aeronave item in Listas.aviones)
+                {
+                    if (item.Matricula == fila.Cells["Avion"].Value.ToString())
+                    {
+                        avion = item;
+                        break;
+                    }
+                }
+
+                //avion.Pasajeros.Add(new Pasajero("Santiago", "Ianello", 43212312, 22, ETipoEquipaje.Ambos, 12));
+
+                FrmListar fm2 = new FrmListar(1, avion.Pasajeros);
+                fm2.label1.Text = "";
+                fm2.txtBuscador.Visible = false;
+                fm2.txtBuscador.Location = new Point(133, 25);
+                fm2.dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                fm2.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Se debera elegir un viaje...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

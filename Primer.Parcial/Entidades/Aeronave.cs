@@ -101,6 +101,18 @@ namespace Entidades
             return !(a1 == a2);
         }
 
+        public static Aeronave operator +(Aeronave a1, Pasajero p1) 
+        {
+            a1.pasajeros.Add(p1);
+            return a1;
+        }
+
+        public static Aeronave operator -(Aeronave a1, Pasajero p1)
+        {
+            a1.pasajeros.Remove(p1);
+            return a1;
+        }
+
         public override bool Equals(object? obj)
         {
             bool rta = false;

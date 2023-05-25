@@ -1,0 +1,31 @@
+[
+  {
+    "CiudadDePartida": "Bariloche",
+    "CiudadDeDestino": "Salta",
+    "Fecha": "2023-09-30T00:00:00",
+    "Avion": {
+      "Matricula": "sas333sa",
+      "CantidadAsientos": 200,
+      "CantidadBanios": 2,
+      "Internet": true,
+      "Comida": true,
+      "CapacidadBodega": 30000,
+      "Pasajeros": [
+        {
+          "Dni": 44444444,
+          "Edad": 23,
+          "TipoEquipaje": 3,
+          "PesoEquipaje": 0,
+          "Apellido": "sos",
+          "Nombre": "sas"
+        }
+      ]
+    },
+    "Asientos": 200,
+    "AsientosPremium": 40,
+    "AsientosTurista": 160,
+    "Duracion": 4,
+    "CostoTurista": 200,
+    "CostoPremium": 270
+  }
+]

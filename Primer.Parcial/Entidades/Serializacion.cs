@@ -22,7 +22,12 @@ namespace Entidades
             {
                 using(Serializacion<T>.writer = new StreamWriter(path)) 
                 {
-                    string json = System.Text.Json.JsonSerializer.Serialize(lista);
+                    var options = new JsonSerializerOptions
+                    {
+                        WriteIndented = true // Para tener una salida JSON con formato legible
+                    };
+
+                    string json = System.Text.Json.JsonSerializer.Serialize(lista, options);
                     Serializacion<T>.writer.Write(json);
                     retorno = true;
                 }

@@ -218,7 +218,7 @@ namespace Form_Aerolinea
 
                 if (!flag3)
                 {
-                    viaje.Avion.Pasajeros.Add(new Pasajero(txtNombre.Text, txtApellido.Text, int.Parse(txtDni.Text), int.Parse(txtEdad.Text), auxEquipaje, float.Parse(txtPeso.Text)));
+                    viaje.Avion += new Pasajero(txtNombre.Text, txtApellido.Text, int.Parse(txtDni.Text), int.Parse(txtEdad.Text), auxEquipaje, float.Parse(txtPeso.Text));
                 }
                 else 
                 {

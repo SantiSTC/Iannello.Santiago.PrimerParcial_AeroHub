@@ -31,26 +31,6 @@ namespace Form_Aerolinea
                     item.Nombre = this.txtNombre.Text;
                     item.Apellido = this.txtApellido.Text;
                     item.Edad = int.Parse(this.txtEdad.Text);
-                    item.PesoEquipaje = float.Parse(this.txtPeso.Text);
-
-                    if (this.chkBodega.Checked && this.chkDeMano.Checked)
-                    {
-                        item.TipoEquipaje = ETipoEquipaje.Ambos;
-                    }
-                    else 
-                    {
-                        if (this.chkBodega.Checked)
-                        {
-                            item.TipoEquipaje = ETipoEquipaje.DeBodega;
-                        }
-                        else 
-                        {
-                            if (this.chkDeMano.Checked) 
-                            {
-                                item.TipoEquipaje = ETipoEquipaje.DeMano;
-                            }
-                        }
-                    }
                 }
             }
 
@@ -70,27 +50,6 @@ namespace Form_Aerolinea
                     this.txtNombre.Text = item.Nombre.ToString();
                     this.txtApellido.Text = item.Apellido.ToString();
                     this.txtEdad.Text = item.Edad.ToString();
-                    this.txtPeso.Text = item.PesoEquipaje.ToString();
-
-                    if (item.TipoEquipaje == ETipoEquipaje.Ambos)
-                    {
-                        this.chkDeMano.Checked = true;
-                        this.chkBodega.Checked = true;
-                    }
-                    else
-                    {
-                        if (item.TipoEquipaje == ETipoEquipaje.DeMano)
-                        {
-                            this.chkDeMano.Checked = true;
-                        }
-                        else
-                        {
-                            if (item.TipoEquipaje == ETipoEquipaje.DeBodega)
-                            {
-                                this.chkBodega.Checked = true;
-                            }
-                        }
-                    }
                     break;
                 }
             }

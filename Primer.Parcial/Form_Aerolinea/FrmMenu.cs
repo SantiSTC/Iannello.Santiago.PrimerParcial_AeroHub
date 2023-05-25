@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,5 +30,11 @@ namespace Form_Aerolinea
 
         }
 
+        private void FrmMenu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Serializacion<Aeronave>.Serializar(Listas.aviones ,Application.StartupPath + @"\Listas_Serializadas\aviones.json");
+            Serializacion<Viaje>.Serializar(Listas.viajes, Application.StartupPath + @"\Listas_Serializadas\viajes.json");
+            Serializacion<Pasajero>.Serializar(Listas.pasajeros, Application.StartupPath + @"\Listas_Serializadas\pasajeros.json");
+        }
     }
 }

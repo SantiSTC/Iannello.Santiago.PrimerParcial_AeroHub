@@ -16,19 +16,60 @@ namespace Entidades
         protected List<Pasajero> pasajeros;
         private float costo;
         private int duracion;
+        private int asientosPremium;
+        private int asientosTurista;
 
-        public string CiudadDePartida { get { return this.ciudadDePartida; } }
-        public string CiudadDeDestino { get { return this.ciudadDeDestino; } }
+        public string CiudadDePartida { get { return this.ciudadDePartida; } set { this.ciudadDePartida = value; } }
+        public string CiudadDeDestino { get { return this.ciudadDeDestino; } set { this.ciudadDeDestino = value; } }
         public DateTime Fecha { get { return this.fecha; } set { this.fecha = value; } }
-        public Aeronave Avion { get { return this.avion; } }
-        public int AsientosPremium { get { return (int)(this.asientos * (float)0.2); } }
-        public int AsientosTurista { get { return this.asientos - AsientosPremium; } }
+        public Aeronave Avion { get { return this.avion; } set { this.avion = value; } }
+
+        public int Asientos 
+        {
+            get 
+            {
+                return this.asientos;
+            }
+
+            set 
+            {
+                this.asientos = value;
+            }
+        }
+        public int AsientosPremium 
+        { 
+            get 
+            { 
+                this.asientosPremium = (int)(this.asientos * (float)0.2);
+                return this.asientosPremium;
+            } 
+            set 
+            { 
+                this.asientosPremium = value;
+            } 
+        }
+        public int AsientosTurista 
+        { 
+            get 
+            { 
+                this.asientosTurista = this.asientos - AsientosPremium;
+                return asientosTurista; 
+            } 
+            set 
+            { 
+                this.asientosTurista = value; 
+            } 
+        }
 
         public int Duracion
         {
             get
             {
                 return this.duracion;
+            }
+            set 
+            {
+                this.duracion = value;
             }
         }
 
@@ -67,7 +108,7 @@ namespace Entidades
             this.ciudadDeDestino = destino;
             this.fecha = fecha;
             this.avion = avion;
-            this.asientos = asientos;
+            this.asientos = avion.CantidadAsientos;
             this.pasajeros = pasajeros;
 
             if (this.ciudadDeDestino != EDestinoInternacional.Acapulco.ToString() && this.ciudadDeDestino != EDestinoInternacional.Miami.ToString() && this.ciudadDeDestino != EDestinoInternacional.Recife.ToString() && this.ciudadDeDestino != EDestinoInternacional.Roma.ToString())

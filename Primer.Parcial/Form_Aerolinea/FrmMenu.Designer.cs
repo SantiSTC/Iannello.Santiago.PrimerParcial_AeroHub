@@ -37,50 +37,56 @@
             // lblUsuarioMenu
             // 
             lblUsuarioMenu.AutoSize = true;
-            lblUsuarioMenu.Location = new Point(12, 399);
+            lblUsuarioMenu.Location = new Point(17, 665);
+            lblUsuarioMenu.Margin = new Padding(4, 0, 4, 0);
             lblUsuarioMenu.Name = "lblUsuarioMenu";
-            lblUsuarioMenu.Size = new Size(47, 15);
+            lblUsuarioMenu.Size = new Size(72, 25);
             lblUsuarioMenu.TabIndex = 1;
             lblUsuarioMenu.Text = "Usuario";
             // 
             // lblPerfilMenu
             // 
             lblPerfilMenu.AutoSize = true;
-            lblPerfilMenu.Location = new Point(12, 423);
+            lblPerfilMenu.Location = new Point(17, 705);
+            lblPerfilMenu.Margin = new Padding(4, 0, 4, 0);
             lblPerfilMenu.Name = "lblPerfilMenu";
-            lblPerfilMenu.Size = new Size(34, 15);
+            lblPerfilMenu.Size = new Size(50, 25);
             lblPerfilMenu.TabIndex = 2;
             lblPerfilMenu.Text = "Perfil";
             // 
             // lblHora
             // 
             lblHora.AutoSize = true;
-            lblHora.Location = new Point(748, 399);
+            lblHora.Location = new Point(1069, 665);
+            lblHora.Margin = new Padding(4, 0, 4, 0);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(33, 15);
+            lblHora.Size = new Size(51, 25);
             lblHora.TabIndex = 3;
             lblHora.Text = "Hora";
             // 
             // lblFecha
             // 
             lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(727, 423);
+            lblFecha.Location = new Point(1039, 705);
+            lblFecha.Margin = new Padding(4, 0, 4, 0);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(38, 15);
+            lblFecha.Size = new Size(57, 25);
             lblFecha.TabIndex = 4;
             lblFecha.Text = "Fecha";
             // 
             // FrmMenu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(814, 458);
+            ClientSize = new Size(1163, 763);
             Controls.Add(lblFecha);
             Controls.Add(lblHora);
             Controls.Add(lblPerfilMenu);
             Controls.Add(lblUsuarioMenu);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmMenu";
             Text = "Form1";
+            FormClosing += FrmMenu_FormClosing;
             Load += FrmMenu_Load;
             ResumeLayout(false);
             PerformLayout();

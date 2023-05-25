@@ -30,10 +30,10 @@
         {
             dgvLista = new DataGridView();
             btnCancelar = new Button();
-            btnVerPasajeros = new Button();
             label1 = new Label();
             txtBuscador = new TextBox();
             btnAceptar = new Button();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvLista).BeginInit();
             SuspendLayout();
             // 
@@ -50,8 +50,10 @@
             dgvLista.ReadOnly = true;
             dgvLista.RowHeadersWidth = 62;
             dgvLista.RowTemplate.Height = 25;
+            dgvLista.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvLista.Size = new Size(1044, 577);
             dgvLista.TabIndex = 1;
+            dgvLista.DoubleClick += dgvLista_DoubleClick;
             // 
             // btnCancelar
             // 
@@ -63,17 +65,6 @@
             btnCancelar.Text = "Volver";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
-            // 
-            // btnVerPasajeros
-            // 
-            btnVerPasajeros.Location = new Point(884, 42);
-            btnVerPasajeros.Margin = new Padding(4, 5, 4, 5);
-            btnVerPasajeros.Name = "btnVerPasajeros";
-            btnVerPasajeros.Size = new Size(210, 38);
-            btnVerPasajeros.TabIndex = 5;
-            btnVerPasajeros.Text = "Ver Pasajeros";
-            btnVerPasajeros.UseVisualStyleBackColor = true;
-            btnVerPasajeros.Click += btnVerPasajeros_Click;
             // 
             // label1
             // 
@@ -106,13 +97,24 @@
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Enabled = false;
+            label2.ForeColor = SystemColors.ControlDarkDark;
+            label2.Location = new Point(50, 700);
+            label2.Name = "label2";
+            label2.Size = new Size(393, 25);
+            label2.TabIndex = 7;
+            label2.Text = "Doble click sobre un viaje para ver sus pasajeros";
+            // 
             // FrmListar
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1143, 778);
+            Controls.Add(label2);
             Controls.Add(btnAceptar);
-            Controls.Add(btnVerPasajeros);
             Controls.Add(label1);
             Controls.Add(txtBuscador);
             Controls.Add(btnCancelar);
@@ -129,9 +131,9 @@
         #endregion
         private DataGridView dgvLista;
         private Button btnCancelar;
-        private Button btnVerPasajeros;
         private Label label1;
         private TextBox txtBuscador;
         public Button btnAceptar;
+        private Label label2;
     }
 }

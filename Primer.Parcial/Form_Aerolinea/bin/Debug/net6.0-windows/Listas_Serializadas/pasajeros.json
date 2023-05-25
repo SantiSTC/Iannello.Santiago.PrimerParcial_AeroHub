@@ -1,0 +1,26 @@
+[
+  {
+    "Dni": 33333333,
+    "Edad": 32,
+    "TipoEquipaje": 3,
+    "PesoEquipaje": 0,
+    "Apellido": "gsegseg",
+    "Nombre": "gsgse"
+  },
+  {
+    "Dni": 11111111,
+    "Edad": 11,
+    "TipoEquipaje": 3,
+    "PesoEquipaje": 0,
+    "Apellido": "daun",
+    "Nombre": "Tomas"
+  },
+  {
+    "Dni": 44444444,
+    "Edad": 23,
+    "TipoEquipaje": 3,
+    "PesoEquipaje": 0,
+    "Apellido": "sos",
+    "Nombre": "sas"
+  }
+]
