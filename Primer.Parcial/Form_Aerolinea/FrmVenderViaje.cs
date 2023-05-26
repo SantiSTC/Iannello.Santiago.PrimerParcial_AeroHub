@@ -208,11 +208,11 @@ namespace Form_Aerolinea
                     }
                 }
 
-                foreach(Pasajero item in viaje.Avion.Pasajeros) 
+                foreach (Pasajero item in viaje.Avion.Pasajeros)
                 {
-                    if (item.Dni == int.Parse(txtDni.Text)) 
+                    if (item.Dni == int.Parse(txtDni.Text))
                     {
-                        flag3 = true;   
+                        flag3 = true;
                     }
                 }
 
@@ -220,12 +220,12 @@ namespace Form_Aerolinea
                 {
                     viaje.Avion += new Pasajero(txtNombre.Text, txtApellido.Text, int.Parse(txtDni.Text), int.Parse(txtEdad.Text), auxEquipaje, float.Parse(txtPeso.Text));
                 }
-                else 
+                else
                 {
                     MessageBox.Show($"El pasajero/a {txtNombre.Text} {txtApellido.Text} ya se encuentra en el viaje.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-                if (!flag2) 
+                if (!flag2)
                 {
                     Listas.pasajeros.Add(new Pasajero(txtNombre.Text, txtApellido.Text, int.Parse(txtDni.Text), int.Parse(txtEdad.Text), auxEquipaje, float.Parse(txtPeso.Text)));
                 }

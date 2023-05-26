@@ -36,38 +36,43 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(203, 20);
+            lblTitulo.Location = new Point(290, 33);
+            lblTitulo.Margin = new Padding(4, 0, 4, 0);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(38, 15);
+            lblTitulo.Size = new Size(59, 25);
             lblTitulo.TabIndex = 0;
             lblTitulo.Text = "label1";
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(79, 402);
+            btnAgregar.Location = new Point(113, 670);
+            btnAgregar.Margin = new Padding(4, 5, 4, 5);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(75, 23);
+            btnAgregar.Size = new Size(107, 38);
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(291, 402);
+            btnCancelar.Location = new Point(416, 670);
+            btnCancelar.Margin = new Padding(4, 5, 4, 5);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(75, 23);
+            btnCancelar.Size = new Size(107, 38);
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             // 
             // FrmAgregar
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(454, 450);
+            ClientSize = new Size(649, 750);
             Controls.Add(btnCancelar);
             Controls.Add(btnAgregar);
             Controls.Add(lblTitulo);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmAgregar";
             Text = "Agregar";
             Load += Agregar_Load;

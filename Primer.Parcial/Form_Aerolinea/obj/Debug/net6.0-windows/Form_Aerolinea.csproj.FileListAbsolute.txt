@@ -108,3 +108,4 @@ C:\Users\santi\Source\Repos\Iannello.Santiago.PrimerParcial\Primer.Parcial\Form_
 C:\Users\santi\Source\Repos\Iannello.Santiago.PrimerParcial\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.pdb
 C:\Users\santi\Source\Repos\Iannello.Santiago.PrimerParcial\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.genruntimeconfig.cache
 C:\Users\santi\Source\Repos\Iannello.Santiago.PrimerParcial\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\ref\Form_Aerolinea.dll
+C:\Users\santi\Source\Repos\Iannello.Santiago.PrimerParcial\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.Properties.Resources.resources

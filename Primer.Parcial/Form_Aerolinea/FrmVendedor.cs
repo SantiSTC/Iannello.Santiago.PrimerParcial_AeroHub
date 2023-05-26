@@ -23,22 +23,103 @@ namespace Form_Aerolinea
 
         }
 
-        private void lnkPasajeros_Click(object sender, EventArgs e)
+        private void lblPasajeros_Click(object sender, EventArgs e)
         {
             FrmCRUD fm = new FrmCRUD(3);
             fm.ShowDialog();
         }
 
-        private void lnkListaViajes_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lblViaje_Click(object sender, EventArgs e)
         {
             FrmListar fm = new FrmListar(Listas.viajes);
             fm.ShowDialog();
         }
 
-        private void lnkVenta_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lblVenta_Click(object sender, EventArgs e)
         {
             FrmVenderViaje fm = new FrmVenderViaje();
             fm.ShowDialog();
+        }
+
+        private void label1_MouseEnter(object sender, EventArgs e)
+        {
+            lblfondoPasajero.BackColor = SystemColors.HotTrack;
+            lblDescPasajero.BackColor = SystemColors.HotTrack;
+            lblPasajeros.BackColor = SystemColors.HotTrack;
+            iconoPasajero.BackColor = SystemColors.HotTrack;
+            lblPasajeros.ForeColor = SystemColors.Window;
+            lblDescPasajero.ForeColor = SystemColors.Window;
+
+        }
+
+        private void lblfondoPasajero_MouseLeave(object sender, EventArgs e)
+        {
+            lblfondoPasajero.BackColor = SystemColors.Window;
+            lblDescPasajero.BackColor = SystemColors.Window;
+            lblPasajeros.BackColor = SystemColors.Window;
+            iconoPasajero.BackColor = SystemColors.Window;
+            lblPasajeros.ForeColor = SystemColors.ControlText;
+            lblDescPasajero.ForeColor = SystemColors.ControlDarkDark;
+        }
+
+        private void lblFondoViaje_MouseEnter(object sender, EventArgs e)
+        {
+            lblFondoViaje.BackColor = SystemColors.HotTrack;
+            lblDescViaje.BackColor = SystemColors.HotTrack;
+            lblViaje.BackColor = SystemColors.HotTrack;
+            iconoViaje.BackColor = SystemColors.HotTrack;
+            lblViaje.ForeColor = SystemColors.Window;
+            lblDescViaje.ForeColor = SystemColors.Window;
+        }
+
+        private void lblFondoViaje_MouseLeave(object sender, EventArgs e)
+        {
+            lblFondoViaje.BackColor = SystemColors.Window;
+            lblDescViaje.BackColor = SystemColors.Window;
+            lblViaje.BackColor = SystemColors.Window;
+            iconoViaje.BackColor = SystemColors.Window;
+            lblViaje.ForeColor = SystemColors.ControlText;
+            lblDescViaje.ForeColor = SystemColors.ControlDarkDark;
+        }
+
+        private void lblFondoVenta_MouseEnter(object sender, EventArgs e)
+        {
+            lblFondoVenta.BackColor = SystemColors.HotTrack;
+            lblDescVenta.BackColor = SystemColors.HotTrack;
+            lblVenta.BackColor = SystemColors.HotTrack;
+            iconoVenta.BackColor = SystemColors.HotTrack;
+            lblVenta.ForeColor = SystemColors.Window;
+            lblDescVenta.ForeColor = SystemColors.Window;
+        }
+
+        private void lblFondoVenta_MouseLeave(object sender, EventArgs e)
+        {
+            lblFondoVenta.BackColor = SystemColors.Window;
+            lblDescVenta.BackColor = SystemColors.Window;
+            lblVenta.BackColor = SystemColors.Window;
+            iconoVenta.BackColor = SystemColors.Window;
+            lblVenta.ForeColor = SystemColors.ControlText;
+            lblDescVenta.ForeColor = SystemColors.ControlDarkDark;
+        }
+
+        private void lblEstadistica_MouseEnter(object sender, EventArgs e)
+        {
+            lblFondoEstadistica.BackColor = SystemColors.HotTrack;
+            lblDescEstadisticas.BackColor = SystemColors.HotTrack;
+            lblEstadisticas.BackColor = SystemColors.HotTrack;
+            iconoEstadisticas.BackColor = SystemColors.HotTrack;
+            lblEstadisticas.ForeColor = SystemColors.Window;
+            lblDescEstadisticas.ForeColor = SystemColors.Window;
+        }
+
+        private void lblEstadistica_MouseLeave(object sender, EventArgs e)
+        {
+            lblFondoEstadistica.BackColor = SystemColors.Window;
+            lblDescEstadisticas.BackColor = SystemColors.Window;
+            lblEstadisticas.BackColor = SystemColors.Window;
+            iconoEstadisticas.BackColor = SystemColors.Window;
+            lblEstadisticas.ForeColor = SystemColors.ControlText;
+            lblDescEstadisticas.ForeColor = SystemColors.ControlDarkDark;
         }
     }
 }

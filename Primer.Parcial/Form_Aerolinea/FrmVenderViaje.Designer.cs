@@ -368,6 +368,7 @@
             Controls.Add(label1);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(4, 5, 4, 5);
             Name = "FrmVenderViaje";
             Text = "FrmVenderViaje";

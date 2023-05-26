@@ -119,6 +119,7 @@
             Controls.Add(txtBuscador);
             Controls.Add(btnCancelar);
             Controls.Add(dgvLista);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(4, 5, 4, 5);
             Name = "FrmListar";
             Text = "FrmListar";

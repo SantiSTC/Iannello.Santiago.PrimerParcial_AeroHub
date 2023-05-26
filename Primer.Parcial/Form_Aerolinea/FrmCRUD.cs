@@ -92,7 +92,7 @@ namespace Form_Aerolinea
                             {
                                 fila[i] = (item.GetType().GetProperty(dgvLista.Columns[i].Name).GetValue(item)).ToString();
                             }
-                            else 
+                            else
                             {
                                 dgvLista.Columns.RemoveAt(i);
                             }
@@ -189,9 +189,9 @@ namespace Form_Aerolinea
 
                         Viaje viaje = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])), avion, avion.CantidadAsientos, avion.Pasajeros);
 
-                        foreach(Viaje item in Listas.viajes)
+                        foreach (Viaje item in Listas.viajes)
                         {
-                            if(item == viaje)
+                            if (item == viaje)
                             {
                                 Listas.viajes.Remove(viaje);
                                 break;
@@ -204,13 +204,13 @@ namespace Form_Aerolinea
                     }
                     break;
                 case "Pasajero":
-                    if(dgvLista.SelectedRows.Count > 0) 
+                    if (dgvLista.SelectedRows.Count > 0)
                     {
                         DataGridViewRow fila = dgvLista.SelectedRows[0];
 
-                        foreach (Pasajero item in Listas.pasajeros) 
+                        foreach (Pasajero item in Listas.pasajeros)
                         {
-                            if (item.Dni.ToString() == fila.Cells["Dni"].Value.ToString()) 
+                            if (item.Dni.ToString() == fila.Cells["Dni"].Value.ToString())
                             {
                                 Listas.pasajeros.Remove(item);
                                 break;
@@ -271,7 +271,7 @@ namespace Form_Aerolinea
                     }
                     break;
                 case "Pasajero":
-                    if(dgvLista.SelectedRows.Count > 0) 
+                    if (dgvLista.SelectedRows.Count > 0)
                     {
                         DataGridViewRow fila = dgvLista.SelectedRows[0];
                         int dni = int.Parse(fila.Cells["Dni"].Value.ToString());
