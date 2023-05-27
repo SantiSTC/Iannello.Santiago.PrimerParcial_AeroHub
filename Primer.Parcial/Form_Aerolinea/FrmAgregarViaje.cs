@@ -32,7 +32,19 @@ namespace Form_Aerolinea
         {
             if (this.cmbAvion.SelectedIndex == -1 || this.cmbDestino.SelectedIndex == -1 || this.cmbPartida.SelectedIndex == -1 || this.mthFecha.SelectionStart >= DateTime.Today)
             {
-                Viaje.AgregarViaje(Listas.viajes, this.cmbPartida.SelectedItem.ToString(), this.cmbDestino.SelectedItem.ToString(), this.mthFecha.SelectionStart, (Aeronave)this.cmbAvion.SelectedItem, Listas.pasajeros);
+                Aeronave avion = (Aeronave)this.cmbAvion.SelectedItem;
+
+                Viaje.AgregarViaje(Listas.viajes, this.cmbPartida.SelectedItem.ToString(), this.cmbDestino.SelectedItem.ToString(), this.mthFecha.SelectionStart, avion, avion.Pasajeros);
+
+                foreach (Aeronave item in Listas.aviones)
+                {
+                    if (item == avion)
+                    {
+                        item.Ocupado = true;
+                        break;
+                    }
+                }
+
                 this.DialogResult = DialogResult.OK;
             }
             else
@@ -47,8 +59,16 @@ namespace Form_Aerolinea
         }
 
         private void CargarComboBoxes()
-        {
-            this.cmbAvion.DataSource = Listas.aviones;
+        { 
+            foreach(Aeronave avion in Listas.aviones) 
+            {
+                if (!avion.Ocupado) 
+                {
+                    this.cmbAvion.Items.Add(avion);
+                }
+            }
+
+
             foreach (EDestinoNacional destino in Enum.GetValues(typeof(EDestinoNacional)))
             {
                 this.cmbPartida.Items.Add(destino.ToString().Replace("_", " "));

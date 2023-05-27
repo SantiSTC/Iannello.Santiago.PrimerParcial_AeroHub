@@ -27,10 +27,9 @@ namespace Entidades
         public int Asientos 
         {
             get 
-            {
-                return this.asientos;
+            { 
+                return this.asientos; 
             }
-
             set 
             {
                 this.asientos = value;
@@ -40,7 +39,6 @@ namespace Entidades
         { 
             get 
             { 
-                this.asientosPremium = (int)(this.asientos * (float)0.2);
                 return this.asientosPremium;
             } 
             set 
@@ -52,8 +50,7 @@ namespace Entidades
         { 
             get 
             { 
-                this.asientosTurista = this.asientos - AsientosPremium;
-                return asientosTurista; 
+               return asientosTurista; 
             } 
             set 
             { 
@@ -92,6 +89,8 @@ namespace Entidades
 
         public float CostoPremium { get { return (this.costo * (float)0.35) + this.costo; } }
 
+        public List<Pasajero> Pasajeros { get { return this.pasajeros; } set { this.pasajeros = value; } }
+
         public Viaje() 
         {
             this.ciudadDePartida = " ";
@@ -108,7 +107,7 @@ namespace Entidades
             this.ciudadDeDestino = destino;
             this.fecha = fecha;
             this.avion = avion;
-            this.asientos = avion.CantidadAsientos;
+            this.asientos = asientos;
             this.pasajeros = pasajeros;
 
             if (this.ciudadDeDestino != EDestinoInternacional.Acapulco.ToString() && this.ciudadDeDestino != EDestinoInternacional.Miami.ToString() && this.ciudadDeDestino != EDestinoInternacional.Recife.ToString() && this.ciudadDeDestino != EDestinoInternacional.Roma.ToString())
@@ -119,6 +118,9 @@ namespace Entidades
             {
                 this.duracion = (new Random()).Next(8, 13);
             }
+
+            this.asientosPremium = (int)(this.asientos * (float)0.2);
+            this.asientosTurista = this.asientos - this.asientosPremium;
         }
 
         public static List<Viaje> AgregarViaje(List<Viaje> lista, string partida, string destino, DateTime fecha, Aeronave avion, List<Pasajero> pasajeros) 
@@ -143,7 +145,7 @@ namespace Entidades
 
         public static bool operator ==(Viaje v1, Viaje v2) 
         {
-            return v1.avion == v2.avion && v1.fecha == v2.fecha;
+            return v1.avion == v2.avion && v1.fecha.Date == v2.fecha.Date;
         }
 
         public static bool operator !=(Viaje v1, Viaje v2) 

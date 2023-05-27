@@ -12,11 +12,13 @@ namespace Entidades
         protected int edad;
         protected ETipoEquipaje tipoEquipaje;
         protected float pesoEquipaje;
+        protected bool esPremium;
 
         public int Dni { get { return this.dni; } set { this.dni = value; } }
         public int Edad { get { return this.edad; } set { this.edad = value; } }
         public ETipoEquipaje TipoEquipaje { get { return this.tipoEquipaje; } set { this.tipoEquipaje = value; } }
         public float PesoEquipaje { get { return this.pesoEquipaje; } set { this.pesoEquipaje = value; } }
+        public bool EsPremium { get => this.esPremium; set => this.esPremium = value; }
 
         public Pasajero() : base()
         {
@@ -24,6 +26,7 @@ namespace Entidades
             this.edad = 0;
             this.tipoEquipaje = 0;
             this.pesoEquipaje = 0;
+            this.esPremium = false;
         }
 
         public Pasajero(string nombre, string apellido, int dni, int edad, ETipoEquipaje tipoEquipaje, float pesoEquipaje) : base(nombre, apellido)

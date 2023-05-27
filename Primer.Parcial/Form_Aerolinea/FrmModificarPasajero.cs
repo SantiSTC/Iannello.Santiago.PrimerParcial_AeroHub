@@ -26,11 +26,53 @@ namespace Form_Aerolinea
             {
                 if (item.Dni == dni) 
                 {
-                    item.TipoEquipaje = ETipoEquipaje.Ninguno;
                     item.Dni = int.Parse(this.txtDni.Text);
                     item.Nombre = this.txtNombre.Text;
                     item.Apellido = this.txtApellido.Text;
                     item.Edad = int.Parse(this.txtEdad.Text);
+                    break;
+                }
+            }
+            foreach (Aeronave avion in Listas.aviones)
+            {
+                foreach (Pasajero item in avion.Pasajeros)
+                {
+                    if (item.Dni == dni)
+                    {
+                        item.Dni = int.Parse(this.txtDni.Text);
+                        item.Nombre = this.txtNombre.Text;
+                        item.Apellido = this.txtApellido.Text;
+                        item.Edad = int.Parse(this.txtEdad.Text);
+                        break;
+                    }
+                }
+            }
+            foreach (Viaje viaje in Listas.viajes)
+            {
+                foreach (Pasajero item in viaje.Avion.Pasajeros)
+                {
+                    if (item.Dni == dni)
+                    {
+                        item.Dni = int.Parse(this.txtDni.Text);
+                        item.Nombre = this.txtNombre.Text;
+                        item.Apellido = this.txtApellido.Text;
+                        item.Edad = int.Parse(this.txtEdad.Text);
+                        break;
+                    }
+                }
+            }
+            foreach (Viaje viaje in Listas.viajes)
+            {
+                foreach (Pasajero item in viaje.Pasajeros)
+                {
+                    if (item.Dni == dni)
+                    {
+                        item.Dni = int.Parse(this.txtDni.Text);
+                        item.Nombre = this.txtNombre.Text;
+                        item.Apellido = this.txtApellido.Text;
+                        item.Edad = int.Parse(this.txtEdad.Text);
+                        break;
+                    }
                 }
             }
 

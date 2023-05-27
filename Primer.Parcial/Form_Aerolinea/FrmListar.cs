@@ -40,6 +40,7 @@ namespace Form_Aerolinea
             get
             {
                 Viaje viaje = new Viaje();
+                Viaje viajeAux = new Viaje();
 
                 if (dgvLista.SelectedRows.Count > 0)
                 {
@@ -55,7 +56,16 @@ namespace Form_Aerolinea
                     }
                     string[] fecha = fila.Cells["Fecha"].Value.ToString().Split('/');
 
-                    viaje = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])), avion, avion.CantidadAsientos, avion.Pasajeros);
+                    viajeAux = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])), avion, avion.CantidadAsientos, avion.Pasajeros);
+
+                    foreach(Viaje item in Listas.viajes)
+                    {
+                        if(item == viajeAux)
+                        {
+                            viaje = item;
+                            break;
+                        }
+                    }
                 }
                 else
                 {

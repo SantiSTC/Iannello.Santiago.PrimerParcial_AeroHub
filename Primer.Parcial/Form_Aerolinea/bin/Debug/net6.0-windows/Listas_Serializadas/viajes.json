@@ -1,31 +1,148 @@
 [
   {
-    "CiudadDePartida": "Bariloche",
-    "CiudadDeDestino": "Salta",
-    "Fecha": "2023-09-30T00:00:00",
+    "CiudadDePartida": "Buenos Aires",
+    "CiudadDeDestino": "Miami",
+    "Fecha": "2023-05-26T00:00:00-03:00",
     "Avion": {
-      "Matricula": "sas333sa",
-      "CantidadAsientos": 200,
+      "Matricula": "AAA111AA",
+      "CantidadAsientos": 2,
       "CantidadBanios": 2,
       "Internet": true,
       "Comida": true,
-      "CapacidadBodega": 30000,
+      "CapacidadBodega": 2000,
+      "Ocupado": true,
       "Pasajeros": [
         {
-          "Dni": 44444444,
-          "Edad": 23,
+          "Dni": 33333333,
+          "Edad": 90,
           "TipoEquipaje": 3,
           "PesoEquipaje": 0,
-          "Apellido": "sos",
-          "Nombre": "sas"
+          "EsPremium": false,
+          "Apellido": "Martinez",
+          "Nombre": "Emiliano"
         }
       ]
     },
-    "Asientos": 200,
-    "AsientosPremium": 40,
-    "AsientosTurista": 160,
-    "Duracion": 4,
-    "CostoTurista": 200,
-    "CostoPremium": 270
+    "Asientos": 2,
+    "AsientosPremium": 0,
+    "AsientosTurista": 1,
+    "Duracion": 11,
+    "CostoTurista": 1100,
+    "CostoPremium": 1485,
+    "Pasajeros": [
+      {
+        "Dni": 33333333,
+        "Edad": 90,
+        "TipoEquipaje": 3,
+        "PesoEquipaje": 0,
+        "EsPremium": false,
+        "Apellido": "Martinez",
+        "Nombre": "Emiliano"
+      }
+    ]
+  },
+  {
+    "CiudadDePartida": "Buenos Aires",
+    "CiudadDeDestino": "Salta",
+    "Fecha": "2023-05-26T00:00:00-03:00",
+    "Avion": {
+      "Matricula": "BBB222BB",
+      "CantidadAsientos": 4,
+      "CantidadBanios": 1,
+      "Internet": false,
+      "Comida": false,
+      "CapacidadBodega": 1000,
+      "Ocupado": true,
+      "Pasajeros": []
+    },
+    "Asientos": 4,
+    "AsientosPremium": 0,
+    "AsientosTurista": 4,
+    "Duracion": 2,
+    "CostoTurista": 100,
+    "CostoPremium": 135,
+    "Pasajeros": []
+  },
+  {
+    "CiudadDePartida": "Bariloche",
+    "CiudadDeDestino": "Salta",
+    "Fecha": "2023-05-26T00:00:00-03:00",
+    "Avion": {
+      "Matricula": "CCC333CC",
+      "CantidadAsientos": 6,
+      "CantidadBanios": 1,
+      "Internet": true,
+      "Comida": false,
+      "CapacidadBodega": 10000,
+      "Ocupado": true,
+      "Pasajeros": [
+        {
+          "Dni": 44195364,
+          "Edad": 20,
+          "TipoEquipaje": 3,
+          "PesoEquipaje": 0,
+          "EsPremium": true,
+          "Apellido": "Iannello",
+          "Nombre": "Santiago"
+        },
+        {
+          "Dni": 33333333,
+          "Edad": 90,
+          "TipoEquipaje": 3,
+          "PesoEquipaje": 0,
+          "EsPremium": false,
+          "Apellido": "Martinez",
+          "Nombre": "Emiliano"
+        }
+      ]
+    },
+    "Asientos": 6,
+    "AsientosPremium": 0,
+    "AsientosTurista": 4,
+    "Duracion": 2,
+    "CostoTurista": 100,
+    "CostoPremium": 135,
+    "Pasajeros": [
+      {
+        "Dni": 44195364,
+        "Edad": 20,
+        "TipoEquipaje": 3,
+        "PesoEquipaje": 0,
+        "EsPremium": true,
+        "Apellido": "Iannello",
+        "Nombre": "Santiago"
+      },
+      {
+        "Dni": 33333333,
+        "Edad": 90,
+        "TipoEquipaje": 3,
+        "PesoEquipaje": 0,
+        "EsPremium": false,
+        "Apellido": "Martinez",
+        "Nombre": "Emiliano"
+      }
+    ]
+  },
+  {
+    "CiudadDePartida": "Posadas",
+    "CiudadDeDestino": "Neuquen",
+    "Fecha": "2023-05-26T00:00:00",
+    "Avion": {
+      "Matricula": "BBB222BB",
+      "CantidadAsientos": 4,
+      "CantidadBanios": 1,
+      "Internet": false,
+      "Comida": false,
+      "CapacidadBodega": 1000,
+      "Ocupado": true,
+      "Pasajeros": []
+    },
+    "Asientos": 4,
+    "AsientosPremium": 0,
+    "AsientosTurista": 4,
+    "Duracion": 2,
+    "CostoTurista": 100,
+    "CostoPremium": 135,
+    "Pasajeros": []
   }
 ]

@@ -44,9 +44,10 @@
             label1.BackColor = SystemColors.HotTrack;
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(-1, 698);
+            label1.Location = new Point(-1, 419);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(1166, 78);
+            label1.Size = new Size(816, 47);
             label1.TabIndex = 6;
             // 
             // lblUsuarioMenu
@@ -54,10 +55,9 @@
             lblUsuarioMenu.AutoSize = true;
             lblUsuarioMenu.BackColor = SystemColors.HotTrack;
             lblUsuarioMenu.ForeColor = SystemColors.Window;
-            lblUsuarioMenu.Location = new Point(71, 704);
-            lblUsuarioMenu.Margin = new Padding(4, 0, 4, 0);
+            lblUsuarioMenu.Location = new Point(50, 422);
             lblUsuarioMenu.Name = "lblUsuarioMenu";
-            lblUsuarioMenu.Size = new Size(72, 25);
+            lblUsuarioMenu.Size = new Size(47, 15);
             lblUsuarioMenu.TabIndex = 10;
             lblUsuarioMenu.Text = "Usuario";
             // 
@@ -66,10 +66,9 @@
             lblFecha.AutoSize = true;
             lblFecha.BackColor = SystemColors.HotTrack;
             lblFecha.ForeColor = SystemColors.Window;
-            lblFecha.Location = new Point(1042, 729);
-            lblFecha.Margin = new Padding(4, 0, 4, 0);
+            lblFecha.Location = new Point(729, 437);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(57, 25);
+            lblFecha.Size = new Size(38, 15);
             lblFecha.TabIndex = 9;
             lblFecha.Text = "Fecha";
             // 
@@ -78,10 +77,9 @@
             lblHora.AutoSize = true;
             lblHora.BackColor = SystemColors.HotTrack;
             lblHora.ForeColor = SystemColors.Window;
-            lblHora.Location = new Point(1072, 704);
-            lblHora.Margin = new Padding(4, 0, 4, 0);
+            lblHora.Location = new Point(750, 422);
             lblHora.Name = "lblHora";
-            lblHora.Size = new Size(51, 25);
+            lblHora.Size = new Size(33, 15);
             lblHora.TabIndex = 8;
             lblHora.Text = "Hora";
             // 
@@ -90,10 +88,9 @@
             lblPerfilMenu.AutoSize = true;
             lblPerfilMenu.BackColor = SystemColors.HotTrack;
             lblPerfilMenu.ForeColor = SystemColors.Window;
-            lblPerfilMenu.Location = new Point(71, 729);
-            lblPerfilMenu.Margin = new Padding(4, 0, 4, 0);
+            lblPerfilMenu.Location = new Point(50, 437);
             lblPerfilMenu.Name = "lblPerfilMenu";
-            lblPerfilMenu.Size = new Size(50, 25);
+            lblPerfilMenu.Size = new Size(34, 15);
             lblPerfilMenu.TabIndex = 7;
             lblPerfilMenu.Text = "Perfil";
             // 
@@ -102,9 +99,10 @@
             label2.BackColor = SystemColors.HotTrack;
             label2.BorderStyle = BorderStyle.Fixed3D;
             label2.ForeColor = SystemColors.ControlText;
-            label2.Location = new Point(-1, -2);
+            label2.Location = new Point(-1, -1);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new Size(1166, 12);
+            label2.Size = new Size(816, 7);
             label2.TabIndex = 11;
             // 
             // pictureBox1
@@ -112,17 +110,18 @@
             pictureBox1.BackColor = SystemColors.HotTrack;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(12, 707);
+            pictureBox1.Location = new Point(8, 424);
+            pictureBox1.Margin = new Padding(2, 2, 2, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(52, 47);
+            pictureBox1.Size = new Size(36, 28);
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
             // 
             // FrmMenu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1163, 763);
+            ClientSize = new Size(814, 458);
             Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(lblUsuarioMenu);
@@ -131,7 +130,6 @@
             Controls.Add(lblPerfilMenu);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

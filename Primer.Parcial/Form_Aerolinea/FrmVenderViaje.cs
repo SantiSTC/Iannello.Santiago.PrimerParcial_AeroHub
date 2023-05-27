@@ -188,6 +188,7 @@ namespace Form_Aerolinea
             {
                 Viaje viaje = fm.ViajeDelForm;
                 ETipoEquipaje auxEquipaje = ETipoEquipaje.Ninguno;
+                Pasajero pasajero = new Pasajero();
 
                 if (this.chkBodega.Checked && this.chkDeMano.Checked)
                 {
@@ -218,7 +219,31 @@ namespace Form_Aerolinea
 
                 if (!flag3)
                 {
-                    viaje.Avion += new Pasajero(txtNombre.Text, txtApellido.Text, int.Parse(txtDni.Text), int.Parse(txtEdad.Text), auxEquipaje, float.Parse(txtPeso.Text));
+                    pasajero = new Pasajero(txtNombre.Text, txtApellido.Text, int.Parse(txtDni.Text), int.Parse(txtEdad.Text), auxEquipaje, float.Parse(txtPeso.Text));
+                    pasajero.EsPremium = chkPremium.Checked;
+
+                    if (pasajero.EsPremium)
+                    {
+                        if (viaje.AsientosPremium > 0)
+                        {
+                            this.AgregarPasajeroAlViaje(viaje, pasajero, auxEquipaje);
+                        }
+                        else
+                        {
+                            MessageBox.Show($"No hay mas asientos PREMIUM disponibles para este viaje. Intente con clase TURISTA", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    else
+                    {
+                        if (viaje.AsientosTurista > 0)
+                        {
+                            this.AgregarPasajeroAlViaje(viaje, pasajero, auxEquipaje);
+                        }
+                        else
+                        {
+                            MessageBox.Show($"No hay mas asientos TURISTA disponibles para este viaje. Intente con clase PREMIUM", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
                 }
                 else
                 {
@@ -227,7 +252,9 @@ namespace Form_Aerolinea
 
                 if (!flag2)
                 {
-                    Listas.pasajeros.Add(new Pasajero(txtNombre.Text, txtApellido.Text, int.Parse(txtDni.Text), int.Parse(txtEdad.Text), auxEquipaje, float.Parse(txtPeso.Text)));
+                    pasajero = new Pasajero(txtNombre.Text, txtApellido.Text, int.Parse(txtDni.Text), int.Parse(txtEdad.Text), auxEquipaje, float.Parse(txtPeso.Text));
+                    pasajero.EsPremium = chkPremium.Checked;
+                    Listas.pasajeros.Add(pasajero);
                 }
 
                 this.btnAceptar.Visible = false;
@@ -251,6 +278,47 @@ namespace Form_Aerolinea
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
+        }
+
+        private void AgregarPasajeroAlViaje(Viaje viaje, Pasajero pasajero, ETipoEquipaje auxEquipaje)
+        {
+            foreach (Viaje item in Listas.viajes)
+            {
+                if (item.Avion == viaje.Avion)
+                {
+                    item.Avion += pasajero;
+
+                    if (pasajero.EsPremium)
+                    {
+                        item.AsientosPremium = item.AsientosPremium - 1;
+                    }
+                    else
+                    {
+                        item.AsientosTurista = item.AsientosTurista - 1;
+                    }
+
+                    break;
+                }
+            }
+
+            foreach (Aeronave avion in Listas.aviones)
+            {
+                if (avion == viaje.Avion)
+                {
+                    avion.Pasajeros.Add(pasajero);
+                    break;
+                }
+            }
+
+            foreach (Viaje item in Listas.viajes)
+            {
+                if (item == viaje)
+                {
+                    item.Pasajeros.Add(pasajero);
+                }
+            }
+
+
         }
     }
 }

@@ -44,6 +44,7 @@ namespace Form_Aerolinea
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            int contador = 0;
             switch (this.obj.GetType().Name)
             {
                 case "Aeronave":
@@ -51,8 +52,24 @@ namespace Form_Aerolinea
                     fm.ShowDialog();
                     break;
                 case "Viaje":
-                    FrmAgregarViaje fm2 = new FrmAgregarViaje();
-                    fm2.ShowDialog();
+                    foreach (Aeronave avion in Listas.aviones) 
+                    {
+                        if (!avion.Ocupado) 
+                        {
+                            contador++;
+                        }
+                    }
+
+                    if (contador > 0)
+                    {
+                        FrmAgregarViaje fm2 = new FrmAgregarViaje();
+                        fm2.ShowDialog();
+                    }
+                    else 
+                    {
+                        MessageBox.Show("No hay aviones disponibles para un nuevo viaje.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+
                     break;
                 case "Pasajero":
                     FrmAgregarPasajero fm3 = new FrmAgregarPasajero();
@@ -216,6 +233,31 @@ namespace Form_Aerolinea
                                 break;
                             }
                         }
+
+                        foreach (Aeronave avion in Listas.aviones) 
+                        {
+                            foreach (Pasajero pasajero in avion.Pasajeros) 
+                            {
+                                if (pasajero.Dni.ToString() == fila.Cells["Dni"].Value.ToString()) 
+                                {
+                                    avion.Pasajeros.Remove(pasajero);
+                                    break;
+                                }
+                            }
+                        }
+
+                        foreach (Viaje viaje in Listas.viajes) 
+                        {
+                            foreach (Pasajero pasajero in viaje.Avion.Pasajeros)
+                            {
+                                if (pasajero.Dni.ToString() == fila.Cells["Dni"].Value.ToString())
+                                {
+                                    viaje.Avion.Pasajeros.Remove(pasajero);
+                                    break;
+                                }
+                            }
+                        }  
+
                     }
                     else
                     {

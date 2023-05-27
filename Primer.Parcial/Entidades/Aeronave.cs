@@ -15,6 +15,7 @@ namespace Entidades
         protected bool comida;
         protected float capacidadBodega;
         protected List<Pasajero> pasajeros;
+        protected bool ocupado;
 
         public string Matricula { get { return this.matricula; } set { this.matricula = value; } }
         public int CantidadAsientos { get { return this.cantAsientos; } set { this.cantAsientos = value; } }
@@ -23,7 +24,9 @@ namespace Entidades
         public bool Comida { get { return this.comida; } set { this.comida = value; } }
         public float CapacidadBodega { get { return this.capacidadBodega; } set { this.capacidadBodega = value; } }
 
-        public List<Pasajero> Pasajeros { get { return this.pasajeros; } }
+        public bool Ocupado { get => this.ocupado; set => this.ocupado = value; }
+
+        public List<Pasajero> Pasajeros { get { return this.pasajeros; }  set { this.pasajeros = value; } }
 
         public Aeronave() 
         {
@@ -34,6 +37,7 @@ namespace Entidades
             this.comida = false;
             this.capacidadBodega = 0;
             this.pasajeros = new List<Pasajero>();
+            this.ocupado = false;
         }
 
         public Aeronave(string matricula, int cantAsientos, int cantBanios, bool internet, bool comida, float capacidadBodega) : this()

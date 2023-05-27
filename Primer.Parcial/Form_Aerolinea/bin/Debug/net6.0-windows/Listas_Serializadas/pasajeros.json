@@ -1,26 +1,47 @@
 [
   {
     "Dni": 33333333,
-    "Edad": 32,
+    "Edad": 90,
     "TipoEquipaje": 3,
     "PesoEquipaje": 0,
-    "Apellido": "gsegseg",
-    "Nombre": "gsgse"
+    "EsPremium": false,
+    "Apellido": "Martinez",
+    "Nombre": "Emiliano"
   },
   {
-    "Dni": 11111111,
-    "Edad": 11,
+    "Dni": 25643312,
+    "Edad": 35,
     "TipoEquipaje": 3,
     "PesoEquipaje": 0,
-    "Apellido": "daun",
+    "EsPremium": false,
+    "Apellido": "Messi",
+    "Nombre": "Lionel Andres"
+  },
+  {
+    "Dni": 16767332,
+    "Edad": 48,
+    "TipoEquipaje": 3,
+    "PesoEquipaje": 0,
+    "EsPremium": false,
+    "Apellido": "Scaloni",
+    "Nombre": "Lionel"
+  },
+  {
+    "Dni": 44195364,
+    "Edad": 20,
+    "TipoEquipaje": 3,
+    "PesoEquipaje": 0,
+    "EsPremium": false,
+    "Apellido": "Iannello",
+    "Nombre": "Santiago"
+  },
+  {
+    "Dni": 45751587,
+    "Edad": 14,
+    "TipoEquipaje": 3,
+    "PesoEquipaje": 0,
+    "EsPremium": false,
+    "Apellido": "Gauna",
     "Nombre": "Tomas"
-  },
-  {
-    "Dni": 44444444,
-    "Edad": 23,
-    "TipoEquipaje": 3,
-    "PesoEquipaje": 0,
-    "Apellido": "sos",
-    "Nombre": "sas"
   }
 ]

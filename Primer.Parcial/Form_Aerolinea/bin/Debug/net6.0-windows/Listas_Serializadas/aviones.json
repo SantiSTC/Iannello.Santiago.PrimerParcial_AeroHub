@@ -1,37 +1,61 @@
 [
   {
-    "Matricula": "sas333sa",
-    "CantidadAsientos": 200,
+    "Matricula": "AAA111AA",
+    "CantidadAsientos": 2,
     "CantidadBanios": 2,
     "Internet": true,
     "Comida": true,
-    "CapacidadBodega": 30000,
+    "CapacidadBodega": 2000,
+    "Ocupado": true,
     "Pasajeros": [
       {
-        "Dni": 44444444,
-        "Edad": 23,
+        "Dni": 33333333,
+        "Edad": 90,
         "TipoEquipaje": 3,
         "PesoEquipaje": 0,
-        "Apellido": "sos",
-        "Nombre": "sas"
-      },
-      {
-        "Dni": 33333333,
-        "Edad": 32,
-        "TipoEquipaje": 1,
-        "PesoEquipaje": 22,
-        "Apellido": "gsegseg",
-        "Nombre": "gsgse"
+        "EsPremium": false,
+        "Apellido": "Martinez",
+        "Nombre": "Emiliano"
       }
     ]
   },
   {
-    "Matricula": "sas222sa",
-    "CantidadAsientos": 300,
-    "CantidadBanios": 3,
+    "Matricula": "BBB222BB",
+    "CantidadAsientos": 4,
+    "CantidadBanios": 1,
     "Internet": false,
     "Comida": false,
-    "CapacidadBodega": 50000,
+    "CapacidadBodega": 1000,
+    "Ocupado": true,
     "Pasajeros": []
+  },
+  {
+    "Matricula": "CCC333CC",
+    "CantidadAsientos": 6,
+    "CantidadBanios": 1,
+    "Internet": true,
+    "Comida": false,
+    "CapacidadBodega": 10000,
+    "Ocupado": true,
+    "Pasajeros": [
+      {
+        "Dni": 44195364,
+        "Edad": 20,
+        "TipoEquipaje": 3,
+        "PesoEquipaje": 0,
+        "EsPremium": true,
+        "Apellido": "Iannello",
+        "Nombre": "Santiago"
+      },
+      {
+        "Dni": 33333333,
+        "Edad": 90,
+        "TipoEquipaje": 3,
+        "PesoEquipaje": 0,
+        "EsPremium": false,
+        "Apellido": "Martinez",
+        "Nombre": "Emiliano"
+      }
+    ]
   }
 ]

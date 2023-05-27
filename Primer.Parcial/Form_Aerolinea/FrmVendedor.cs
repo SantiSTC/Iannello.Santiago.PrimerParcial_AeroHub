@@ -41,6 +41,12 @@ namespace Form_Aerolinea
             fm.ShowDialog();
         }
 
+        private void lblEstadisticas_Click(object sender, EventArgs e)
+        {
+            FrmEstadisticas fm = new FrmEstadisticas();
+            fm.ShowDialog();
+        }
+
         private void label1_MouseEnter(object sender, EventArgs e)
         {
             lblfondoPasajero.BackColor = SystemColors.HotTrack;
@@ -121,5 +127,7 @@ namespace Form_Aerolinea
             lblEstadisticas.ForeColor = SystemColors.ControlText;
             lblDescEstadisticas.ForeColor = SystemColors.ControlDarkDark;
         }
+
+
     }
 }

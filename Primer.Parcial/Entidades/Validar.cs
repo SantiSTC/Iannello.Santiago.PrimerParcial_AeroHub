@@ -10,7 +10,7 @@ namespace Entidades
     {
         public static bool EsDni(int dni) 
         {
-            if(dni.ToString().Count() == 8 && dni < 99999999 && dni > 11111111) 
+            if(dni.ToString().Count() == 8 && dni < 99999999 && dni > 00000001) 
             {
                 return true;
             }
@@ -21,7 +21,7 @@ namespace Entidades
         {
             int dniValido;
 
-            if (int.TryParse(dni, out dniValido) && dni.Count() == 8 && dniValido < 99999999 && dniValido > 11111111)
+            if (int.TryParse(dni, out dniValido) && dni.Count() == 8 && dniValido < 99999999 && dniValido > 00000001)
             {
                 return true;
             }
