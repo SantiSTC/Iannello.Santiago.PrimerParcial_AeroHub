@@ -32,19 +32,15 @@
             txtCapacidad = new TextBox();
             txtBanios = new TextBox();
             txtAsientos = new TextBox();
-            checkInternet = new CheckBox();
-            checkComida = new CheckBox();
             lblMatricula = new Label();
             lblAsientos = new Label();
             lblBanios = new Label();
             lblCapacidad = new Label();
             lblInternet = new Label();
             lblComida = new Label();
+            checkInternet = new CheckBox();
+            checkComida = new CheckBox();
             SuspendLayout();
-            // 
-            // lblTitulo
-            // 
-            lblTitulo.Location = new Point(176, 19);
             // 
             // btnAgregar
             // 
@@ -54,119 +50,125 @@
             // 
             btnCancelar.Click += btnCancelar_Click;
             // 
+            // lblTitulo
+            // 
+            lblTitulo.Location = new Point(129, 34);
+            // 
             // txtMatricula
             // 
-            txtMatricula.Location = new Point(208, 72);
+            txtMatricula.Location = new Point(216, 88);
             txtMatricula.Name = "txtMatricula";
             txtMatricula.Size = new Size(100, 23);
             txtMatricula.TabIndex = 3;
             // 
             // txtCapacidad
             // 
-            txtCapacidad.Location = new Point(208, 222);
+            txtCapacidad.Location = new Point(216, 238);
             txtCapacidad.Name = "txtCapacidad";
             txtCapacidad.Size = new Size(100, 23);
             txtCapacidad.TabIndex = 4;
             // 
             // txtBanios
             // 
-            txtBanios.Location = new Point(208, 176);
+            txtBanios.Location = new Point(216, 192);
             txtBanios.Name = "txtBanios";
             txtBanios.Size = new Size(100, 23);
             txtBanios.TabIndex = 5;
             // 
             // txtAsientos
             // 
-            txtAsientos.Location = new Point(208, 121);
+            txtAsientos.Location = new Point(216, 137);
             txtAsientos.Name = "txtAsientos";
             txtAsientos.Size = new Size(100, 23);
             txtAsientos.TabIndex = 6;
             // 
-            // checkInternet
-            // 
-            checkInternet.AutoSize = true;
-            checkInternet.Location = new Point(208, 276);
-            checkInternet.Name = "checkInternet";
-            checkInternet.Size = new Size(15, 14);
-            checkInternet.TabIndex = 7;
-            checkInternet.UseVisualStyleBackColor = true;
-            // 
-            // checkComida
-            // 
-            checkComida.AutoSize = true;
-            checkComida.Location = new Point(208, 321);
-            checkComida.Name = "checkComida";
-            checkComida.Size = new Size(15, 14);
-            checkComida.TabIndex = 8;
-            checkComida.UseVisualStyleBackColor = true;
-            // 
             // lblMatricula
             // 
             lblMatricula.AutoSize = true;
-            lblMatricula.Location = new Point(63, 72);
+            lblMatricula.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMatricula.Location = new Point(65, 88);
             lblMatricula.Name = "lblMatricula";
-            lblMatricula.Size = new Size(60, 15);
+            lblMatricula.Size = new Size(65, 15);
             lblMatricula.TabIndex = 9;
             lblMatricula.Text = "Matricula:";
             // 
             // lblAsientos
             // 
             lblAsientos.AutoSize = true;
-            lblAsientos.Location = new Point(63, 121);
+            lblAsientos.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblAsientos.Location = new Point(65, 137);
             lblAsientos.Name = "lblAsientos";
-            lblAsientos.Size = new Size(55, 15);
+            lblAsientos.Size = new Size(57, 15);
             lblAsientos.TabIndex = 10;
             lblAsientos.Text = "Asientos:";
             // 
             // lblBanios
             // 
             lblBanios.AutoSize = true;
-            lblBanios.Location = new Point(63, 176);
+            lblBanios.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBanios.Location = new Point(65, 192);
             lblBanios.Name = "lblBanios";
-            lblBanios.Size = new Size(42, 15);
+            lblBanios.Size = new Size(44, 15);
             lblBanios.TabIndex = 11;
             lblBanios.Text = "Baños:";
             // 
             // lblCapacidad
             // 
             lblCapacidad.AutoSize = true;
-            lblCapacidad.Location = new Point(63, 222);
+            lblCapacidad.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCapacidad.Location = new Point(65, 241);
             lblCapacidad.Name = "lblCapacidad";
-            lblCapacidad.Size = new Size(125, 15);
+            lblCapacidad.Size = new Size(141, 17);
             lblCapacidad.TabIndex = 12;
             lblCapacidad.Text = "Capacidad de Bodega:";
             // 
             // lblInternet
             // 
             lblInternet.AutoSize = true;
-            lblInternet.Location = new Point(63, 276);
+            lblInternet.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblInternet.Location = new Point(65, 292);
             lblInternet.Name = "lblInternet";
-            lblInternet.Size = new Size(51, 15);
+            lblInternet.Size = new Size(55, 17);
             lblInternet.TabIndex = 13;
             lblInternet.Text = "Internet:";
             // 
             // lblComida
             // 
             lblComida.AutoSize = true;
-            lblComida.Location = new Point(63, 321);
+            lblComida.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblComida.Location = new Point(65, 337);
             lblComida.Name = "lblComida";
-            lblComida.Size = new Size(52, 15);
+            lblComida.Size = new Size(56, 17);
             lblComida.TabIndex = 14;
             lblComida.Text = "Comida:";
+            // 
+            // checkInternet
+            // 
+            checkInternet.Location = new Point(216, 285);
+            checkInternet.Name = "checkInternet";
+            checkInternet.Size = new Size(104, 24);
+            checkInternet.TabIndex = 39;
+            // 
+            // checkComida
+            // 
+            checkComida.Location = new Point(216, 330);
+            checkComida.Name = "checkComida";
+            checkComida.Size = new Size(104, 24);
+            checkComida.TabIndex = 38;
             // 
             // FrmAgregarAvion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(450, 450);
+            ClientSize = new Size(445, 450);
+            Controls.Add(checkComida);
+            Controls.Add(checkInternet);
             Controls.Add(lblComida);
             Controls.Add(lblInternet);
             Controls.Add(lblCapacidad);
             Controls.Add(lblBanios);
             Controls.Add(lblAsientos);
             Controls.Add(lblMatricula);
-            Controls.Add(checkComida);
-            Controls.Add(checkInternet);
             Controls.Add(txtAsientos);
             Controls.Add(txtBanios);
             Controls.Add(txtCapacidad);
@@ -181,14 +183,14 @@
             Controls.SetChildIndex(txtCapacidad, 0);
             Controls.SetChildIndex(txtBanios, 0);
             Controls.SetChildIndex(txtAsientos, 0);
-            Controls.SetChildIndex(checkInternet, 0);
-            Controls.SetChildIndex(checkComida, 0);
             Controls.SetChildIndex(lblMatricula, 0);
             Controls.SetChildIndex(lblAsientos, 0);
             Controls.SetChildIndex(lblBanios, 0);
             Controls.SetChildIndex(lblCapacidad, 0);
             Controls.SetChildIndex(lblInternet, 0);
             Controls.SetChildIndex(lblComida, 0);
+            Controls.SetChildIndex(checkInternet, 0);
+            Controls.SetChildIndex(checkComida, 0);
             ResumeLayout(false);
             PerformLayout();
         }

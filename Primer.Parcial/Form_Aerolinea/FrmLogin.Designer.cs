@@ -28,30 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             btnAceptar = new Button();
             txtUsuario = new TextBox();
             txtContrasenia = new TextBox();
             lblLogin = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnAceptar
             // 
-            btnAceptar.Anchor = AnchorStyles.Top;
+            btnAceptar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnAceptar.BackColor = SystemColors.HotTrack;
             btnAceptar.Cursor = Cursors.Hand;
             btnAceptar.ForeColor = SystemColors.ControlLightLight;
-            btnAceptar.Location = new Point(117, 209);
+            btnAceptar.Location = new Point(118, 246);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(279, 28);
+            btnAceptar.Size = new Size(280, 28);
             btnAceptar.TabIndex = 0;
-            btnAceptar.Text = "Ingresar a mi cuenta";
+            btnAceptar.Text = "Iniciar sesión";
             btnAceptar.UseVisualStyleBackColor = false;
             btnAceptar.Click += btnAceptar_Click;
             // 
             // txtUsuario
             // 
             txtUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtUsuario.Location = new Point(117, 122);
+            txtUsuario.Location = new Point(118, 154);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.PlaceholderText = " Usuario";
             txtUsuario.Size = new Size(280, 23);
@@ -60,7 +63,7 @@
             // txtContrasenia
             // 
             txtContrasenia.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtContrasenia.Location = new Point(117, 165);
+            txtContrasenia.Location = new Point(118, 197);
             txtContrasenia.Name = "txtContrasenia";
             txtContrasenia.PlaceholderText = " Contraseña";
             txtContrasenia.Size = new Size(280, 23);
@@ -69,16 +72,28 @@
             // 
             // lblLogin
             // 
-            lblLogin.Anchor = AnchorStyles.Top;
+            lblLogin.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Calibri", 22F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = SystemColors.ActiveCaptionText;
-            lblLogin.Location = new Point(167, 61);
+            lblLogin.Location = new Point(165, 98);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(179, 37);
             lblLogin.TabIndex = 6;
             lblLogin.Text = "Iniciar sesión";
             lblLogin.TextAlign = ContentAlignment.TopCenter;
+            lblLogin.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(78, 27);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(354, 108);
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // FrmLogin
             // 
@@ -88,17 +103,20 @@
             BackColor = SystemColors.Window;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(519, 345);
+            Controls.Add(pictureBox1);
             Controls.Add(lblLogin);
             Controls.Add(txtContrasenia);
             Controls.Add(txtUsuario);
             Controls.Add(btnAceptar);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(1140, 384);
             MinimumSize = new Size(533, 384);
             Name = "FrmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio de sesión";
             Load += FrmLogin_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -109,5 +127,6 @@
         private TextBox txtUsuario;
         private TextBox txtContrasenia;
         private Label lblLogin;
+        private PictureBox pictureBox1;
     }
 }

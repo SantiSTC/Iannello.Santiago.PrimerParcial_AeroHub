@@ -17,21 +17,56 @@ namespace Form_Aerolinea
             InitializeComponent();
         }
 
-        private void MenuAdmin_Load(object sender, EventArgs e)
+        private void lblfondoAeronave_Click(object sender, EventArgs e)
         {
-
+            FrmCRUD fm = new FrmCRUD(1);
+            fm.ShowDialog();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void lblFondoViaje_Click(object sender, EventArgs e)
         {
             FrmCRUD fm = new FrmCRUD(2);
             fm.ShowDialog();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void lblFondoViaje_MouseEnter(object sender, EventArgs e)
         {
-            FrmCRUD fm = new FrmCRUD(1);
-            fm.ShowDialog();
+            lblFondoViaje.BackColor = SystemColors.HotTrack;
+            lblDescViaje.BackColor = SystemColors.HotTrack;
+            lblViaje.BackColor = SystemColors.HotTrack;
+            iconoViaje.BackColor = SystemColors.HotTrack;
+            lblViaje.ForeColor = SystemColors.Window;
+            lblDescViaje.ForeColor = SystemColors.Window;
+        }
+
+        private void lblFondoViaje_MouseLeave(object sender, EventArgs e)
+        {
+            lblFondoViaje.BackColor = SystemColors.Window;
+            lblDescViaje.BackColor = SystemColors.Window;
+            lblViaje.BackColor = SystemColors.Window;
+            iconoViaje.BackColor = SystemColors.Window;
+            lblViaje.ForeColor = SystemColors.ControlText;
+            lblDescViaje.ForeColor = SystemColors.ControlDarkDark;
+        }
+
+        private void lblfondoAeronave_MouseEnter(object sender, EventArgs e)
+        {
+            lblfondoAeronave.BackColor = SystemColors.HotTrack;
+            lblAeronave.BackColor = SystemColors.HotTrack;
+            lblDescAeronave.BackColor = SystemColors.HotTrack;
+            iconoAeronave.BackColor = SystemColors.HotTrack;
+            lblAeronave.ForeColor = SystemColors.Window;
+            lblDescAeronave.ForeColor = SystemColors.Window;
+        }
+
+        private void lblfondoAeronave_MouseLeave(object sender, EventArgs e)
+        {
+            lblfondoAeronave.BackColor = SystemColors.Window;
+            lblAeronave.BackColor = SystemColors.Window;
+            lblDescAeronave.BackColor = SystemColors.Window;
+            iconoAeronave.BackColor = SystemColors.Window;
+            lblAeronave.ForeColor = SystemColors.ControlText;
+            lblDescAeronave.ForeColor = SystemColors.ControlDarkDark;
         }
     }
 }

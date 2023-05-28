@@ -1,6 +1,6 @@
 ﻿namespace Form_Aerolinea
 {
-    partial class FrmModificarPasajero
+    partial class FrmResultadosEstadistica
     {
         /// <summary>
         /// Required designer variable.
@@ -28,36 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            rchEstadistica = new RichTextBox();
             SuspendLayout();
             // 
-            // btnAgregar
+            // rchEstadistica
             // 
-            btnAgregar.Location = new Point(79, 282);
-            btnAgregar.Click += btnAgregar_Click;
+            rchEstadistica.BorderStyle = BorderStyle.FixedSingle;
+            rchEstadistica.Location = new Point(12, 33);
+            rchEstadistica.Name = "rchEstadistica";
+            rchEstadistica.ReadOnly = true;
+            rchEstadistica.Size = new Size(304, 376);
+            rchEstadistica.TabIndex = 0;
+            rchEstadistica.Text = "";
             // 
-            // btnCancelar
-            // 
-            btnCancelar.Location = new Point(291, 282);
-            // 
-            // lblTitulo
-            // 
-            lblTitulo.AutoSize = false;
-            lblTitulo.Location = new Point(118, 34);
-            lblTitulo.Size = new Size(187, 35);
-            lblTitulo.Text = "Modificar Pasajero";
-            // 
-            // FrmModificarPasajero
+            // FrmResultadosEstadistica
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(445, 332);
-            Name = "FrmModificarPasajero";
-            Text = "FrmModificarPasajero";
-            Load += FrmModificarPasajero_Load;
+            ClientSize = new Size(328, 421);
+            Controls.Add(rchEstadistica);
+            Name = "FrmResultadosEstadistica";
+            Text = "FrmResultadosEstadistica";
+            Load += FrmResultadosEstadistica_Load;
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
+
+        private RichTextBox rchEstadistica;
     }
 }

@@ -22,9 +22,9 @@ namespace Form_Aerolinea
 
         protected override void btnAgregar_Click(object sender, EventArgs e)
         {
-            foreach (Pasajero item in Listas.pasajeros) 
+            foreach (Pasajero item in Listas.pasajeros)
             {
-                if (item.Dni == dni) 
+                if (item.Dni == dni)
                 {
                     item.Dni = int.Parse(this.txtDni.Text);
                     item.Nombre = this.txtNombre.Text;

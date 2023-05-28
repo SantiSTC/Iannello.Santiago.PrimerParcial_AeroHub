@@ -104,6 +104,7 @@
             label2.Name = "label2";
             label2.Size = new Size(816, 7);
             label2.TabIndex = 11;
+            label2.Visible = false;
             // 
             // pictureBox1
             // 
@@ -111,7 +112,7 @@
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.Location = new Point(8, 424);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(36, 28);
             pictureBox1.TabIndex = 12;
@@ -130,6 +131,7 @@
             Controls.Add(lblPerfilMenu);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

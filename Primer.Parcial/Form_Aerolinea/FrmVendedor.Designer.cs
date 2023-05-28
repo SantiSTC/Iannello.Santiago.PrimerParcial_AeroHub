@@ -46,10 +46,12 @@
             lblDescEstadisticas = new Label();
             iconoEstadisticas = new PictureBox();
             lblEstadisticas = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)iconoPasajero).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoViaje).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoVenta).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconoEstadisticas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblfondoPasajero
@@ -57,7 +59,7 @@
             lblfondoPasajero.BackColor = SystemColors.Window;
             lblfondoPasajero.BorderStyle = BorderStyle.FixedSingle;
             lblfondoPasajero.Cursor = Cursors.Hand;
-            lblfondoPasajero.Location = new Point(30, 59);
+            lblfondoPasajero.Location = new Point(29, 66);
             lblfondoPasajero.Margin = new Padding(2, 0, 2, 0);
             lblfondoPasajero.Name = "lblfondoPasajero";
             lblfondoPasajero.Size = new Size(754, 69);
@@ -70,11 +72,11 @@
             // 
             lblLogin.Anchor = AnchorStyles.Top;
             lblLogin.AutoSize = true;
-            lblLogin.Font = new Font("Calibri", 22F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLogin.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = SystemColors.ActiveCaptionText;
-            lblLogin.Location = new Point(353, 9);
+            lblLogin.Location = new Point(354, 9);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(98, 37);
+            lblLogin.Size = new Size(88, 33);
             lblLogin.TabIndex = 7;
             lblLogin.Text = "MENÚ";
             lblLogin.TextAlign = ContentAlignment.TopCenter;
@@ -84,7 +86,7 @@
             lblFondoViaje.BackColor = SystemColors.Window;
             lblFondoViaje.BorderStyle = BorderStyle.FixedSingle;
             lblFondoViaje.Cursor = Cursors.Hand;
-            lblFondoViaje.Location = new Point(30, 142);
+            lblFondoViaje.Location = new Point(29, 149);
             lblFondoViaje.Margin = new Padding(2, 0, 2, 0);
             lblFondoViaje.Name = "lblFondoViaje";
             lblFondoViaje.Size = new Size(754, 69);
@@ -98,7 +100,7 @@
             lblFondoVenta.BackColor = SystemColors.Window;
             lblFondoVenta.BorderStyle = BorderStyle.FixedSingle;
             lblFondoVenta.Cursor = Cursors.Hand;
-            lblFondoVenta.Location = new Point(30, 223);
+            lblFondoVenta.Location = new Point(29, 230);
             lblFondoVenta.Margin = new Padding(2, 0, 2, 0);
             lblFondoVenta.Name = "lblFondoVenta";
             lblFondoVenta.Size = new Size(754, 69);
@@ -112,7 +114,7 @@
             lblFondoEstadistica.BackColor = SystemColors.Window;
             lblFondoEstadistica.BorderStyle = BorderStyle.FixedSingle;
             lblFondoEstadistica.Cursor = Cursors.Hand;
-            lblFondoEstadistica.Location = new Point(30, 306);
+            lblFondoEstadistica.Location = new Point(29, 313);
             lblFondoEstadistica.Margin = new Padding(2, 0, 2, 0);
             lblFondoEstadistica.Name = "lblFondoEstadistica";
             lblFondoEstadistica.Size = new Size(754, 69);
@@ -126,7 +128,7 @@
             lblPasajeros.AutoSize = true;
             lblPasajeros.Cursor = Cursors.Hand;
             lblPasajeros.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPasajeros.Location = new Point(106, 71);
+            lblPasajeros.Location = new Point(105, 78);
             lblPasajeros.Margin = new Padding(2, 0, 2, 0);
             lblPasajeros.Name = "lblPasajeros";
             lblPasajeros.Size = new Size(82, 21);
@@ -142,7 +144,7 @@
             iconoPasajero.BackgroundImage = Properties.Resources.pasajero;
             iconoPasajero.BackgroundImageLayout = ImageLayout.Zoom;
             iconoPasajero.Cursor = Cursors.Hand;
-            iconoPasajero.Location = new Point(43, 71);
+            iconoPasajero.Location = new Point(42, 78);
             iconoPasajero.Margin = new Padding(2);
             iconoPasajero.Name = "iconoPasajero";
             iconoPasajero.Size = new Size(49, 43);
@@ -158,7 +160,7 @@
             lblDescPasajero.Cursor = Cursors.Hand;
             lblDescPasajero.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescPasajero.ForeColor = SystemColors.ControlDarkDark;
-            lblDescPasajero.Location = new Point(106, 93);
+            lblDescPasajero.Location = new Point(105, 100);
             lblDescPasajero.Margin = new Padding(2, 0, 2, 0);
             lblDescPasajero.Name = "lblDescPasajero";
             lblDescPasajero.Size = new Size(545, 19);
@@ -174,12 +176,12 @@
             lblDescViaje.Cursor = Cursors.Hand;
             lblDescViaje.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescViaje.ForeColor = SystemColors.ControlDarkDark;
-            lblDescViaje.Location = new Point(106, 176);
+            lblDescViaje.Location = new Point(105, 183);
             lblDescViaje.Margin = new Padding(2, 0, 2, 0);
             lblDescViaje.Name = "lblDescViaje";
-            lblDescViaje.Size = new Size(486, 19);
+            lblDescViaje.Size = new Size(256, 19);
             lblDescViaje.TabIndex = 16;
-            lblDescViaje.Text = "Se podrá ver la lista de viajes, ademas de agregar, modificar o eliminar un viaje";
+            lblDescViaje.Text = "Se podrá ver la lista de viajes disponibles";
             lblDescViaje.Click += lblViaje_Click;
             lblDescViaje.MouseEnter += lblFondoViaje_MouseEnter;
             lblDescViaje.MouseLeave += lblFondoViaje_MouseLeave;
@@ -189,7 +191,7 @@
             iconoViaje.BackgroundImage = (Image)resources.GetObject("iconoViaje.BackgroundImage");
             iconoViaje.BackgroundImageLayout = ImageLayout.Zoom;
             iconoViaje.Cursor = Cursors.Hand;
-            iconoViaje.Location = new Point(43, 154);
+            iconoViaje.Location = new Point(42, 161);
             iconoViaje.Margin = new Padding(2);
             iconoViaje.Name = "iconoViaje";
             iconoViaje.Size = new Size(49, 43);
@@ -204,7 +206,7 @@
             lblViaje.AutoSize = true;
             lblViaje.Cursor = Cursors.Hand;
             lblViaje.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblViaje.Location = new Point(106, 154);
+            lblViaje.Location = new Point(105, 161);
             lblViaje.Margin = new Padding(2, 0, 2, 0);
             lblViaje.Name = "lblViaje";
             lblViaje.Size = new Size(56, 21);
@@ -220,7 +222,7 @@
             lblDescVenta.Cursor = Cursors.Hand;
             lblDescVenta.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescVenta.ForeColor = SystemColors.ControlDarkDark;
-            lblDescVenta.Location = new Point(106, 257);
+            lblDescVenta.Location = new Point(105, 264);
             lblDescVenta.Margin = new Padding(2, 0, 2, 0);
             lblDescVenta.Name = "lblDescVenta";
             lblDescVenta.Size = new Size(234, 19);
@@ -235,7 +237,7 @@
             iconoVenta.BackgroundImage = (Image)resources.GetObject("iconoVenta.BackgroundImage");
             iconoVenta.BackgroundImageLayout = ImageLayout.Zoom;
             iconoVenta.Cursor = Cursors.Hand;
-            iconoVenta.Location = new Point(43, 235);
+            iconoVenta.Location = new Point(42, 242);
             iconoVenta.Margin = new Padding(2);
             iconoVenta.Name = "iconoVenta";
             iconoVenta.Size = new Size(49, 43);
@@ -250,7 +252,7 @@
             lblVenta.AutoSize = true;
             lblVenta.Cursor = Cursors.Hand;
             lblVenta.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblVenta.Location = new Point(106, 235);
+            lblVenta.Location = new Point(105, 242);
             lblVenta.Margin = new Padding(2, 0, 2, 0);
             lblVenta.Name = "lblVenta";
             lblVenta.Size = new Size(54, 21);
@@ -266,7 +268,7 @@
             lblDescEstadisticas.Cursor = Cursors.Hand;
             lblDescEstadisticas.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescEstadisticas.ForeColor = SystemColors.ControlDarkDark;
-            lblDescEstadisticas.Location = new Point(106, 339);
+            lblDescEstadisticas.Location = new Point(105, 346);
             lblDescEstadisticas.Margin = new Padding(2, 0, 2, 0);
             lblDescEstadisticas.Name = "lblDescEstadisticas";
             lblDescEstadisticas.Size = new Size(319, 19);
@@ -281,7 +283,7 @@
             iconoEstadisticas.BackgroundImage = (Image)resources.GetObject("iconoEstadisticas.BackgroundImage");
             iconoEstadisticas.BackgroundImageLayout = ImageLayout.Zoom;
             iconoEstadisticas.Cursor = Cursors.Hand;
-            iconoEstadisticas.Location = new Point(43, 317);
+            iconoEstadisticas.Location = new Point(42, 324);
             iconoEstadisticas.Margin = new Padding(2);
             iconoEstadisticas.Name = "iconoEstadisticas";
             iconoEstadisticas.Size = new Size(49, 43);
@@ -296,7 +298,7 @@
             lblEstadisticas.AutoSize = true;
             lblEstadisticas.Cursor = Cursors.Hand;
             lblEstadisticas.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEstadisticas.Location = new Point(106, 317);
+            lblEstadisticas.Location = new Point(105, 324);
             lblEstadisticas.Margin = new Padding(2, 0, 2, 0);
             lblEstadisticas.Name = "lblEstadisticas";
             lblEstadisticas.Size = new Size(175, 21);
@@ -306,12 +308,23 @@
             lblEstadisticas.MouseEnter += lblEstadistica_MouseEnter;
             lblEstadisticas.MouseLeave += lblEstadistica_MouseLeave;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(-1, 9);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(238, 50);
+            pictureBox1.TabIndex = 23;
+            pictureBox1.TabStop = false;
+            // 
             // FrmVendedor
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
             ClientSize = new Size(814, 458);
+            Controls.Add(pictureBox1);
             Controls.Add(lblDescEstadisticas);
             Controls.Add(iconoEstadisticas);
             Controls.Add(lblEstadisticas);
@@ -330,12 +343,13 @@
             Controls.Add(lblLogin);
             Controls.Add(lblfondoPasajero);
             Name = "FrmVendedor";
-            Text = "Menu Vendedor";
+            Text = "Vendedor";
             Load += FrmVendedor_Load;
             ((System.ComponentModel.ISupportInitialize)iconoPasajero).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconoViaje).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconoVenta).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconoEstadisticas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -358,5 +372,6 @@
         private Label lblDescEstadisticas;
         private PictureBox iconoEstadisticas;
         private Label lblEstadisticas;
+        private PictureBox pictureBox1;
     }
 }

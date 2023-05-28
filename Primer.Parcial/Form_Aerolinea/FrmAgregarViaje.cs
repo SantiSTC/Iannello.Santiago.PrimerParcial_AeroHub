@@ -14,6 +14,7 @@ namespace Form_Aerolinea
     public partial class FrmAgregarViaje : FrmAgregar
     {
         private bool flag;
+        List<Viaje> aux = Listas.viajes.OrderBy(v => v.Fecha).ToList();
 
         public FrmAgregarViaje()
         {
@@ -32,20 +33,37 @@ namespace Form_Aerolinea
         {
             if (this.cmbAvion.SelectedIndex == -1 || this.cmbDestino.SelectedIndex == -1 || this.cmbPartida.SelectedIndex == -1 || this.mthFecha.SelectionStart >= DateTime.Today)
             {
-                Aeronave avion = (Aeronave)this.cmbAvion.SelectedItem;
-
-                Viaje.AgregarViaje(Listas.viajes, this.cmbPartida.SelectedItem.ToString(), this.cmbDestino.SelectedItem.ToString(), this.mthFecha.SelectionStart, avion, avion.Pasajeros);
-
-                foreach (Aeronave item in Listas.aviones)
+                if (!this.mthFecha.BoldedDates.Contains(this.mthFecha.SelectionStart))
                 {
-                    if (item == avion)
-                    {
-                        item.Ocupado = true;
-                        break;
-                    }
-                }
+                    Aeronave avion = (Aeronave)this.cmbAvion.SelectedItem;
 
-                this.DialogResult = DialogResult.OK;
+                    Viaje.AgregarViaje(Listas.viajes, this.cmbPartida.SelectedItem.ToString(), this.cmbDestino.SelectedItem.ToString(), this.mthFecha.SelectionStart, avion, avion.Pasajeros);
+
+                    foreach (Viaje item in aux)
+                    {
+                        if (item.Avion == avion)
+                        {
+                            item.Avion.Ocupado = true;
+                            break;
+                        }
+                    }
+
+                    foreach (Viaje item in Listas.viajes)
+                    {
+                        foreach (Viaje viaje in aux)
+                        {
+                            if (item == viaje)
+                            {
+                                item.Avion.Ocupado = viaje.Avion.Ocupado;
+                            }
+                        }
+                    }
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                {
+                    MessageBox.Show("Esta fecha esta ocupada, intente con otra.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
@@ -59,15 +77,9 @@ namespace Form_Aerolinea
         }
 
         private void CargarComboBoxes()
-        { 
-            foreach(Aeronave avion in Listas.aviones) 
-            {
-                if (!avion.Ocupado) 
-                {
-                    this.cmbAvion.Items.Add(avion);
-                }
-            }
+        {
 
+            this.cmbAvion.DataSource = Listas.aviones;
 
             foreach (EDestinoNacional destino in Enum.GetValues(typeof(EDestinoNacional)))
             {
@@ -124,6 +136,23 @@ namespace Form_Aerolinea
             }
 
             this.cmbDestino.Items.Remove(EDestinoNacional.Buenos_Aires.ToString().Replace("_", " "));
+        }
+
+        private void cmbAvion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.mthFecha.RemoveAllBoldedDates();
+
+            Aeronave? avion = cmbAvion.SelectedItem as Aeronave;
+
+            foreach (Viaje viaje in Listas.viajes)
+            {
+                if (viaje.Avion == avion)
+                {
+                    this.mthFecha.AddBoldedDate(viaje.Fecha);
+                }
+            }
+
+            this.mthFecha.UpdateBoldedDates();
         }
     }
 }

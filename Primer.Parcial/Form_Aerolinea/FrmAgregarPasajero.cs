@@ -49,5 +49,6 @@ namespace Form_Aerolinea
                 MessageBox.Show("Asegurese de no dejar ningun campo vacio...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
     }
 }

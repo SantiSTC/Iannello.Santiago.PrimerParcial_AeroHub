@@ -26,7 +26,7 @@
     "Internet": false,
     "Comida": false,
     "CapacidadBodega": 1000,
-    "Ocupado": true,
+    "Ocupado": false,
     "Pasajeros": []
   },
   {
@@ -36,7 +36,7 @@
     "Internet": true,
     "Comida": false,
     "CapacidadBodega": 10000,
-    "Ocupado": true,
+    "Ocupado": false,
     "Pasajeros": [
       {
         "Dni": 44195364,
@@ -57,5 +57,25 @@
         "Nombre": "Emiliano"
       }
     ]
+  },
+  {
+    "Matricula": "DDD444DD",
+    "CantidadAsientos": 300,
+    "CantidadBanios": 3,
+    "Internet": true,
+    "Comida": true,
+    "CapacidadBodega": 3000,
+    "Ocupado": false,
+    "Pasajeros": []
+  },
+  {
+    "Matricula": "EEE555EE",
+    "CantidadAsientos": 100,
+    "CantidadBanios": 1,
+    "Internet": true,
+    "Comida": true,
+    "CapacidadBodega": 1400,
+    "Ocupado": true,
+    "Pasajeros": []
   }
 ]

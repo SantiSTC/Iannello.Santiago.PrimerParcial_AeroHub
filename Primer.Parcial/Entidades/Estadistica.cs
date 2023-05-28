@@ -47,9 +47,19 @@ namespace Entidades
             return sumador;
         }
 
-        public static int ObtenerCantidadDePasajerosPorVuelo(Viaje viaje) 
+        public static Dictionary<string, int> ObtenerCantidadDePasajerosPorVuelo() 
         {
-            return viaje.Pasajeros.Count;
+            Dictionary<string, int> diccionario = new Dictionary<string, int>();
+            string cadena = "";
+
+            foreach (Viaje item in Listas.viajes) 
+            {
+                cadena = $"{item.CiudadDePartida} a {item.CiudadDeDestino} - {item.Fecha.Date}";
+
+                diccionario.Add(cadena, item.Pasajeros.Count);
+            }
+
+            return diccionario;
         }
 
         public static string ObtenerDestinoMasElegido() 
@@ -68,11 +78,11 @@ namespace Entidades
                 destinos.Add(dest.ToString().Replace("_", " "));
             }
 
-            foreach (Viaje item in Listas.viajes) 
+            foreach (string destino in destinos) 
             {
                 contador = 0;
 
-                foreach (string destino in destinos) 
+                foreach (Viaje item in Listas.viajes)
                 {
                     if (item.CiudadDeDestino.Replace("_", " ") == destino) 
                     {
@@ -83,7 +93,7 @@ namespace Entidades
                 if (contador >= max) 
                 {
                     max = contador;
-                    destMasElegido = item.CiudadDeDestino;
+                    destMasElegido = destino;
                 }
             }
 

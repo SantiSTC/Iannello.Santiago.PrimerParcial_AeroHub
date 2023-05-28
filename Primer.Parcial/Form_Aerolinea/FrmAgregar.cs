@@ -17,9 +17,5 @@ namespace Form_Aerolinea
             InitializeComponent();
         }
 
-        private void Agregar_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
