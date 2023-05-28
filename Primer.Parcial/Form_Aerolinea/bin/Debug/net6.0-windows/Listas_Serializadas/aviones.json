@@ -27,7 +27,17 @@
     "Comida": false,
     "CapacidadBodega": 1000,
     "Ocupado": false,
-    "Pasajeros": []
+    "Pasajeros": [
+      {
+        "Dni": 44195364,
+        "Edad": 20,
+        "TipoEquipaje": 3,
+        "PesoEquipaje": 0,
+        "EsPremium": false,
+        "Apellido": "Iannello",
+        "Nombre": "Santiago"
+      }
+    ]
   },
   {
     "Matricula": "CCC333CC",

@@ -49,12 +49,14 @@ namespace Form_Aerolinea
             {
                 case "Aeronave":
                     FrmAgregarAvion fm = new FrmAgregarAvion();
+                    fm.FormClosed += FrmCRUD_FormClosed;
+                    this.Hide();
                     fm.ShowDialog();
                     break;
                 case "Viaje":
-                    foreach (Aeronave avion in Listas.aviones) 
+                    foreach (Aeronave avion in Listas.aviones)
                     {
-                        if (!avion.Ocupado) 
+                        if (!avion.Ocupado)
                         {
                             contador++;
                         }
@@ -63,9 +65,11 @@ namespace Form_Aerolinea
                     if (contador > 0)
                     {
                         FrmAgregarViaje fm2 = new FrmAgregarViaje();
+                        fm2.FormClosed += FrmCRUD_FormClosed;
+                        this.Hide();
                         fm2.ShowDialog();
                     }
-                    else 
+                    else
                     {
                         MessageBox.Show("No hay aviones disponibles para un nuevo viaje.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
@@ -73,9 +77,14 @@ namespace Form_Aerolinea
                     break;
                 case "Pasajero":
                     FrmAgregarPasajero fm3 = new FrmAgregarPasajero();
+                    fm3.FormClosed += FrmCRUD_FormClosed;
+                    this.Hide();
                     fm3.ShowDialog();
                     break;
             }
+
+            
+
             ActualizarGrid();
         }
 
@@ -234,11 +243,11 @@ namespace Form_Aerolinea
                             }
                         }
 
-                        foreach (Aeronave avion in Listas.aviones) 
+                        foreach (Aeronave avion in Listas.aviones)
                         {
-                            foreach (Pasajero pasajero in avion.Pasajeros) 
+                            foreach (Pasajero pasajero in avion.Pasajeros)
                             {
-                                if (pasajero.Dni.ToString() == fila.Cells["Dni"].Value.ToString()) 
+                                if (pasajero.Dni.ToString() == fila.Cells["Dni"].Value.ToString())
                                 {
                                     avion.Pasajeros.Remove(pasajero);
                                     break;
@@ -246,7 +255,7 @@ namespace Form_Aerolinea
                             }
                         }
 
-                        foreach (Viaje viaje in Listas.viajes) 
+                        foreach (Viaje viaje in Listas.viajes)
                         {
                             foreach (Pasajero pasajero in viaje.Avion.Pasajeros)
                             {
@@ -256,7 +265,7 @@ namespace Form_Aerolinea
                                     break;
                                 }
                             }
-                        }  
+                        }
 
                     }
                     else
@@ -329,6 +338,11 @@ namespace Form_Aerolinea
             }
 
             ActualizarGrid();
+        }
+
+        private void FrmCRUD_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
     }
 }

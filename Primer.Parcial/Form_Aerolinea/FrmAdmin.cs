@@ -20,13 +20,24 @@ namespace Form_Aerolinea
         private void lblfondoAeronave_Click(object sender, EventArgs e)
         {
             FrmCRUD fm = new FrmCRUD(1);
+
+            fm.FormClosed += FrmAdmin_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
         private void lblFondoViaje_Click(object sender, EventArgs e)
         {
             FrmCRUD fm = new FrmCRUD(2);
+
+            fm.FormClosed += FrmAdmin_FormClosed;
+            this.Hide();
             fm.ShowDialog();
+        }
+
+        private void FrmAdmin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
 
         private void lblFondoViaje_MouseEnter(object sender, EventArgs e)

@@ -113,11 +113,21 @@
       "Comida": false,
       "CapacidadBodega": 1000,
       "Ocupado": false,
-      "Pasajeros": []
+      "Pasajeros": [
+        {
+          "Dni": 44195364,
+          "Edad": 20,
+          "TipoEquipaje": 3,
+          "PesoEquipaje": 0,
+          "EsPremium": false,
+          "Apellido": "Iannello",
+          "Nombre": "Santiago"
+        }
+      ]
     },
     "Asientos": 4,
     "AsientosPremium": 0,
-    "AsientosTurista": 4,
+    "AsientosTurista": 3,
     "Duracion": 2,
     "CostoTurista": 100,
     "CostoPremium": 135,
@@ -229,6 +239,16 @@
     "Duracion": 12,
     "CostoTurista": 1200,
     "CostoPremium": 1620,
-    "Pasajeros": []
+    "Pasajeros": [
+      {
+        "Dni": 44195364,
+        "Edad": 20,
+        "TipoEquipaje": 3,
+        "PesoEquipaje": 0,
+        "EsPremium": false,
+        "Apellido": "Iannello",
+        "Nombre": "Santiago"
+      }
+    ]
   }
 ]

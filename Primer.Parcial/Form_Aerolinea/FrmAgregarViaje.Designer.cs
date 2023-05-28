@@ -36,6 +36,7 @@
             lblFecha = new Label();
             cmbAvion = new ComboBox();
             lblAvion = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnAgregar
@@ -128,6 +129,14 @@
             lblAvion.TabIndex = 17;
             lblAvion.Text = "Avion:";
             // 
+            // label1
+            // 
+            label1.BackColor = SystemColors.HotTrack;
+            label1.Location = new Point(-2, 501);
+            label1.Name = "label1";
+            label1.Size = new Size(449, 10);
+            label1.TabIndex = 41;
+            // 
             // FrmAgregarViaje
             // 
             AcceptButton = btnAgregar;
@@ -135,6 +144,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = btnCancelar;
             ClientSize = new Size(445, 507);
+            Controls.Add(label1);
             Controls.Add(lblAvion);
             Controls.Add(cmbAvion);
             Controls.Add(lblFecha);
@@ -157,6 +167,7 @@
             Controls.SetChildIndex(lblFecha, 0);
             Controls.SetChildIndex(cmbAvion, 0);
             Controls.SetChildIndex(lblAvion, 0);
+            Controls.SetChildIndex(label1, 0);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -170,5 +181,6 @@
         protected ComboBox cmbPartida;
         protected ComboBox cmbDestino;
         protected ComboBox cmbAvion;
+        private Label label1;
     }
 }

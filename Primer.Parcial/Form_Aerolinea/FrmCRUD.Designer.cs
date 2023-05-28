@@ -43,23 +43,21 @@
             dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgvLista.BackgroundColor = SystemColors.ControlLightLight;
             dgvLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLista.Location = new Point(17, 20);
-            dgvLista.Margin = new Padding(4, 5, 4, 5);
+            dgvLista.Location = new Point(12, 12);
             dgvLista.Name = "dgvLista";
             dgvLista.ReadOnly = true;
             dgvLista.RowHeadersWidth = 62;
             dgvLista.RowTemplate.Height = 25;
             dgvLista.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvLista.Size = new Size(921, 573);
+            dgvLista.Size = new Size(645, 344);
             dgvLista.TabIndex = 0;
             // 
             // btnAgregar
             // 
             btnAgregar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnAgregar.Location = new Point(571, 635);
-            btnAgregar.Margin = new Padding(4, 5, 4, 5);
+            btnAgregar.Location = new Point(400, 381);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(107, 38);
+            btnAgregar.Size = new Size(75, 23);
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -68,10 +66,9 @@
             // btnModificar
             // 
             btnModificar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnModificar.Location = new Point(703, 635);
-            btnModificar.Margin = new Padding(4, 5, 4, 5);
+            btnModificar.Location = new Point(492, 381);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(107, 38);
+            btnModificar.Size = new Size(75, 23);
             btnModificar.TabIndex = 2;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
@@ -80,10 +77,9 @@
             // btnEliminar
             // 
             btnEliminar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnEliminar.Location = new Point(833, 635);
-            btnEliminar.Margin = new Padding(4, 5, 4, 5);
+            btnEliminar.Location = new Point(583, 381);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(107, 38);
+            btnEliminar.Size = new Size(75, 23);
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -91,15 +87,14 @@
             // 
             // FrmCRUD
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(956, 718);
+            ClientSize = new Size(669, 431);
             Controls.Add(btnEliminar);
             Controls.Add(btnModificar);
             Controls.Add(btnAgregar);
             Controls.Add(dgvLista);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmCRUD";
             Text = "FrmCRUD";
             Load += FrmCRUD_Load;

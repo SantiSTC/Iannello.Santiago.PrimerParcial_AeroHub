@@ -41,9 +41,5 @@ namespace Form_Aerolinea
             this.DialogResult = DialogResult.Cancel;
         }
 
-        private void materialSwitch1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -40,6 +40,7 @@
             lblComida = new Label();
             checkInternet = new CheckBox();
             checkComida = new CheckBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnAgregar
@@ -156,11 +157,20 @@
             checkComida.Size = new Size(104, 24);
             checkComida.TabIndex = 38;
             // 
+            // label1
+            // 
+            label1.BackColor = SystemColors.HotTrack;
+            label1.Location = new Point(-3, 444);
+            label1.Name = "label1";
+            label1.Size = new Size(449, 10);
+            label1.TabIndex = 40;
+            // 
             // FrmAgregarAvion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(445, 450);
+            Controls.Add(label1);
             Controls.Add(checkComida);
             Controls.Add(checkInternet);
             Controls.Add(lblComida);
@@ -191,6 +201,7 @@
             Controls.SetChildIndex(lblComida, 0);
             Controls.SetChildIndex(checkInternet, 0);
             Controls.SetChildIndex(checkComida, 0);
+            Controls.SetChildIndex(label1, 0);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -208,5 +219,6 @@
         protected TextBox txtAsientos;
         protected CheckBox checkInternet;
         protected CheckBox checkComida;
+        private Label label1;
     }
 }

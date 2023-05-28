@@ -36,6 +36,7 @@
             lblApellido = new Label();
             lblDni = new Label();
             lblEdad = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btnAgregar
@@ -121,11 +122,20 @@
             lblEdad.TabIndex = 9;
             lblEdad.Text = "Edad:";
             // 
+            // label1
+            // 
+            label1.BackColor = SystemColors.HotTrack;
+            label1.Location = new Point(-3, 326);
+            label1.Name = "label1";
+            label1.Size = new Size(449, 10);
+            label1.TabIndex = 41;
+            // 
             // FrmAgregarPasajero
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(445, 334);
+            Controls.Add(label1);
             Controls.Add(lblEdad);
             Controls.Add(lblDni);
             Controls.Add(lblApellido);
@@ -149,6 +159,7 @@
             Controls.SetChildIndex(lblTitulo, 0);
             Controls.SetChildIndex(btnAgregar, 0);
             Controls.SetChildIndex(btnCancelar, 0);
+            Controls.SetChildIndex(label1, 0);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -162,5 +173,6 @@
         protected TextBox txtApellido;
         protected TextBox txtDni;
         protected TextBox txtEdad;
+        private Label label1;
     }
 }

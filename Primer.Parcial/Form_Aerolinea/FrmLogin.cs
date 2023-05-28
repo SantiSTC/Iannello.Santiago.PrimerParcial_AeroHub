@@ -55,7 +55,5 @@ namespace Form_Aerolinea
             Listas.viajes = Serializacion<Viaje>.Deserializar(Application.StartupPath + @"\Listas_Serializadas\viajes.json");
             Listas.pasajeros = Serializacion<Pasajero>.Deserializar(Application.StartupPath + @"\Listas_Serializadas\pasajeros.json");
         }
-
-
     }
 }

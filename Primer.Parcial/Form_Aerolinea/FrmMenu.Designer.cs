@@ -34,7 +34,6 @@
             lblFecha = new Label();
             lblHora = new Label();
             lblPerfilMenu = new Label();
-            label2 = new Label();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -94,18 +93,6 @@
             lblPerfilMenu.TabIndex = 7;
             lblPerfilMenu.Text = "Perfil";
             // 
-            // label2
-            // 
-            label2.BackColor = SystemColors.HotTrack;
-            label2.BorderStyle = BorderStyle.Fixed3D;
-            label2.ForeColor = SystemColors.ControlText;
-            label2.Location = new Point(-1, -1);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(816, 7);
-            label2.TabIndex = 11;
-            label2.Visible = false;
-            // 
             // pictureBox1
             // 
             pictureBox1.BackColor = SystemColors.HotTrack;
@@ -124,7 +111,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(814, 458);
             Controls.Add(pictureBox1);
-            Controls.Add(label2);
             Controls.Add(lblUsuarioMenu);
             Controls.Add(lblFecha);
             Controls.Add(lblHora);
@@ -149,7 +135,6 @@
         private Label lblFecha;
         private Label lblHora;
         private Label lblPerfilMenu;
-        private Label label2;
         private PictureBox pictureBox1;
     }
 }
