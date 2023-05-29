@@ -90,7 +90,15 @@ namespace Form_Aerolinea
 
         private void lblFondoFrecuentes_Click(object sender, EventArgs e)
         {
+            this.cadena = "Pasajeros frecuentes: \n\n";
 
+            foreach (KeyValuePair<string, int> item in Estadistica.ObtenerPasajerosFrecuentes())
+            {
+                cadena += $"{item.Key}: {item.Value} viajes.\n";
+            }
+
+            FrmResultadosEstadistica fm = new FrmResultadosEstadistica(this.cadena);
+            fm.ShowDialog();
         }
 
         private void lblfondoRecaudacion_MouseEnter(object sender, EventArgs e)
@@ -231,6 +239,11 @@ namespace Form_Aerolinea
             iconoFrecuentes.BackColor = SystemColors.Window;
             lblFrecuentes.ForeColor = SystemColors.ControlText;
             lblDescFrecuentes.ForeColor = SystemColors.ControlDarkDark;
+        }
+
+        private void FrmEstadisticas_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

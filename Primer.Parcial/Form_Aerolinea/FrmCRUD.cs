@@ -83,7 +83,7 @@ namespace Form_Aerolinea
                     break;
             }
 
-            
+
 
             ActualizarGrid();
         }
@@ -343,6 +343,11 @@ namespace Form_Aerolinea
         private void FrmCRUD_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

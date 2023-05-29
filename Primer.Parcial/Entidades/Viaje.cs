@@ -148,6 +148,24 @@ namespace Entidades
             return v1.avion == v2.avion && v1.fecha.Date == v2.fecha.Date;
         }
 
+        public static bool operator ==(Pasajero p, Viaje v) 
+        {
+            foreach(Pasajero pasajero in v.pasajeros) 
+            {
+                if (pasajero == p) 
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public static bool operator !=(Pasajero p, Viaje v) 
+        {
+            return !(p == v);
+        }
+
         public static bool operator !=(Viaje v1, Viaje v2) 
         {
             return !(v1 == v2);

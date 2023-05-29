@@ -32,9 +32,25 @@ namespace Form_Aerolinea
 
         private void FrmMenu_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Serializacion<Aeronave>.Serializar(Listas.aviones, Application.StartupPath + @"\Listas_Serializadas\aviones.json");
-            Serializacion<Viaje>.Serializar(Listas.viajes, Application.StartupPath + @"\Listas_Serializadas\viajes.json");
-            Serializacion<Pasajero>.Serializar(Listas.pasajeros, Application.StartupPath + @"\Listas_Serializadas\pasajeros.json");
+            DialogResult resultado = MessageBox.Show("¿Está seguro que desea salir de la aplicación?", "Cerrar aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (resultado == DialogResult.Yes)
+            {
+                //Serializacion JSON
+                Serializacion<Aeronave>.Serializar(Listas.aviones, Application.StartupPath + @"\Listas_Serializadas\aviones.json");
+                Serializacion<Viaje>.Serializar(Listas.viajes, Application.StartupPath + @"\Listas_Serializadas\viajes.json");
+                Serializacion<Pasajero>.Serializar(Listas.pasajeros, Application.StartupPath + @"\Listas_Serializadas\pasajeros.json");
+            
+                //Serializacion XML
+                Serializacion<Aeronave>.SerializarXML(Listas.aviones, Application.StartupPath + @"\Listas_Serializadas\aviones.xml");
+                Serializacion<Viaje>.SerializarXML(Listas.viajes, Application.StartupPath + @"\Listas_Serializadas\viajes.xml");
+                Serializacion<Pasajero>.SerializarXML(Listas.pasajeros, Application.StartupPath + @"\Listas_Serializadas\pasajeros.xml");
+            }
+            else 
+            {
+                e.Cancel = true;
+            }
+
         }
     }
 }

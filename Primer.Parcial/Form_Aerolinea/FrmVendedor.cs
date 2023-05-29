@@ -26,24 +26,32 @@ namespace Form_Aerolinea
         private void lblPasajeros_Click(object sender, EventArgs e)
         {
             FrmCRUD fm = new FrmCRUD(3);
+            fm.FormClosed += FrmVendedor_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
         private void lblViaje_Click(object sender, EventArgs e)
         {
             FrmListar fm = new FrmListar(Listas.viajes);
+            fm.FormClosed += FrmVendedor_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
         private void lblVenta_Click(object sender, EventArgs e)
         {
             FrmVenderViaje fm = new FrmVenderViaje();
+            fm.FormClosed += FrmVendedor_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
         private void lblEstadisticas_Click(object sender, EventArgs e)
         {
             FrmEstadisticas fm = new FrmEstadisticas();
+            fm.FormClosed += FrmVendedor_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
@@ -128,6 +136,9 @@ namespace Form_Aerolinea
             lblDescEstadisticas.ForeColor = SystemColors.ControlDarkDark;
         }
 
-
+        private void FrmVendedor_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
     }
 }

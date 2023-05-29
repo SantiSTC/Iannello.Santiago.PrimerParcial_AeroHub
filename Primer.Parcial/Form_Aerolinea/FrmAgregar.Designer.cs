@@ -40,9 +40,10 @@
             // 
             btnAgregar.Cursor = Cursors.Hand;
             btnAgregar.FlatStyle = FlatStyle.Popup;
-            btnAgregar.Location = new Point(79, 402);
+            btnAgregar.Location = new Point(113, 670);
+            btnAgregar.Margin = new Padding(4, 5, 4, 5);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(75, 23);
+            btnAgregar.Size = new Size(107, 38);
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@
             // 
             btnCancelar.Cursor = Cursors.Hand;
             btnCancelar.FlatStyle = FlatStyle.Popup;
-            btnCancelar.Location = new Point(291, 402);
+            btnCancelar.Location = new Point(416, 670);
+            btnCancelar.Margin = new Padding(4, 5, 4, 5);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(75, 23);
+            btnCancelar.Size = new Size(107, 38);
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(141, 2);
+            pictureBox2.Location = new Point(201, 3);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(143, 29);
+            pictureBox2.Size = new Size(204, 48);
             pictureBox2.TabIndex = 36;
             pictureBox2.TabStop = false;
             // 
@@ -74,26 +77,29 @@
             lblTitulo.AutoSize = true;
             lblTitulo.Font = new Font("Calibri", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblTitulo.ForeColor = SystemColors.ActiveCaptionText;
-            lblTitulo.Location = new Point(141, 34);
+            lblTitulo.Location = new Point(201, 57);
+            lblTitulo.Margin = new Padding(4, 0, 4, 0);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(80, 26);
+            lblTitulo.Size = new Size(119, 39);
             lblTitulo.TabIndex = 37;
             lblTitulo.Text = "Agregar";
             lblTitulo.TextAlign = ContentAlignment.TopCenter;
             // 
             // FrmAgregar
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
-            ClientSize = new Size(454, 450);
+            ClientSize = new Size(649, 750);
             Controls.Add(lblTitulo);
             Controls.Add(pictureBox2);
             Controls.Add(btnCancelar);
             Controls.Add(btnAgregar);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmAgregar";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Agregar";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
@@ -103,7 +109,7 @@
         #endregion
         protected Button btnAgregar;
         protected Button btnCancelar;
-        private PictureBox pictureBox2;
         protected Label lblTitulo;
+        protected PictureBox pictureBox2;
     }
 }

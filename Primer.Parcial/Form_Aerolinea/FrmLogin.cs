@@ -12,13 +12,13 @@ namespace Form_Aerolinea
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             bool validar = false;
-            List<Usuario> usuarios = Serializacion<Usuario>.Deserializar(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\MOCK_DATA.json");
+            List<Usuario> usuarios = Serializacion<Usuario>.Deserializar(Application.StartupPath + @"\Usuarios_Serializados\MOCK_DATA.json");
 
             foreach (Usuario usuario in usuarios)
             {
                 if (!(txtUsuario.Text == usuario.Correo && txtContrasenia.Text == usuario.Clave))
                 {
-                    usuario.Perfil = EPerfil.Administrador;//
+                    usuario.Perfil = EPerfil.Vendedor;//
                     validar = true;
                     FrmMenu fm = new FrmMenu();
 
@@ -51,9 +51,15 @@ namespace Form_Aerolinea
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
+            //Deserializar JSON
             Listas.aviones = Serializacion<Aeronave>.Deserializar(Application.StartupPath + @"\Listas_Serializadas\aviones.json");
             Listas.viajes = Serializacion<Viaje>.Deserializar(Application.StartupPath + @"\Listas_Serializadas\viajes.json");
             Listas.pasajeros = Serializacion<Pasajero>.Deserializar(Application.StartupPath + @"\Listas_Serializadas\pasajeros.json");
+
+            //Deserializar XML
+            //Listas.aviones = Serializacion<Aeronave>.DeserializarXML(Application.StartupPath + @"\Listas_Serializadas\aviones.xml");
+            //Listas.viajes = Serializacion<Viaje>.DeserializarXML(Application.StartupPath + @"\Listas_Serializadas\viajes.xml");
+            //Listas.pasajeros = Serializacion<Pasajero>.DeserializarXML(Application.StartupPath + @"\Listas_Serializadas\pasajeros.xml");
         }
     }
 }

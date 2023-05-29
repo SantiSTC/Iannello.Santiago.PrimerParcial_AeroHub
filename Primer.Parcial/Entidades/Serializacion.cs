@@ -6,6 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Entidades
 {
@@ -24,7 +25,7 @@ namespace Entidades
                 {
                     var options = new JsonSerializerOptions
                     {
-                        WriteIndented = true // Para tener una salida JSON con formato legible
+                        WriteIndented = true 
                     };
 
                     string json = System.Text.Json.JsonSerializer.Serialize(lista, options);
@@ -59,6 +60,49 @@ namespace Entidades
             }
 
             return lista;
+        }
+
+        public static bool SerializarXML(List<T> lista, string path) 
+        {
+            XmlSerializer serializer;
+            bool retorno = false;
+
+            try 
+            {
+                using (Serializacion<T>.writer = new StreamWriter(path)) 
+                {
+                    serializer = new XmlSerializer(typeof(List<T>));
+                    serializer.Serialize(Serializacion<T>.writer, lista);
+                    retorno = true;
+                }
+            }
+            catch (Exception) 
+            {
+                retorno = false;
+            }
+
+            return retorno;
+        }
+
+        public static List<T> DeserializarXML(string path) 
+        {
+            XmlSerializer serializer;
+            List<T> aux = new List<T>();
+
+            try 
+            {
+                using (Serializacion<T>.reader = new StreamReader(path)) 
+                {
+                    serializer = new XmlSerializer(typeof(List<T>));
+                    aux = (List<T>)serializer.Deserialize(Serializacion<T>.reader);
+                }
+            }
+            catch (Exception) 
+            {
+                aux = new List<T>();
+            }
+
+            return aux;
         }
     }
 }

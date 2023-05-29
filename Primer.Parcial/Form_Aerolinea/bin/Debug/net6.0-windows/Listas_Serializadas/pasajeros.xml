@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPasajero xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Pasajero>
+    <Apellido>Martinez</Apellido>
+    <Nombre>Emiliano</Nombre>
+    <Dni>33333333</Dni>
+    <Edad>90</Edad>
+    <TipoEquipaje>Ninguno</TipoEquipaje>
+    <PesoEquipaje>0</PesoEquipaje>
+    <EsPremium>false</EsPremium>
+  </Pasajero>
+  <Pasajero>
+    <Apellido>Messi</Apellido>
+    <Nombre>Lionel Andres</Nombre>
+    <Dni>25643312</Dni>
+    <Edad>35</Edad>
+    <TipoEquipaje>Ninguno</TipoEquipaje>
+    <PesoEquipaje>0</PesoEquipaje>
+    <EsPremium>false</EsPremium>
+  </Pasajero>
+  <Pasajero>
+    <Apellido>Scaloni</Apellido>
+    <Nombre>Lionel</Nombre>
+    <Dni>16767332</Dni>
+    <Edad>48</Edad>
+    <TipoEquipaje>Ninguno</TipoEquipaje>
+    <PesoEquipaje>0</PesoEquipaje>
+    <EsPremium>false</EsPremium>
+  </Pasajero>
+  <Pasajero>
+    <Apellido>Iannello</Apellido>
+    <Nombre>Santiago</Nombre>
+    <Dni>44195364</Dni>
+    <Edad>20</Edad>
+    <TipoEquipaje>Ninguno</TipoEquipaje>
+    <PesoEquipaje>0</PesoEquipaje>
+    <EsPremium>false</EsPremium>
+  </Pasajero>
+</ArrayOfPasajero>

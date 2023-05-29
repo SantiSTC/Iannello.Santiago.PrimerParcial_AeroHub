@@ -28,33 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmResultadosEstadistica));
             rchEstadistica = new RichTextBox();
+            pictureBox1 = new PictureBox();
+            label1 = new Label();
+            label2 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // rchEstadistica
             // 
+            rchEstadistica.BackColor = SystemColors.Window;
             rchEstadistica.BorderStyle = BorderStyle.FixedSingle;
-            rchEstadistica.Location = new Point(12, 33);
+            rchEstadistica.Location = new Point(17, 94);
+            rchEstadistica.Margin = new Padding(4, 5, 4, 5);
             rchEstadistica.Name = "rchEstadistica";
             rchEstadistica.ReadOnly = true;
-            rchEstadistica.Size = new Size(304, 376);
+            rchEstadistica.Size = new Size(433, 585);
             rchEstadistica.TabIndex = 0;
             rchEstadistica.Text = "";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(106, 1);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(254, 59);
+            pictureBox1.TabIndex = 26;
+            pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Calibri", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(184, 52);
+            label1.Name = "label1";
+            label1.Size = new Size(113, 27);
+            label1.TabIndex = 27;
+            label1.Text = "Resultados";
+            // 
+            // label2
+            // 
+            label2.BackColor = SystemColors.HotTrack;
+            label2.Location = new Point(-12, 694);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(489, 12);
+            label2.TabIndex = 42;
+            // 
             // FrmResultadosEstadistica
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(328, 421);
+            BackColor = SystemColors.Window;
+            ClientSize = new Size(469, 702);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(pictureBox1);
             Controls.Add(rchEstadistica);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmResultadosEstadistica";
-            Text = "FrmResultadosEstadistica";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Resultados";
             Load += FrmResultadosEstadistica_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private RichTextBox rchEstadistica;
+        private PictureBox pictureBox1;
+        private Label label1;
+        private Label label2;
     }
 }

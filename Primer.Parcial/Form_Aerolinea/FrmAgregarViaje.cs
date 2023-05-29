@@ -14,8 +14,7 @@ namespace Form_Aerolinea
     public partial class FrmAgregarViaje : FrmAgregar
     {
         private bool flag;
-        List<Viaje> aux = Listas.viajes.OrderBy(v => v.Fecha).ToList();
-
+        List<Viaje> aux = Listas.viajes;
         public FrmAgregarViaje()
         {
             InitializeComponent();
@@ -142,7 +141,7 @@ namespace Form_Aerolinea
         {
             this.mthFecha.RemoveAllBoldedDates();
 
-            Aeronave? avion = cmbAvion.SelectedItem as Aeronave;
+            Aeronave avion = cmbAvion.SelectedItem as Aeronave;
 
             foreach (Viaje viaje in Listas.viajes)
             {

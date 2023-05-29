@@ -250,5 +250,38 @@ namespace Entidades
 
             return acumulador;
         }
+
+        public static Dictionary<string, int> ObtenerPasajerosFrecuentes() 
+        {
+            Dictionary<string, int> diccionario = new Dictionary<string, int>();
+            int contador;
+            string datosPasajero;
+
+            foreach (Pasajero pasajero in Listas.pasajeros) 
+            {
+                contador = 0;
+
+                foreach (Viaje viaje in Listas.viajes)
+                {
+                    if (pasajero == viaje) 
+                    {
+                        contador++;
+                    }
+                }
+
+                datosPasajero = $"{pasajero.Dni} - {pasajero.Apellido} {pasajero.Nombre}";
+                diccionario.Add(datosPasajero, contador);
+
+                var listaOrdenada = diccionario.ToList().OrderByDescending(x => x.Value);
+                diccionario.Clear();
+
+                foreach (var item in listaOrdenada)
+                {
+                    diccionario.Add(item.Key, item.Value);
+                }
+            }
+
+            return diccionario;
+        } 
     }
 }

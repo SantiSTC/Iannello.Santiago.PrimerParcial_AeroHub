@@ -34,14 +34,5 @@
     "EsPremium": false,
     "Apellido": "Iannello",
     "Nombre": "Santiago"
-  },
-  {
-    "Dni": 45751587,
-    "Edad": 14,
-    "TipoEquipaje": 3,
-    "PesoEquipaje": 0,
-    "EsPremium": false,
-    "Apellido": "Gauna",
-    "Nombre": "Tomas"
   }
 ]

@@ -19,12 +19,18 @@ namespace Form_Aerolinea
 
         private void lblfondoPasajero_Click(object sender, EventArgs e)
         {
-
+            FrmCRUD fm = new FrmCRUD(3);
+            fm.FormClosed += FrmSupervisor_FormClosed;
+            this.Hide();
+            fm.ShowDialog();
         }
 
         private void lblFondoEstadistica_Click(object sender, EventArgs e)
         {
-
+            FrmEstadisticas fm = new FrmEstadisticas();
+            fm.FormClosed += FrmSupervisor_FormClosed;
+            this.Hide();
+            fm.ShowDialog();
         }
 
         private void lblfondoPasajero_MouseEnter(object sender, EventArgs e)
@@ -67,6 +73,9 @@ namespace Form_Aerolinea
             lblDescEstadisticas.ForeColor = SystemColors.ControlDarkDark;
         }
 
-
+        private void FrmSupervisor_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
+        }
     }
 }

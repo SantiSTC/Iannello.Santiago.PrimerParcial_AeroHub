@@ -112,3 +112,5 @@ C:\Users\santi\Source\Repos\Iannello.Santiago.PrimerParcial\Primer.Parcial\Form_
 C:\Users\Santiago\source\repos\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.Properties.Resources.resources
 C:\Users\Santiago\source\repos\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.FrmEstadisticas.resources
 C:\Users\Santiago\source\repos\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.FrmResultadosEstadistica.resources
+C:\Users\santi\Source\Repos\Iannello.Santiago.PrimerParcial\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.FrmEstadisticas.resources
+C:\Users\santi\Source\Repos\Iannello.Santiago.PrimerParcial\Primer.Parcial\Form_Aerolinea\obj\Debug\net6.0-windows\Form_Aerolinea.FrmResultadosEstadistica.resources
