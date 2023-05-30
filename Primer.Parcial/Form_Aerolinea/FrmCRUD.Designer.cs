@@ -124,6 +124,7 @@
             Controls.Add(btnAgregar);
             Controls.Add(dgvLista);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(685, 476);
             Name = "FrmCRUD";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Listado";

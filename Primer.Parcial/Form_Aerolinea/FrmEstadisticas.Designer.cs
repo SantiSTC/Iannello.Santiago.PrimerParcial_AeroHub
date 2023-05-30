@@ -586,6 +586,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(lblLogin);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(813, 500);
             Name = "FrmEstadisticas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Estadisticas";

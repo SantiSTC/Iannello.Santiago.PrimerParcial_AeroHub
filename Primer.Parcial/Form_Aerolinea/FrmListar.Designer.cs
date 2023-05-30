@@ -152,6 +152,7 @@
             Controls.Add(btnCancelar);
             Controls.Add(dgvLista);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(816, 506);
             Name = "FrmListar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmListar";

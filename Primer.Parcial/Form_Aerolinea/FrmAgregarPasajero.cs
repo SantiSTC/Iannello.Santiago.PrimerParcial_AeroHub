@@ -46,7 +46,7 @@ namespace Form_Aerolinea
                     Listas.pasajeros.Add(new Pasajero(this.txtNombre.Text, this.txtApellido.Text, dni, edad, ETipoEquipaje.Ninguno, 0));
                     this.DialogResult = DialogResult.OK;
                 }
-                else 
+                else
                 {
                     MessageBox.Show("El nombre o el apellido son invalidos...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }

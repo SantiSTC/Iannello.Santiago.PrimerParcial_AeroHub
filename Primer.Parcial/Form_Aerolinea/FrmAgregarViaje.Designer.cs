@@ -172,6 +172,7 @@
             Controls.Add(cmbPartida);
             Controls.Add(mthFecha);
             Margin = new Padding(4, 5, 4, 5);
+            MinimumSize = new Size(461, 546);
             Name = "FrmAgregarViaje";
             Text = "Agregar viaje";
             Load += FrmAgregarViaje_Load;

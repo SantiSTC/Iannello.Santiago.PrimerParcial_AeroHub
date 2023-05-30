@@ -91,6 +91,7 @@
             Controls.Add(pictureBox1);
             Controls.Add(rchEstadistica);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(344, 460);
             Name = "FrmResultadosEstadistica";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Resultados";

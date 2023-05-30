@@ -160,6 +160,7 @@
             Controls.Add(txtApellido);
             Controls.Add(txtNombre);
             Margin = new Padding(4, 5, 4, 5);
+            MinimumSize = new Size(461, 373);
             Name = "FrmAgregarPasajero";
             Text = "Agregar Pasajero";
             Load += FrmAgregarPasajero_Load;

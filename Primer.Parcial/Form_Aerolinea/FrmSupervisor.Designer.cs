@@ -200,6 +200,7 @@
             Controls.Add(lblfondoPasajero);
             Controls.Add(pictureBox2);
             Controls.Add(lblLogin);
+            MaximumSize = new Size(830, 497);
             Name = "FrmSupervisor";
             Text = "Supervisor";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

@@ -51,6 +51,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(445, 332);
+            MinimumSize = new Size(461, 371);
             Name = "FrmModificarPasajero";
             Text = "Modificar Pasajero";
             Load += FrmModificarPasajero_Load;

@@ -110,7 +110,7 @@
             Controls.Add(btnAceptar);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(1140, 384);
-            MinimumSize = new Size(533, 384);
+            MinimumSize = new Size(535, 384);
             Name = "FrmLogin";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Inicio de sesión";

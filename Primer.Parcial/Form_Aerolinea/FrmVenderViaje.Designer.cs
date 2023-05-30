@@ -447,6 +447,7 @@
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(650, 505);
             Name = "FrmVenderViaje";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Venta de viaje";

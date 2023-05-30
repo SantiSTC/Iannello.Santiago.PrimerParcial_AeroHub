@@ -123,6 +123,7 @@
             Controls.Add(lblPerfilMenu);
             Controls.Add(label1);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MinimumSize = new Size(830, 497);
             Name = "FrmMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

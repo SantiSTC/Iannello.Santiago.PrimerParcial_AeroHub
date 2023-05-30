@@ -209,6 +209,7 @@
             Controls.Add(txtCapacidad);
             Controls.Add(txtMatricula);
             Margin = new Padding(4, 5, 4, 5);
+            MinimumSize = new Size(461, 489);
             Name = "FrmAgregarAvion";
             Text = "Agregar Avion";
             Load += FrmAgregarAvion_Load;

@@ -35,27 +35,27 @@
             // 
             txtMatricula.BackColor = SystemColors.ScrollBar;
             txtMatricula.Enabled = false;
-            txtMatricula.Location = new Point(221, 88);
+            txtMatricula.Location = new Point(233, 88);
             // 
             // txtCapacidad
             // 
-            txtCapacidad.Location = new Point(221, 238);
+            txtCapacidad.Location = new Point(233, 238);
             // 
             // txtBanios
             // 
-            txtBanios.Location = new Point(221, 192);
+            txtBanios.Location = new Point(233, 192);
             // 
             // txtAsientos
             // 
-            txtAsientos.Location = new Point(221, 137);
+            txtAsientos.Location = new Point(233, 137);
             // 
             // checkInternet
             // 
-            checkInternet.Location = new Point(221, 285);
+            checkInternet.Location = new Point(233, 285);
             // 
             // checkComida
             // 
-            checkComida.Location = new Point(221, 330);
+            checkComida.Location = new Point(233, 330);
             // 
             // lblTitulo
             // 
@@ -76,6 +76,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(427, 450);
+            MinimumSize = new Size(443, 489);
             Name = "FrmModificarAvion";
             Text = "Modificar Avion";
             Load += FrmModificarAvion_Load;
