@@ -57,5 +57,9 @@ namespace Form_Aerolinea
             }
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+        }
     }
 }

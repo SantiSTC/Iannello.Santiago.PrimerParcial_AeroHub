@@ -42,10 +42,9 @@
             // 
             // lblTitulo
             // 
-            lblTitulo.AutoSize = false;
-            lblTitulo.Location = new Point(128, 34);
+            lblTitulo.Location = new Point(139, 34);
             lblTitulo.Margin = new Padding(4, 0, 4, 0);
-            lblTitulo.Size = new Size(173, 26);
+            lblTitulo.Size = new Size(158, 26);
             lblTitulo.Text = "Agregar Pasajero";
             // 
             // pictureBox2
@@ -55,19 +54,24 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(79, 283);
+            btnAgregar.AutoSize = true;
+            btnAgregar.Location = new Point(79, 281);
             btnAgregar.Margin = new Padding(4, 5, 4, 5);
+            btnAgregar.Size = new Size(75, 25);
             btnAgregar.Click += btnAgregar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(291, 283);
+            btnCancelar.AutoSize = true;
+            btnCancelar.Location = new Point(291, 281);
             btnCancelar.Margin = new Padding(4, 5, 4, 5);
+            btnCancelar.Size = new Size(75, 25);
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // txtNombre
             // 
             txtNombre.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtNombre.Location = new Point(217, 72);
+            txtNombre.Location = new Point(217, 81);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(100, 23);
             txtNombre.TabIndex = 0;
@@ -75,7 +79,7 @@
             // txtApellido
             // 
             txtApellido.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtApellido.Location = new Point(217, 120);
+            txtApellido.Location = new Point(217, 129);
             txtApellido.Name = "txtApellido";
             txtApellido.Size = new Size(100, 23);
             txtApellido.TabIndex = 1;
@@ -83,7 +87,7 @@
             // txtDni
             // 
             txtDni.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtDni.Location = new Point(217, 168);
+            txtDni.Location = new Point(217, 177);
             txtDni.Name = "txtDni";
             txtDni.Size = new Size(100, 23);
             txtDni.TabIndex = 2;
@@ -91,7 +95,7 @@
             // txtEdad
             // 
             txtEdad.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtEdad.Location = new Point(217, 221);
+            txtEdad.Location = new Point(217, 230);
             txtEdad.MaximumSize = new Size(28, 23);
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(28, 23);
@@ -101,7 +105,7 @@
             // 
             lblNombre.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(100, 80);
+            lblNombre.Location = new Point(100, 89);
             lblNombre.Name = "lblNombre";
             lblNombre.Size = new Size(54, 15);
             lblNombre.TabIndex = 6;
@@ -111,7 +115,7 @@
             // 
             lblApellido.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblApellido.AutoSize = true;
-            lblApellido.Location = new Point(100, 128);
+            lblApellido.Location = new Point(100, 137);
             lblApellido.Name = "lblApellido";
             lblApellido.Size = new Size(54, 15);
             lblApellido.TabIndex = 7;
@@ -121,7 +125,7 @@
             // 
             lblDni.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblDni.AutoSize = true;
-            lblDni.Location = new Point(100, 176);
+            lblDni.Location = new Point(100, 185);
             lblDni.Name = "lblDni";
             lblDni.Size = new Size(28, 15);
             lblDni.TabIndex = 8;
@@ -131,7 +135,7 @@
             // 
             lblEdad.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblEdad.AutoSize = true;
-            lblEdad.Location = new Point(100, 229);
+            lblEdad.Location = new Point(100, 238);
             lblEdad.Name = "lblEdad";
             lblEdad.Size = new Size(36, 15);
             lblEdad.TabIndex = 9;
