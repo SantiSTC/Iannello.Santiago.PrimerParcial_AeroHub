@@ -57,6 +57,7 @@
             btnAgregar.AutoSize = true;
             btnAgregar.Location = new Point(79, 281);
             btnAgregar.Margin = new Padding(4, 5, 4, 5);
+            btnAgregar.MaximumSize = new Size(75, 25);
             btnAgregar.Size = new Size(75, 25);
             btnAgregar.Click += btnAgregar_Click;
             // 
@@ -65,6 +66,7 @@
             btnCancelar.AutoSize = true;
             btnCancelar.Location = new Point(291, 281);
             btnCancelar.Margin = new Padding(4, 5, 4, 5);
+            btnCancelar.MaximumSize = new Size(75, 25);
             btnCancelar.Size = new Size(75, 25);
             btnCancelar.Click += btnCancelar_Click;
             // 
