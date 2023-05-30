@@ -40,14 +40,14 @@
             // 
             // label1
             // 
-            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.BackColor = SystemColors.HotTrack;
             label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Dock = DockStyle.Bottom;
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(-1, 419);
+            label1.Location = new Point(0, 411);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(816, 47);
+            label1.Size = new Size(814, 47);
             label1.TabIndex = 6;
             // 
             // lblUsuarioMenu

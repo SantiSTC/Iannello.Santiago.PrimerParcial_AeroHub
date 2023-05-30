@@ -346,7 +346,7 @@
             Controls.Add(lblFondoViaje);
             Controls.Add(lblLogin);
             Controls.Add(lblfondoPasajero);
-            MinimumSize = new Size(400, 200);
+            MinimumSize = new Size(830, 497);
             Name = "FrmVendedor";
             Text = "Vendedor";
             Load += FrmVendedor_Load;
