@@ -42,7 +42,6 @@
             // 
             // lblTitulo
             // 
-            lblTitulo.Anchor = AnchorStyles.Top | AnchorStyles.Left;
             lblTitulo.Location = new Point(139, 34);
             lblTitulo.Margin = new Padding(4, 0, 4, 0);
             lblTitulo.Size = new Size(158, 26);
@@ -50,15 +49,12 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Left;
-            pictureBox2.Dock = DockStyle.Top;
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Size = new Size(445, 29);
             // 
             // btnAgregar
             // 
-            btnAgregar.Anchor = AnchorStyles.Top | AnchorStyles.Left;
             btnAgregar.AutoSize = true;
             btnAgregar.Location = new Point(79, 281);
             btnAgregar.Margin = new Padding(4, 5, 4, 5);
@@ -68,7 +64,6 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Anchor = AnchorStyles.Top | AnchorStyles.Left;
             btnCancelar.AutoSize = true;
             btnCancelar.Location = new Point(291, 281);
             btnCancelar.Margin = new Padding(4, 5, 4, 5);

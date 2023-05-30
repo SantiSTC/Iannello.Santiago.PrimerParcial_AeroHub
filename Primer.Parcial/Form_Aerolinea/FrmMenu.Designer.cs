@@ -40,9 +40,9 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.BackColor = SystemColors.HotTrack;
             label1.BorderStyle = BorderStyle.Fixed3D;
-            label1.Dock = DockStyle.Bottom;
             label1.ForeColor = SystemColors.ControlText;
             label1.Location = new Point(0, 411);
             label1.Margin = new Padding(2, 0, 2, 0);
@@ -61,6 +61,7 @@
             lblUsuarioMenu.Size = new Size(47, 15);
             lblUsuarioMenu.TabIndex = 10;
             lblUsuarioMenu.Text = "Usuario";
+            lblUsuarioMenu.Click += lblUsuarioMenu_Click;
             // 
             // lblFecha
             // 
@@ -97,6 +98,7 @@
             lblPerfilMenu.Size = new Size(34, 15);
             lblPerfilMenu.TabIndex = 7;
             lblPerfilMenu.Text = "Perfil";
+            lblPerfilMenu.Click += lblPerfilMenu_Click;
             // 
             // pictureBox1
             // 
@@ -110,6 +112,7 @@
             pictureBox1.Size = new Size(36, 28);
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // FrmMenu
             // 
