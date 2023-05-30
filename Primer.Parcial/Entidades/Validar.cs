@@ -2,21 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Entidades
 {
     public static class Validar
     {
-        public static bool EsDni(int dni) 
-        {
-            if(dni.ToString().Count() == 8 && dni < 99999999 && dni > 00000001) 
-            {
-                return true;
-            }
-            return false;
-        }
-
         public static bool EsDni(string dni) 
         {
             int dniValido;
@@ -25,6 +17,38 @@ namespace Entidades
             {
                 return true;
             }
+            return false;
+        }
+
+        public static bool esMatricula(string matricula) 
+        {
+            if(matricula.Count() == 8 && Regex.IsMatch(matricula, "^[a-zA-Z0-9]*$")) 
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public static bool esNombreOApellido(string nombre) 
+        {
+            if (nombre.All(c => Char.IsLetter(c))) 
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public static bool esEdad(string edad) 
+        {
+            int edadValida;
+
+            if (int.TryParse(edad, out edadValida) && edadValida > 0 && edadValida < 130) 
+            {
+                return true;
+            }
+
             return false;
         }
     }

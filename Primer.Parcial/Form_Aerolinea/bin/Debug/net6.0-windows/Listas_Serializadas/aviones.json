@@ -87,5 +87,15 @@
     "CapacidadBodega": 1400,
     "Ocupado": true,
     "Pasajeros": []
+  },
+  {
+    "Matricula": "FFF666FF",
+    "CantidadAsientos": 300,
+    "CantidadBanios": 6,
+    "Internet": true,
+    "Comida": true,
+    "CapacidadBodega": 5000,
+    "Ocupado": false,
+    "Pasajeros": []
   }
 ]

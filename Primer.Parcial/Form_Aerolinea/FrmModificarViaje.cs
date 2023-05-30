@@ -47,9 +47,9 @@ namespace Form_Aerolinea
 
         protected override void btnAgregar_Click(object sender, EventArgs e)
         {
-            foreach (Viaje viaje in Listas.viajes) 
+            foreach (Viaje viaje in Listas.viajes)
             {
-                if(viaje == this.viaje) 
+                if (viaje == this.viaje)
                 {
                     viaje.Fecha = this.mthFecha.SelectionStart;
                     break;

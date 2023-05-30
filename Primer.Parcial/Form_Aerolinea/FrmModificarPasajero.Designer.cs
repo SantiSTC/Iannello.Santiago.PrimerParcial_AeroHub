@@ -28,7 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
+            // 
+            // lblTitulo
+            // 
+            lblTitulo.Location = new Point(118, 34);
+            lblTitulo.Size = new Size(187, 35);
+            lblTitulo.Text = "Modificar Pasajero";
             // 
             // btnAgregar
             // 
@@ -39,21 +46,15 @@
             // 
             btnCancelar.Location = new Point(291, 282);
             // 
-            // lblTitulo
-            // 
-            lblTitulo.AutoSize = false;
-            lblTitulo.Location = new Point(118, 34);
-            lblTitulo.Size = new Size(187, 35);
-            lblTitulo.Text = "Modificar Pasajero";
-            // 
             // FrmModificarPasajero
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(445, 332);
             Name = "FrmModificarPasajero";
-            Text = "FrmModificarPasajero";
+            Text = "Modificar Pasajero";
             Load += FrmModificarPasajero_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

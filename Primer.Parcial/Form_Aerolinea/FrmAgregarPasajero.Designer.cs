@@ -50,20 +50,17 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Anchor = AnchorStyles.Top;
             pictureBox2.Location = new Point(144, 1);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             // 
             // btnAgregar
             // 
-            btnAgregar.Anchor = AnchorStyles.Bottom;
             btnAgregar.Location = new Point(79, 283);
             btnAgregar.Margin = new Padding(4, 5, 4, 5);
             btnAgregar.Click += btnAgregar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Anchor = AnchorStyles.Bottom;
             btnCancelar.Location = new Point(291, 283);
             btnCancelar.Margin = new Padding(4, 5, 4, 5);
             // 
@@ -164,7 +161,7 @@
             Controls.Add(txtNombre);
             Margin = new Padding(4, 5, 4, 5);
             Name = "FrmAgregarPasajero";
-            Text = "FrmAgregarPasajero";
+            Text = "Agregar Pasajero";
             Load += FrmAgregarPasajero_Load;
             Controls.SetChildIndex(pictureBox2, 0);
             Controls.SetChildIndex(txtNombre, 0);

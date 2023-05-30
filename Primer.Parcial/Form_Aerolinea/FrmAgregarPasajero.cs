@@ -27,22 +27,29 @@ namespace Form_Aerolinea
         {
             if (!string.IsNullOrWhiteSpace(this.txtNombre.Text) && !string.IsNullOrWhiteSpace(this.txtApellido.Text) && !string.IsNullOrWhiteSpace(this.txtDni.Text) && !string.IsNullOrWhiteSpace(this.txtEdad.Text))
             {
-                int dni;
-                if (!int.TryParse(this.txtDni.Text, out dni))
+                if (Validar.esNombreOApellido(this.txtNombre.Text) && Validar.esNombreOApellido(this.txtApellido.Text))
                 {
-                    MessageBox.Show("El campo DNI debe ser un valor numérico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
+                    int dni;
+                    if (!int.TryParse(this.txtDni.Text, out dni) && !Validar.EsDni(this.txtDni.Text))
+                    {
+                        MessageBox.Show("El campo DNI debe ser un valor numérico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
 
-                int edad;
-                if (!int.TryParse(this.txtEdad.Text, out edad))
+                    int edad;
+                    if (!int.TryParse(this.txtEdad.Text, out edad) && !Validar.esEdad(this.txtEdad.Text))
+                    {
+                        MessageBox.Show("El campo Edad debe ser un valor numérico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    Listas.pasajeros.Add(new Pasajero(this.txtNombre.Text, this.txtApellido.Text, dni, edad, ETipoEquipaje.Ninguno, 0));
+                    this.DialogResult = DialogResult.OK;
+                }
+                else 
                 {
-                    MessageBox.Show("El campo Edad debe ser un valor numérico válido.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                    MessageBox.Show("El nombre o el apellido son invalidos...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
-                Listas.pasajeros.Add(new Pasajero(this.txtNombre.Text, this.txtApellido.Text, dni, edad, ETipoEquipaje.Ninguno, 0));
-                this.DialogResult = DialogResult.OK;
             }
             else
             {

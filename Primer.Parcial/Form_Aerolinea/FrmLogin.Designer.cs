@@ -39,7 +39,7 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAceptar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnAceptar.BackColor = SystemColors.HotTrack;
             btnAceptar.Cursor = Cursors.Hand;
             btnAceptar.ForeColor = SystemColors.ControlLightLight;
@@ -53,7 +53,7 @@
             // 
             // txtUsuario
             // 
-            txtUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtUsuario.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtUsuario.Location = new Point(118, 154);
             txtUsuario.Name = "txtUsuario";
             txtUsuario.PlaceholderText = " Usuario";
@@ -62,7 +62,7 @@
             // 
             // txtContrasenia
             // 
-            txtContrasenia.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtContrasenia.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtContrasenia.Location = new Point(118, 197);
             txtContrasenia.Name = "txtContrasenia";
             txtContrasenia.PlaceholderText = " Contraseña";
@@ -86,7 +86,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.Anchor = AnchorStyles.Top;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.Location = new Point(78, 27);
@@ -108,7 +108,6 @@
             Controls.Add(txtContrasenia);
             Controls.Add(txtUsuario);
             Controls.Add(btnAceptar);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximumSize = new Size(1140, 384);
             MinimumSize = new Size(533, 384);

@@ -25,10 +25,17 @@ namespace Form_Aerolinea
 
         protected virtual void btnAgregar_Click(object sender, EventArgs e)
         {
-            if (this.txtMatricula.Text is not null || this.txtAsientos.Text is not null || this.txtBanios.Text is not null || this.txtCapacidad.Text is not null)
+            if (this.txtMatricula.Text is not null && this.txtAsientos.Text is not null && this.txtBanios.Text is not null && this.txtCapacidad.Text is not null)
             {
-                Aeronave.AgregarAeronave(Listas.aviones, this.txtMatricula.Text, int.Parse(this.txtAsientos.Text), int.Parse(this.txtBanios.Text), this.checkInternet.Checked, this.checkComida.Checked, float.Parse(this.txtCapacidad.Text));
-                this.DialogResult = DialogResult.OK;
+                if (Validar.esMatricula(this.txtMatricula.Text))
+                {
+                    Aeronave.AgregarAeronave(Listas.aviones, this.txtMatricula.Text, int.Parse(this.txtAsientos.Text), int.Parse(this.txtBanios.Text), this.checkInternet.Checked, this.checkComida.Checked, float.Parse(this.txtCapacidad.Text));
+                    this.DialogResult = DialogResult.OK;
+                }
+                else
+                {
+                    MessageBox.Show("La matricula solo puede ser un codigo alfanumerico de 8 caracteres...", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {

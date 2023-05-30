@@ -50,20 +50,17 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Anchor = AnchorStyles.Top;
             pictureBox2.Location = new Point(147, 1);
             pictureBox2.Margin = new Padding(4, 5, 4, 5);
             // 
             // btnAgregar
             // 
-            btnAgregar.Anchor = AnchorStyles.Bottom;
             btnAgregar.Location = new Point(70, 455);
             btnAgregar.Margin = new Padding(4, 5, 4, 5);
             btnAgregar.Click += btnAgregar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Anchor = AnchorStyles.Bottom;
             btnCancelar.Location = new Point(297, 455);
             btnCancelar.Margin = new Padding(4, 5, 4, 5);
             btnCancelar.Click += btnCancelar_Click;
@@ -156,7 +153,7 @@
             label1.BackColor = SystemColors.HotTrack;
             label1.Location = new Point(-2, 501);
             label1.Name = "label1";
-            label1.Size = new Size(449, 10);
+            label1.Size = new Size(449, 16);
             label1.TabIndex = 41;
             // 
             // FrmAgregarViaje
@@ -197,14 +194,14 @@
         }
 
         #endregion
-        private Label lblPartida;
-        private Label lblDestino;
-        private Label lblFecha;
-        private Label lblAvion;
+        protected Label lblPartida;
+        protected Label lblDestino;
+        protected Label lblFecha;
+        protected Label lblAvion;
         protected MonthCalendar mthFecha;
         protected ComboBox cmbPartida;
         protected ComboBox cmbDestino;
         protected ComboBox cmbAvion;
-        private Label label1;
+        protected Label label1;
     }
 }

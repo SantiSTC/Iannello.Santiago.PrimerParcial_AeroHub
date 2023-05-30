@@ -38,7 +38,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnAgregar.Anchor = AnchorStyles.Bottom;
             btnAgregar.Cursor = Cursors.Hand;
             btnAgregar.FlatStyle = FlatStyle.Popup;
             btnAgregar.Location = new Point(79, 402);
@@ -50,7 +50,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            btnCancelar.Anchor = AnchorStyles.Bottom;
             btnCancelar.Cursor = Cursors.Hand;
             btnCancelar.FlatStyle = FlatStyle.Popup;
             btnCancelar.Location = new Point(291, 402);
@@ -62,6 +62,7 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Top;
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox2.Location = new Point(141, 2);

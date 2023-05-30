@@ -89,4 +89,14 @@
     <Ocupado>true</Ocupado>
     <Pasajeros />
   </Aeronave>
+  <Aeronave>
+    <Matricula>FFF666FF</Matricula>
+    <CantidadAsientos>300</CantidadAsientos>
+    <CantidadBanios>6</CantidadBanios>
+    <Internet>true</Internet>
+    <Comida>true</Comida>
+    <CapacidadBodega>5000</CapacidadBodega>
+    <Ocupado>false</Ocupado>
+    <Pasajeros />
+  </Aeronave>
 </ArrayOfAeronave>

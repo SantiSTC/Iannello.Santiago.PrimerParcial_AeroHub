@@ -46,27 +46,24 @@
             // 
             // lblTitulo
             // 
-            lblTitulo.Location = new Point(120, 34);
+            lblTitulo.Location = new Point(136, 34);
             lblTitulo.Margin = new Padding(4, 0, 4, 0);
             lblTitulo.Size = new Size(169, 26);
             lblTitulo.Text = "Agregar Aeronave";
             // 
             // pictureBox2
             // 
-            pictureBox2.Anchor = AnchorStyles.Top;
-            pictureBox2.Location = new Point(134, 3);
+            pictureBox2.Location = new Point(150, 3);
             pictureBox2.Margin = new Padding(2);
             // 
             // btnAgregar
             // 
-            btnAgregar.Anchor = AnchorStyles.Bottom;
             btnAgregar.Location = new Point(94, 402);
             btnAgregar.Margin = new Padding(4, 5, 4, 5);
             btnAgregar.Click += btnAgregar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Anchor = AnchorStyles.Bottom;
             btnCancelar.Location = new Point(263, 402);
             btnCancelar.Margin = new Padding(4, 5, 4, 5);
             btnCancelar.Click += btnCancelar_Click;
@@ -213,7 +210,7 @@
             Controls.Add(txtMatricula);
             Margin = new Padding(4, 5, 4, 5);
             Name = "FrmAgregarAvion";
-            Text = "FrmAgregarAvion";
+            Text = "Agregar Avion";
             Load += FrmAgregarAvion_Load;
             Controls.SetChildIndex(pictureBox2, 0);
             Controls.SetChildIndex(lblTitulo, 0);

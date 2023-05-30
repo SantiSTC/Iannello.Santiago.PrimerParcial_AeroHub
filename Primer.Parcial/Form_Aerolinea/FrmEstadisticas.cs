@@ -25,6 +25,8 @@ namespace Form_Aerolinea
             this.cadena += Estadistica.ObtenerRecaudacion().ToString();
 
             FrmResultadosEstadistica fm = new FrmResultadosEstadistica(this.cadena);
+            fm.FormClosed += FrmEstadisticas_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
@@ -38,6 +40,8 @@ namespace Form_Aerolinea
             }
 
             FrmResultadosEstadistica fm = new FrmResultadosEstadistica(this.cadena);
+            fm.FormClosed += FrmEstadisticas_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
@@ -51,6 +55,8 @@ namespace Form_Aerolinea
             }
 
             FrmResultadosEstadistica fm = new FrmResultadosEstadistica(this.cadena);
+            fm.FormClosed += FrmEstadisticas_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
@@ -64,6 +70,8 @@ namespace Form_Aerolinea
             }
 
             FrmResultadosEstadistica fm = new FrmResultadosEstadistica(this.cadena);
+            fm.FormClosed += FrmEstadisticas_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
@@ -77,6 +85,8 @@ namespace Form_Aerolinea
             }
 
             FrmResultadosEstadistica fm = new FrmResultadosEstadistica(this.cadena);
+            fm.FormClosed += FrmEstadisticas_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
@@ -85,6 +95,8 @@ namespace Form_Aerolinea
             this.cadena = $"El destino mas elegido es: {Estadistica.ObtenerDestinoMasElegido()}";
 
             FrmResultadosEstadistica fm = new FrmResultadosEstadistica(this.cadena);
+            fm.FormClosed += FrmEstadisticas_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
@@ -98,6 +110,8 @@ namespace Form_Aerolinea
             }
 
             FrmResultadosEstadistica fm = new FrmResultadosEstadistica(this.cadena);
+            fm.FormClosed += FrmEstadisticas_FormClosed;
+            this.Hide();
             fm.ShowDialog();
         }
 
@@ -240,10 +254,10 @@ namespace Form_Aerolinea
             lblFrecuentes.ForeColor = SystemColors.ControlText;
             lblDescFrecuentes.ForeColor = SystemColors.ControlDarkDark;
         }
-
-        private void FrmEstadisticas_Load(object sender, EventArgs e)
+        private void FrmEstadisticas_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            this.Show();
         }
+
     }
 }
