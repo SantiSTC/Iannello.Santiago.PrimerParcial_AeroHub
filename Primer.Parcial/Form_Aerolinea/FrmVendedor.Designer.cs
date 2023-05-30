@@ -56,6 +56,7 @@
             // 
             // lblfondoPasajero
             // 
+            lblfondoPasajero.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblfondoPasajero.BackColor = SystemColors.Window;
             lblfondoPasajero.BorderStyle = BorderStyle.FixedSingle;
             lblfondoPasajero.Cursor = Cursors.Hand;
@@ -74,7 +75,7 @@
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = SystemColors.ActiveCaptionText;
-            lblLogin.Location = new Point(354, 9);
+            lblLogin.Location = new Point(366, 19);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(88, 33);
             lblLogin.TabIndex = 7;
@@ -83,6 +84,7 @@
             // 
             // lblFondoViaje
             // 
+            lblFondoViaje.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblFondoViaje.BackColor = SystemColors.Window;
             lblFondoViaje.BorderStyle = BorderStyle.FixedSingle;
             lblFondoViaje.Cursor = Cursors.Hand;
@@ -97,6 +99,7 @@
             // 
             // lblFondoVenta
             // 
+            lblFondoVenta.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblFondoVenta.BackColor = SystemColors.Window;
             lblFondoVenta.BorderStyle = BorderStyle.FixedSingle;
             lblFondoVenta.Cursor = Cursors.Hand;
@@ -111,6 +114,7 @@
             // 
             // lblFondoEstadistica
             // 
+            lblFondoEstadistica.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblFondoEstadistica.BackColor = SystemColors.Window;
             lblFondoEstadistica.BorderStyle = BorderStyle.FixedSingle;
             lblFondoEstadistica.Cursor = Cursors.Hand;

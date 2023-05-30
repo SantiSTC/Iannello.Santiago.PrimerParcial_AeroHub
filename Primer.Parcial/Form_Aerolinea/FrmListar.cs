@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -58,9 +59,9 @@ namespace Form_Aerolinea
 
                     viajeAux = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])), avion, avion.CantidadAsientos, avion.Pasajeros);
 
-                    foreach(Viaje item in Listas.viajes)
+                    foreach (Viaje item in Listas.viajes)
                     {
-                        if(item == viajeAux)
+                        if (item == viajeAux)
                         {
                             viaje = item;
                             break;
@@ -207,6 +208,9 @@ namespace Form_Aerolinea
                 fm2.txtBuscador.Visible = false;
                 fm2.txtBuscador.Location = new Point(133, 25);
                 fm2.dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                fm2.txtBuscador.TextChanged -= txtBuscador_TextChanged;
+                fm2.txtBuscador.TextChanged += (sender, e) => { };
 
                 fm2.ShowDialog();
             }

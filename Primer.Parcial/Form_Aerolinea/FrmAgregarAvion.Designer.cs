@@ -44,153 +44,160 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
+            // lblTitulo
+            // 
+            lblTitulo.Location = new Point(120, 34);
+            lblTitulo.Margin = new Padding(4, 0, 4, 0);
+            lblTitulo.Size = new Size(169, 26);
+            lblTitulo.Text = "Agregar Aeronave";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = AnchorStyles.Top;
+            pictureBox2.Location = new Point(134, 3);
+            pictureBox2.Margin = new Padding(2);
+            // 
             // btnAgregar
             // 
-            btnAgregar.Location = new Point(161, 1117);
-            btnAgregar.Margin = new Padding(6, 8, 6, 8);
-            btnAgregar.Size = new Size(153, 63);
+            btnAgregar.Anchor = AnchorStyles.Bottom;
+            btnAgregar.Location = new Point(94, 402);
+            btnAgregar.Margin = new Padding(4, 5, 4, 5);
             btnAgregar.Click += btnAgregar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(594, 1117);
-            btnCancelar.Margin = new Padding(6, 8, 6, 8);
-            btnCancelar.Size = new Size(153, 63);
+            btnCancelar.Anchor = AnchorStyles.Bottom;
+            btnCancelar.Location = new Point(263, 402);
+            btnCancelar.Margin = new Padding(4, 5, 4, 5);
             btnCancelar.Click += btnCancelar_Click;
-            // 
-            // lblTitulo
-            // 
-            lblTitulo.Location = new Point(171, 56);
-            lblTitulo.Margin = new Padding(6, 0, 6, 0);
             // 
             // txtMatricula
             // 
-            txtMatricula.Location = new Point(309, 147);
-            txtMatricula.Margin = new Padding(4, 5, 4, 5);
+            txtMatricula.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtMatricula.Location = new Point(216, 88);
             txtMatricula.Name = "txtMatricula";
-            txtMatricula.Size = new Size(141, 31);
+            txtMatricula.Size = new Size(100, 23);
             txtMatricula.TabIndex = 3;
             // 
             // txtCapacidad
             // 
-            txtCapacidad.Location = new Point(309, 397);
-            txtCapacidad.Margin = new Padding(4, 5, 4, 5);
+            txtCapacidad.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtCapacidad.Location = new Point(216, 238);
             txtCapacidad.Name = "txtCapacidad";
-            txtCapacidad.Size = new Size(141, 31);
+            txtCapacidad.Size = new Size(100, 23);
             txtCapacidad.TabIndex = 4;
             // 
             // txtBanios
             // 
-            txtBanios.Location = new Point(309, 320);
-            txtBanios.Margin = new Padding(4, 5, 4, 5);
+            txtBanios.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtBanios.Location = new Point(216, 192);
             txtBanios.Name = "txtBanios";
-            txtBanios.Size = new Size(141, 31);
+            txtBanios.Size = new Size(100, 23);
             txtBanios.TabIndex = 5;
             // 
             // txtAsientos
             // 
-            txtAsientos.Location = new Point(309, 228);
-            txtAsientos.Margin = new Padding(4, 5, 4, 5);
+            txtAsientos.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtAsientos.Location = new Point(216, 137);
             txtAsientos.Name = "txtAsientos";
-            txtAsientos.Size = new Size(141, 31);
+            txtAsientos.Size = new Size(100, 23);
             txtAsientos.TabIndex = 6;
             // 
             // lblMatricula
             // 
+            lblMatricula.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblMatricula.AutoSize = true;
             lblMatricula.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblMatricula.Location = new Point(93, 147);
-            lblMatricula.Margin = new Padding(4, 0, 4, 0);
+            lblMatricula.Location = new Point(65, 88);
             lblMatricula.Name = "lblMatricula";
-            lblMatricula.Size = new Size(95, 24);
+            lblMatricula.Size = new Size(65, 15);
             lblMatricula.TabIndex = 9;
             lblMatricula.Text = "Matricula:";
             // 
             // lblAsientos
             // 
+            lblAsientos.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblAsientos.AutoSize = true;
             lblAsientos.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAsientos.Location = new Point(93, 228);
-            lblAsientos.Margin = new Padding(4, 0, 4, 0);
+            lblAsientos.Location = new Point(65, 137);
             lblAsientos.Name = "lblAsientos";
-            lblAsientos.Size = new Size(87, 24);
+            lblAsientos.Size = new Size(57, 15);
             lblAsientos.TabIndex = 10;
             lblAsientos.Text = "Asientos:";
             // 
             // lblBanios
             // 
+            lblBanios.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblBanios.AutoSize = true;
             lblBanios.Font = new Font("Calibri", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblBanios.Location = new Point(93, 320);
-            lblBanios.Margin = new Padding(4, 0, 4, 0);
+            lblBanios.Location = new Point(65, 192);
             lblBanios.Name = "lblBanios";
-            lblBanios.Size = new Size(66, 24);
+            lblBanios.Size = new Size(44, 15);
             lblBanios.TabIndex = 11;
             lblBanios.Text = "Baños:";
             // 
             // lblCapacidad
             // 
+            lblCapacidad.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblCapacidad.AutoSize = true;
             lblCapacidad.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblCapacidad.Location = new Point(93, 402);
-            lblCapacidad.Margin = new Padding(4, 0, 4, 0);
+            lblCapacidad.Location = new Point(65, 241);
             lblCapacidad.Name = "lblCapacidad";
-            lblCapacidad.Size = new Size(207, 28);
+            lblCapacidad.Size = new Size(141, 17);
             lblCapacidad.TabIndex = 12;
             lblCapacidad.Text = "Capacidad de Bodega:";
             // 
             // lblInternet
             // 
+            lblInternet.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblInternet.AutoSize = true;
             lblInternet.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblInternet.Location = new Point(93, 487);
-            lblInternet.Margin = new Padding(4, 0, 4, 0);
+            lblInternet.Location = new Point(65, 292);
             lblInternet.Name = "lblInternet";
-            lblInternet.Size = new Size(84, 28);
+            lblInternet.Size = new Size(55, 17);
             lblInternet.TabIndex = 13;
             lblInternet.Text = "Internet:";
             // 
             // lblComida
             // 
+            lblComida.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblComida.AutoSize = true;
             lblComida.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblComida.Location = new Point(93, 562);
-            lblComida.Margin = new Padding(4, 0, 4, 0);
+            lblComida.Location = new Point(65, 337);
             lblComida.Name = "lblComida";
-            lblComida.Size = new Size(84, 28);
+            lblComida.Size = new Size(56, 17);
             lblComida.TabIndex = 14;
             lblComida.Text = "Comida:";
             // 
             // checkInternet
             // 
-            checkInternet.Location = new Point(309, 475);
-            checkInternet.Margin = new Padding(4, 5, 4, 5);
+            checkInternet.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            checkInternet.Location = new Point(216, 285);
             checkInternet.Name = "checkInternet";
-            checkInternet.Size = new Size(149, 40);
+            checkInternet.Size = new Size(104, 24);
             checkInternet.TabIndex = 39;
             // 
             // checkComida
             // 
-            checkComida.Location = new Point(309, 550);
-            checkComida.Margin = new Padding(4, 5, 4, 5);
+            checkComida.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            checkComida.Location = new Point(216, 330);
             checkComida.Name = "checkComida";
-            checkComida.Size = new Size(149, 40);
+            checkComida.Size = new Size(104, 24);
             checkComida.TabIndex = 38;
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.BackColor = SystemColors.HotTrack;
-            label1.Location = new Point(-4, 740);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(-3, 444);
             label1.Name = "label1";
-            label1.Size = new Size(641, 17);
+            label1.Size = new Size(449, 10);
             label1.TabIndex = 40;
             // 
             // FrmAgregarAvion
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(636, 750);
+            AutoScaleMode = AutoScaleMode.Inherit;
+            ClientSize = new Size(445, 450);
             Controls.Add(label1);
             Controls.Add(checkComida);
             Controls.Add(checkInternet);
@@ -204,7 +211,7 @@
             Controls.Add(txtBanios);
             Controls.Add(txtCapacidad);
             Controls.Add(txtMatricula);
-            Margin = new Padding(6, 8, 6, 8);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmAgregarAvion";
             Text = "FrmAgregarAvion";
             Load += FrmAgregarAvion_Load;

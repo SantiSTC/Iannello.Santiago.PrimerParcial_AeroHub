@@ -40,129 +40,131 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // btnAgregar
-            // 
-            btnAgregar.Location = new Point(100, 759);
-            btnAgregar.Margin = new Padding(6, 8, 6, 8);
-            btnAgregar.Click += btnAgregar_Click;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.Location = new Point(429, 759);
-            btnCancelar.Margin = new Padding(6, 8, 6, 8);
-            btnCancelar.Click += btnCancelar_Click;
-            // 
             // lblTitulo
             // 
             lblTitulo.AutoSize = false;
-            lblTitulo.Location = new Point(178, 58);
-            lblTitulo.Margin = new Padding(6, 0, 6, 0);
-            lblTitulo.Size = new Size(276, 50);
+            lblTitulo.Location = new Point(125, 35);
+            lblTitulo.Margin = new Padding(4, 0, 4, 0);
+            lblTitulo.Size = new Size(193, 30);
             lblTitulo.Text = "Agregar Viaje";
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(210, 2);
-            pictureBox2.Margin = new Padding(6, 8, 6, 8);
+            pictureBox2.Anchor = AnchorStyles.Top;
+            pictureBox2.Location = new Point(147, 1);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.Anchor = AnchorStyles.Bottom;
+            btnAgregar.Location = new Point(70, 455);
+            btnAgregar.Margin = new Padding(4, 5, 4, 5);
+            btnAgregar.Click += btnAgregar_Click;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Anchor = AnchorStyles.Bottom;
+            btnCancelar.Location = new Point(297, 455);
+            btnCancelar.Margin = new Padding(4, 5, 4, 5);
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // mthFecha
             // 
-            mthFecha.Location = new Point(210, 428);
-            mthFecha.Margin = new Padding(13, 15, 13, 15);
+            mthFecha.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            mthFecha.Location = new Point(147, 257);
             mthFecha.Name = "mthFecha";
             mthFecha.TabIndex = 7;
             // 
             // cmbPartida
             // 
+            cmbPartida.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             cmbPartida.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbPartida.FlatStyle = FlatStyle.Popup;
             cmbPartida.FormattingEnabled = true;
-            cmbPartida.Location = new Point(210, 132);
-            cmbPartida.Margin = new Padding(4, 5, 4, 5);
+            cmbPartida.Location = new Point(147, 79);
             cmbPartida.Name = "cmbPartida";
-            cmbPartida.Size = new Size(257, 33);
+            cmbPartida.Size = new Size(181, 23);
             cmbPartida.TabIndex = 10;
             cmbPartida.SelectedIndexChanged += cmbPartida_SelectedIndexChanged;
             // 
             // cmbDestino
             // 
+            cmbDestino.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             cmbDestino.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbDestino.FlatStyle = FlatStyle.Popup;
             cmbDestino.FormattingEnabled = true;
-            cmbDestino.Location = new Point(210, 240);
-            cmbDestino.Margin = new Padding(4, 5, 4, 5);
+            cmbDestino.Location = new Point(147, 144);
             cmbDestino.Name = "cmbDestino";
-            cmbDestino.Size = new Size(257, 33);
+            cmbDestino.Size = new Size(181, 23);
             cmbDestino.TabIndex = 11;
             // 
             // lblPartida
             // 
+            lblPartida.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblPartida.AutoSize = true;
-            lblPartida.Location = new Point(100, 145);
-            lblPartida.Margin = new Padding(4, 0, 4, 0);
+            lblPartida.Location = new Point(70, 87);
             lblPartida.Name = "lblPartida";
-            lblPartida.Size = new Size(70, 25);
+            lblPartida.Size = new Size(47, 15);
             lblPartida.TabIndex = 12;
             lblPartida.Text = "Partida:";
             // 
             // lblDestino
             // 
+            lblDestino.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblDestino.AutoSize = true;
-            lblDestino.Location = new Point(100, 253);
-            lblDestino.Margin = new Padding(4, 0, 4, 0);
+            lblDestino.Location = new Point(70, 152);
             lblDestino.Name = "lblDestino";
-            lblDestino.Size = new Size(77, 25);
+            lblDestino.Size = new Size(50, 15);
             lblDestino.TabIndex = 13;
             lblDestino.Text = "Destino:";
             // 
             // lblFecha
             // 
+            lblFecha.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(100, 428);
-            lblFecha.Margin = new Padding(4, 0, 4, 0);
+            lblFecha.Location = new Point(70, 257);
             lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(61, 25);
+            lblFecha.Size = new Size(41, 15);
             lblFecha.TabIndex = 15;
             lblFecha.Text = "Fecha:";
             // 
             // cmbAvion
             // 
+            cmbAvion.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             cmbAvion.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbAvion.FlatStyle = FlatStyle.Popup;
             cmbAvion.FormattingEnabled = true;
-            cmbAvion.Location = new Point(210, 338);
-            cmbAvion.Margin = new Padding(4, 5, 4, 5);
+            cmbAvion.Location = new Point(147, 203);
             cmbAvion.Name = "cmbAvion";
-            cmbAvion.Size = new Size(257, 33);
+            cmbAvion.Size = new Size(181, 23);
             cmbAvion.TabIndex = 16;
             cmbAvion.SelectedIndexChanged += cmbAvion_SelectedIndexChanged;
             // 
             // lblAvion
             // 
+            lblAvion.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblAvion.AutoSize = true;
-            lblAvion.Location = new Point(100, 352);
-            lblAvion.Margin = new Padding(4, 0, 4, 0);
+            lblAvion.Location = new Point(70, 211);
             lblAvion.Name = "lblAvion";
-            lblAvion.Size = new Size(62, 25);
+            lblAvion.Size = new Size(41, 15);
             lblAvion.TabIndex = 17;
             lblAvion.Text = "Avion:";
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.BackColor = SystemColors.HotTrack;
-            label1.Location = new Point(-3, 835);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(-2, 501);
             label1.Name = "label1";
-            label1.Size = new Size(641, 17);
+            label1.Size = new Size(449, 10);
             label1.TabIndex = 41;
             // 
             // FrmAgregarViaje
             // 
             AcceptButton = btnAgregar;
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.Inherit;
             CancelButton = btnCancelar;
-            ClientSize = new Size(636, 845);
+            ClientSize = new Size(445, 507);
             Controls.Add(label1);
             Controls.Add(lblAvion);
             Controls.Add(cmbAvion);
@@ -172,7 +174,7 @@
             Controls.Add(cmbDestino);
             Controls.Add(cmbPartida);
             Controls.Add(mthFecha);
-            Margin = new Padding(6, 8, 6, 8);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmAgregarViaje";
             Text = "Agregar viaje";
             Load += FrmAgregarViaje_Load;

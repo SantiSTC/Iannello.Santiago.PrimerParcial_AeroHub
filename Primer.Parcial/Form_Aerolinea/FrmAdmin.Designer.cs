@@ -48,7 +48,7 @@
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(-1, 12);
+            pictureBox2.Location = new Point(-1, 7);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(238, 50);
             pictureBox2.TabIndex = 33;
@@ -149,6 +149,7 @@
             // 
             // lblFondoViaje
             // 
+            lblFondoViaje.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblFondoViaje.BackColor = SystemColors.Window;
             lblFondoViaje.BorderStyle = BorderStyle.FixedSingle;
             lblFondoViaje.Cursor = Cursors.Hand;
@@ -167,7 +168,7 @@
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = SystemColors.ActiveCaptionText;
-            lblLogin.Location = new Point(354, 12);
+            lblLogin.Location = new Point(366, 19);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(88, 33);
             lblLogin.TabIndex = 25;
@@ -176,6 +177,7 @@
             // 
             // lblfondoAeronave
             // 
+            lblfondoAeronave.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblfondoAeronave.BackColor = SystemColors.Window;
             lblfondoAeronave.BorderStyle = BorderStyle.FixedSingle;
             lblfondoAeronave.Cursor = Cursors.Hand;

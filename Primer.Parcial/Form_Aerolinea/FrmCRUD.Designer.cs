@@ -47,24 +47,22 @@
             dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgvLista.BackgroundColor = SystemColors.ControlLightLight;
             dgvLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLista.Location = new Point(17, 75);
-            dgvLista.Margin = new Padding(4, 5, 4, 5);
+            dgvLista.Location = new Point(23, 45);
             dgvLista.Name = "dgvLista";
             dgvLista.ReadOnly = true;
             dgvLista.RowHeadersWidth = 62;
             dgvLista.RowTemplate.Height = 25;
             dgvLista.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvLista.Size = new Size(921, 567);
+            dgvLista.Size = new Size(623, 340);
             dgvLista.TabIndex = 0;
             // 
             // btnAgregar
             // 
             btnAgregar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnAgregar.FlatStyle = FlatStyle.Popup;
-            btnAgregar.Location = new Point(582, 663);
-            btnAgregar.Margin = new Padding(4, 5, 4, 5);
+            btnAgregar.Location = new Point(397, 398);
             btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(107, 38);
+            btnAgregar.Size = new Size(75, 23);
             btnAgregar.TabIndex = 1;
             btnAgregar.Text = "Agregar";
             btnAgregar.UseVisualStyleBackColor = true;
@@ -74,10 +72,9 @@
             // 
             btnModificar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnModificar.FlatStyle = FlatStyle.Popup;
-            btnModificar.Location = new Point(707, 663);
-            btnModificar.Margin = new Padding(4, 5, 4, 5);
+            btnModificar.Location = new Point(485, 398);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(107, 38);
+            btnModificar.Size = new Size(75, 23);
             btnModificar.TabIndex = 2;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
@@ -87,10 +84,9 @@
             // 
             btnEliminar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnEliminar.FlatStyle = FlatStyle.Popup;
-            btnEliminar.Location = new Point(832, 663);
-            btnEliminar.Margin = new Padding(4, 5, 4, 5);
+            btnEliminar.Location = new Point(572, 398);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(107, 38);
+            btnEliminar.Size = new Size(75, 23);
             btnEliminar.TabIndex = 3;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -100,37 +96,35 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(17, 4);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(23, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(216, 61);
+            pictureBox1.Size = new Size(151, 37);
             pictureBox1.TabIndex = 26;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.BackColor = SystemColors.HotTrack;
-            label1.Location = new Point(-3, 721);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(-2, 433);
             label1.Name = "label1";
-            label1.Size = new Size(964, 11);
+            label1.Size = new Size(675, 7);
             label1.TabIndex = 41;
             // 
             // FrmCRUD
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
-            ClientSize = new Size(956, 728);
+            ClientSize = new Size(669, 437);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(btnEliminar);
             Controls.Add(btnModificar);
             Controls.Add(btnAgregar);
             Controls.Add(dgvLista);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(4, 5, 4, 5);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmCRUD";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Listado";

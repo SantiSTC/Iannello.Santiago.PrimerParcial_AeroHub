@@ -40,13 +40,13 @@ namespace Form_Aerolinea
                 Serializacion<Aeronave>.Serializar(Listas.aviones, Application.StartupPath + @"\Listas_Serializadas\aviones.json");
                 Serializacion<Viaje>.Serializar(Listas.viajes, Application.StartupPath + @"\Listas_Serializadas\viajes.json");
                 Serializacion<Pasajero>.Serializar(Listas.pasajeros, Application.StartupPath + @"\Listas_Serializadas\pasajeros.json");
-            
+
                 //Serializacion XML
                 Serializacion<Aeronave>.SerializarXML(Listas.aviones, Application.StartupPath + @"\Listas_Serializadas\aviones.xml");
                 Serializacion<Viaje>.SerializarXML(Listas.viajes, Application.StartupPath + @"\Listas_Serializadas\viajes.xml");
                 Serializacion<Pasajero>.SerializarXML(Listas.pasajeros, Application.StartupPath + @"\Listas_Serializadas\pasajeros.xml");
             }
-            else 
+            else
             {
                 e.Cancel = true;
             }

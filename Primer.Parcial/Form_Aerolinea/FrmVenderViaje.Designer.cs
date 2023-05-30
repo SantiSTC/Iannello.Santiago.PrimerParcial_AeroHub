@@ -28,42 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmVenderViaje));
             btnAceptar = new Button();
             btnCancelar = new Button();
-            label1 = new Label();
-            chkInternet = new CheckBox();
-            chkComida = new CheckBox();
-            label3 = new Label();
-            txtDni = new TextBox();
-            txtApellido = new TextBox();
-            label4 = new Label();
+            pictureBox1 = new PictureBox();
+            lblLogin = new Label();
+            label11 = new Label();
+            lblfondoPasajero = new Label();
+            label7 = new Label();
             txtEdad = new TextBox();
             label5 = new Label();
             txtNombre = new TextBox();
             label6 = new Label();
-            chkPremium = new CheckBox();
-            label2 = new Label();
+            txtApellido = new TextBox();
+            label4 = new Label();
+            txtDni = new TextBox();
+            label3 = new Label();
+            label12 = new Label();
+            txtPeso = new TextBox();
+            label10 = new Label();
+            chkDeMano = new CheckBox();
+            chkBodega = new CheckBox();
+            label9 = new Label();
+            lblFecha = new Label();
+            mthFecha = new MonthCalendar();
+            label8 = new Label();
             lblDestino = new Label();
             lblPartida = new Label();
             cmbDestino = new ComboBox();
             cmbPartida = new ComboBox();
-            label7 = new Label();
-            label8 = new Label();
-            lblFecha = new Label();
-            mthFecha = new MonthCalendar();
-            chkDeMano = new CheckBox();
-            chkBodega = new CheckBox();
-            label9 = new Label();
-            txtPeso = new TextBox();
-            label10 = new Label();
+            chkPremium = new CheckBox();
+            label2 = new Label();
+            chkComida = new CheckBox();
+            chkInternet = new CheckBox();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnAceptar
             // 
-            btnAceptar.Location = new Point(321, 615);
-            btnAceptar.Margin = new Padding(4, 5, 4, 5);
+            btnAceptar.FlatStyle = FlatStyle.Popup;
+            btnAceptar.Location = new Point(215, 420);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(107, 38);
+            btnAceptar.Size = new Size(75, 23);
             btnAceptar.TabIndex = 0;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
@@ -71,226 +78,171 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(451, 615);
-            btnCancelar.Margin = new Padding(4, 5, 4, 5);
+            btnCancelar.FlatStyle = FlatStyle.Popup;
+            btnCancelar.Location = new Point(326, 420);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(107, 38);
+            btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 1;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Click += btnCancelar_Click;
             // 
-            // label1
+            // pictureBox1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(42, 397);
-            label1.Margin = new Padding(4, 0, 4, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(64, 25);
-            label1.TabIndex = 2;
-            label1.Text = "Desea:";
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox1.Location = new Point(1, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(181, 55);
+            pictureBox1.TabIndex = 33;
+            pictureBox1.TabStop = false;
             // 
-            // chkInternet
+            // lblLogin
             // 
-            chkInternet.AutoSize = true;
-            chkInternet.Location = new Point(127, 397);
-            chkInternet.Margin = new Padding(4, 5, 4, 5);
-            chkInternet.Name = "chkInternet";
-            chkInternet.Size = new Size(99, 29);
-            chkInternet.TabIndex = 3;
-            chkInternet.Text = "Internet";
-            chkInternet.UseVisualStyleBackColor = true;
+            lblLogin.Anchor = AnchorStyles.Top;
+            lblLogin.AutoSize = true;
+            lblLogin.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLogin.ForeColor = SystemColors.ActiveCaptionText;
+            lblLogin.Location = new Point(279, 9);
+            lblLogin.Name = "lblLogin";
+            lblLogin.Size = new Size(96, 33);
+            lblLogin.TabIndex = 34;
+            lblLogin.Text = "Vender";
+            lblLogin.TextAlign = ContentAlignment.TopCenter;
             // 
-            // chkComida
+            // label11
             // 
-            chkComida.AutoSize = true;
-            chkComida.Location = new Point(256, 397);
-            chkComida.Margin = new Padding(4, 5, 4, 5);
-            chkComida.Name = "chkComida";
-            chkComida.Size = new Size(100, 29);
-            chkComida.TabIndex = 4;
-            chkComida.Text = "Comida";
-            chkComida.UseVisualStyleBackColor = true;
+            label11.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label11.BackColor = SystemColors.HotTrack;
+            label11.Location = new Point(-13, 460);
+            label11.Name = "label11";
+            label11.Size = new Size(675, 7);
+            label11.TabIndex = 42;
             // 
-            // label3
+            // lblfondoPasajero
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(20, 77);
-            label3.Margin = new Padding(4, 0, 4, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(47, 25);
-            label3.TabIndex = 10;
-            label3.Text = "DNI:";
-            // 
-            // txtDni
-            // 
-            txtDni.Location = new Point(75, 71);
-            txtDni.Margin = new Padding(4, 5, 4, 5);
-            txtDni.Name = "txtDni";
-            txtDni.Size = new Size(141, 31);
-            txtDni.TabIndex = 11;
-            txtDni.TextChanged += txtDni_TextChanged;
-            // 
-            // txtApellido
-            // 
-            txtApellido.Location = new Point(329, 71);
-            txtApellido.Margin = new Padding(4, 5, 4, 5);
-            txtApellido.Name = "txtApellido";
-            txtApellido.Size = new Size(141, 31);
-            txtApellido.TabIndex = 13;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(244, 75);
-            label4.Margin = new Padding(4, 0, 4, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(82, 25);
-            label4.TabIndex = 12;
-            label4.Text = "Apellido:";
-            // 
-            // txtEdad
-            // 
-            txtEdad.Location = new Point(820, 71);
-            txtEdad.Margin = new Padding(4, 5, 4, 5);
-            txtEdad.Name = "txtEdad";
-            txtEdad.Size = new Size(35, 31);
-            txtEdad.TabIndex = 17;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(756, 74);
-            label5.Margin = new Padding(4, 0, 4, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(56, 25);
-            label5.TabIndex = 16;
-            label5.Text = "Edad:";
-            // 
-            // txtNombre
-            // 
-            txtNombre.Location = new Point(576, 69);
-            txtNombre.Margin = new Padding(4, 5, 4, 5);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(141, 31);
-            txtNombre.TabIndex = 15;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(486, 77);
-            label6.Margin = new Padding(4, 0, 4, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(82, 25);
-            label6.TabIndex = 14;
-            label6.Text = "Nombre:";
-            // 
-            // chkPremium
-            // 
-            chkPremium.AutoSize = true;
-            chkPremium.Location = new Point(127, 445);
-            chkPremium.Margin = new Padding(4, 5, 4, 5);
-            chkPremium.Name = "chkPremium";
-            chkPremium.Size = new Size(22, 21);
-            chkPremium.TabIndex = 19;
-            chkPremium.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(19, 441);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(87, 25);
-            label2.TabIndex = 18;
-            label2.Text = "Premium:";
-            // 
-            // lblDestino
-            // 
-            lblDestino.AutoSize = true;
-            lblDestino.Location = new Point(30, 275);
-            lblDestino.Margin = new Padding(4, 0, 4, 0);
-            lblDestino.Name = "lblDestino";
-            lblDestino.Size = new Size(77, 25);
-            lblDestino.TabIndex = 23;
-            lblDestino.Text = "Destino:";
-            // 
-            // lblPartida
-            // 
-            lblPartida.AutoSize = true;
-            lblPartida.Location = new Point(37, 213);
-            lblPartida.Margin = new Padding(4, 0, 4, 0);
-            lblPartida.Name = "lblPartida";
-            lblPartida.Size = new Size(70, 25);
-            lblPartida.TabIndex = 22;
-            lblPartida.Text = "Partida:";
-            // 
-            // cmbDestino
-            // 
-            cmbDestino.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbDestino.FormattingEnabled = true;
-            cmbDestino.Location = new Point(115, 272);
-            cmbDestino.Margin = new Padding(4, 5, 4, 5);
-            cmbDestino.Name = "cmbDestino";
-            cmbDestino.Size = new Size(257, 33);
-            cmbDestino.TabIndex = 21;
-            // 
-            // cmbPartida
-            // 
-            cmbPartida.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbPartida.FormattingEnabled = true;
-            cmbPartida.Location = new Point(116, 210);
-            cmbPartida.Margin = new Padding(4, 5, 4, 5);
-            cmbPartida.Name = "cmbPartida";
-            cmbPartida.Size = new Size(257, 33);
-            cmbPartida.TabIndex = 20;
-            cmbPartida.SelectedIndexChanged += cmbPartida_SelectedIndexChanged;
+            lblfondoPasajero.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lblfondoPasajero.BackColor = SystemColors.Window;
+            lblfondoPasajero.BorderStyle = BorderStyle.FixedSingle;
+            lblfondoPasajero.Cursor = Cursors.Hand;
+            lblfondoPasajero.Location = new Point(11, 67);
+            lblfondoPasajero.Margin = new Padding(2, 0, 2, 0);
+            lblfondoPasajero.Name = "lblfondoPasajero";
+            lblfondoPasajero.Size = new Size(612, 80);
+            lblfondoPasajero.TabIndex = 43;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(381, 9);
-            label7.Margin = new Padding(4, 0, 4, 0);
+            label7.FlatStyle = FlatStyle.Popup;
+            label7.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = SystemColors.ControlText;
+            label7.Location = new Point(259, 73);
             label7.Name = "label7";
-            label7.Size = new Size(160, 25);
-            label7.TabIndex = 24;
+            label7.Size = new Size(135, 19);
+            label7.TabIndex = 52;
             label7.Text = "Datos del pasajero";
             // 
-            // label8
+            // txtEdad
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(399, 145);
-            label8.Margin = new Padding(4, 0, 4, 0);
-            label8.Name = "label8";
-            label8.Size = new Size(128, 25);
-            label8.TabIndex = 25;
-            label8.Text = "Datos del viaje";
+            txtEdad.Location = new Point(577, 113);
+            txtEdad.Name = "txtEdad";
+            txtEdad.Size = new Size(26, 23);
+            txtEdad.TabIndex = 51;
             // 
-            // lblFecha
+            // label5
             // 
-            lblFecha.AutoSize = true;
-            lblFecha.Location = new Point(420, 213);
-            lblFecha.Margin = new Padding(4, 0, 4, 0);
-            lblFecha.Name = "lblFecha";
-            lblFecha.Size = new Size(61, 25);
-            lblFecha.TabIndex = 27;
-            lblFecha.Text = "Fecha:";
+            label5.AutoSize = true;
+            label5.Location = new Point(532, 114);
+            label5.Name = "label5";
+            label5.Size = new Size(36, 15);
+            label5.TabIndex = 50;
+            label5.Text = "Edad:";
             // 
-            // mthFecha
+            // txtNombre
             // 
-            mthFecha.Location = new Point(510, 213);
-            mthFecha.Margin = new Padding(13, 15, 13, 15);
-            mthFecha.Name = "mthFecha";
-            mthFecha.TabIndex = 26;
+            txtNombre.Location = new Point(406, 111);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(100, 23);
+            txtNombre.TabIndex = 49;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(343, 116);
+            label6.Name = "label6";
+            label6.Size = new Size(54, 15);
+            label6.TabIndex = 48;
+            label6.Text = "Nombre:";
+            // 
+            // txtApellido
+            // 
+            txtApellido.Location = new Point(233, 113);
+            txtApellido.Name = "txtApellido";
+            txtApellido.Size = new Size(100, 23);
+            txtApellido.TabIndex = 47;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(174, 115);
+            label4.Name = "label4";
+            label4.Size = new Size(54, 15);
+            label4.TabIndex = 46;
+            label4.Text = "Apellido:";
+            // 
+            // txtDni
+            // 
+            txtDni.Location = new Point(55, 113);
+            txtDni.Name = "txtDni";
+            txtDni.Size = new Size(100, 23);
+            txtDni.TabIndex = 45;
+            txtDni.TextChanged += txtDni_TextChanged;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(17, 116);
+            label3.Name = "label3";
+            label3.Size = new Size(30, 15);
+            label3.TabIndex = 44;
+            label3.Text = "DNI:";
+            // 
+            // label12
+            // 
+            label12.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label12.BackColor = SystemColors.Window;
+            label12.BorderStyle = BorderStyle.FixedSingle;
+            label12.Cursor = Cursors.Hand;
+            label12.Location = new Point(11, 165);
+            label12.Margin = new Padding(2, 0, 2, 0);
+            label12.Name = "label12";
+            label12.Size = new Size(612, 235);
+            label12.TabIndex = 53;
+            // 
+            // txtPeso
+            // 
+            txtPeso.Location = new Point(315, 292);
+            txtPeso.Name = "txtPeso";
+            txtPeso.Size = new Size(26, 23);
+            txtPeso.TabIndex = 70;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(270, 294);
+            label10.Name = "label10";
+            label10.Size = new Size(35, 15);
+            label10.TabIndex = 69;
+            label10.Text = "Peso:";
             // 
             // chkDeMano
             // 
             chkDeMano.AutoSize = true;
-            chkDeMano.Location = new Point(256, 350);
-            chkDeMano.Margin = new Padding(4, 5, 4, 5);
+            chkDeMano.Location = new Point(187, 294);
             chkDeMano.Name = "chkDeMano";
-            chkDeMano.Size = new Size(111, 29);
-            chkDeMano.TabIndex = 30;
+            chkDeMano.Size = new Size(74, 19);
+            chkDeMano.TabIndex = 68;
             chkDeMano.Text = "De Mano";
             chkDeMano.UseVisualStyleBackColor = true;
             chkDeMano.CheckedChanged += chkDeMano_CheckedChanged;
@@ -298,11 +250,10 @@
             // chkBodega
             // 
             chkBodega.AutoSize = true;
-            chkBodega.Location = new Point(127, 350);
-            chkBodega.Margin = new Padding(4, 5, 4, 5);
+            chkBodega.Location = new Point(97, 294);
             chkBodega.Name = "chkBodega";
-            chkBodega.Size = new Size(99, 29);
-            chkBodega.TabIndex = 29;
+            chkBodega.Size = new Size(66, 19);
+            chkBodega.TabIndex = 67;
             chkBodega.Text = "Bodega";
             chkBodega.UseVisualStyleBackColor = true;
             chkBodega.CheckedChanged += chkDeMano_CheckedChanged;
@@ -310,36 +261,130 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(23, 350);
-            label9.Margin = new Padding(4, 0, 4, 0);
+            label9.Location = new Point(24, 294);
             label9.Name = "label9";
-            label9.Size = new Size(83, 25);
-            label9.TabIndex = 28;
+            label9.Size = new Size(55, 15);
+            label9.TabIndex = 66;
             label9.Text = "Equipaje:";
             // 
-            // txtPeso
+            // lblFecha
             // 
-            txtPeso.Location = new Point(438, 347);
-            txtPeso.Margin = new Padding(4, 5, 4, 5);
-            txtPeso.Name = "txtPeso";
-            txtPeso.Size = new Size(35, 31);
-            txtPeso.TabIndex = 32;
+            lblFecha.AutoSize = true;
+            lblFecha.Location = new Point(302, 212);
+            lblFecha.Name = "lblFecha";
+            lblFecha.Size = new Size(41, 15);
+            lblFecha.TabIndex = 65;
+            lblFecha.Text = "Fecha:";
             // 
-            // label10
+            // mthFecha
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(374, 350);
-            label10.Margin = new Padding(4, 0, 4, 0);
-            label10.Name = "label10";
-            label10.Size = new Size(53, 25);
-            label10.TabIndex = 31;
-            label10.Text = "Peso:";
+            mthFecha.Location = new Point(365, 212);
+            mthFecha.Name = "mthFecha";
+            mthFecha.TabIndex = 64;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = SystemColors.ControlText;
+            label8.Location = new Point(268, 169);
+            label8.Name = "label8";
+            label8.Size = new Size(109, 19);
+            label8.TabIndex = 63;
+            label8.Text = "Datos del viaje";
+            // 
+            // lblDestino
+            // 
+            lblDestino.AutoSize = true;
+            lblDestino.Location = new Point(29, 249);
+            lblDestino.Name = "lblDestino";
+            lblDestino.Size = new Size(50, 15);
+            lblDestino.TabIndex = 62;
+            lblDestino.Text = "Destino:";
+            // 
+            // lblPartida
+            // 
+            lblPartida.AutoSize = true;
+            lblPartida.Location = new Point(34, 212);
+            lblPartida.Name = "lblPartida";
+            lblPartida.Size = new Size(47, 15);
+            lblPartida.TabIndex = 61;
+            lblPartida.Text = "Partida:";
+            // 
+            // cmbDestino
+            // 
+            cmbDestino.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbDestino.FlatStyle = FlatStyle.Popup;
+            cmbDestino.FormattingEnabled = true;
+            cmbDestino.Location = new Point(88, 247);
+            cmbDestino.Name = "cmbDestino";
+            cmbDestino.Size = new Size(181, 23);
+            cmbDestino.TabIndex = 60;
+            // 
+            // cmbPartida
+            // 
+            cmbPartida.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbPartida.FlatStyle = FlatStyle.Popup;
+            cmbPartida.FormattingEnabled = true;
+            cmbPartida.Location = new Point(89, 210);
+            cmbPartida.Name = "cmbPartida";
+            cmbPartida.Size = new Size(181, 23);
+            cmbPartida.TabIndex = 59;
+            cmbPartida.SelectedIndexChanged += cmbPartida_SelectedIndexChanged;
+            // 
+            // chkPremium
+            // 
+            chkPremium.AutoSize = true;
+            chkPremium.Location = new Point(97, 351);
+            chkPremium.Name = "chkPremium";
+            chkPremium.Size = new Size(15, 14);
+            chkPremium.TabIndex = 58;
+            chkPremium.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(21, 349);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 15);
+            label2.TabIndex = 57;
+            label2.Text = "Premium:";
+            // 
+            // chkComida
+            // 
+            chkComida.AutoSize = true;
+            chkComida.Location = new Point(187, 322);
+            chkComida.Name = "chkComida";
+            chkComida.Size = new Size(68, 19);
+            chkComida.TabIndex = 56;
+            chkComida.Text = "Comida";
+            chkComida.UseVisualStyleBackColor = true;
+            // 
+            // chkInternet
+            // 
+            chkInternet.AutoSize = true;
+            chkInternet.Location = new Point(97, 322);
+            chkInternet.Name = "chkInternet";
+            chkInternet.Size = new Size(67, 19);
+            chkInternet.TabIndex = 55;
+            chkInternet.Text = "Internet";
+            chkInternet.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(37, 322);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 15);
+            label1.TabIndex = 54;
+            label1.Text = "Desea:";
             // 
             // FrmVenderViaje
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(905, 681);
+            BackColor = SystemColors.Window;
+            ClientSize = new Size(634, 466);
             Controls.Add(txtPeso);
             Controls.Add(label10);
             Controls.Add(chkDeMano);
@@ -348,13 +393,17 @@
             Controls.Add(lblFecha);
             Controls.Add(mthFecha);
             Controls.Add(label8);
-            Controls.Add(label7);
             Controls.Add(lblDestino);
             Controls.Add(lblPartida);
             Controls.Add(cmbDestino);
             Controls.Add(cmbPartida);
             Controls.Add(chkPremium);
             Controls.Add(label2);
+            Controls.Add(chkComida);
+            Controls.Add(chkInternet);
+            Controls.Add(label1);
+            Controls.Add(label12);
+            Controls.Add(label7);
             Controls.Add(txtEdad);
             Controls.Add(label5);
             Controls.Add(txtNombre);
@@ -363,16 +412,19 @@
             Controls.Add(label4);
             Controls.Add(txtDni);
             Controls.Add(label3);
-            Controls.Add(chkComida);
-            Controls.Add(chkInternet);
-            Controls.Add(label1);
+            Controls.Add(lblfondoPasajero);
+            Controls.Add(label11);
+            Controls.Add(lblLogin);
+            Controls.Add(pictureBox1);
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(4, 5, 4, 5);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmVenderViaje";
-            Text = "FrmVenderViaje";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Venta de viaje";
             Load += FrmVenderViaje_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -381,31 +433,36 @@
 
         private Button btnAceptar;
         private Button btnCancelar;
-        private Label label1;
-        private CheckBox chkInternet;
-        private CheckBox chkComida;
-        private Label label3;
-        private TextBox txtDni;
-        private TextBox txtApellido;
-        private Label label4;
+        private PictureBox pictureBox1;
+        private Label lblLogin;
+        private Label label11;
+        private Label lblfondoPasajero;
+        private Label label7;
         private TextBox txtEdad;
         private Label label5;
         private TextBox txtNombre;
         private Label label6;
-        private CheckBox chkPremium;
-        private Label label2;
+        private TextBox txtApellido;
+        private Label label4;
+        private TextBox txtDni;
+        private Label label3;
+        private Label label12;
+        private TextBox txtPeso;
+        private Label label10;
+        private CheckBox chkDeMano;
+        private CheckBox chkBodega;
+        private Label label9;
+        private Label lblFecha;
+        protected MonthCalendar mthFecha;
+        private Label label8;
         private Label lblDestino;
         private Label lblPartida;
         protected ComboBox cmbDestino;
         protected ComboBox cmbPartida;
-        private Label label7;
-        private Label label8;
-        private Label lblFecha;
-        protected MonthCalendar mthFecha;
-        private CheckBox chkDeMano;
-        private CheckBox chkBodega;
-        private Label label9;
-        private TextBox txtPeso;
-        private Label label10;
+        private CheckBox chkPremium;
+        private Label label2;
+        private CheckBox chkComida;
+        private CheckBox chkInternet;
+        private Label label1;
     }
 }

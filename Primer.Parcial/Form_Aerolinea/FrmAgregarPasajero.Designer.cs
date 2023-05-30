@@ -40,116 +40,119 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // btnAgregar
-            // 
-            btnAgregar.Location = new Point(113, 472);
-            btnAgregar.Margin = new Padding(6, 8, 6, 8);
-            btnAgregar.Click += btnAgregar_Click;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.Location = new Point(416, 472);
-            btnCancelar.Margin = new Padding(6, 8, 6, 8);
-            // 
             // lblTitulo
             // 
             lblTitulo.AutoSize = false;
-            lblTitulo.Location = new Point(183, 57);
-            lblTitulo.Margin = new Padding(6, 0, 6, 0);
-            lblTitulo.Size = new Size(247, 43);
+            lblTitulo.Location = new Point(128, 34);
+            lblTitulo.Margin = new Padding(4, 0, 4, 0);
+            lblTitulo.Size = new Size(173, 26);
             lblTitulo.Text = "Agregar Pasajero";
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(206, 1);
-            pictureBox2.Margin = new Padding(6, 8, 6, 8);
+            pictureBox2.Anchor = AnchorStyles.Top;
+            pictureBox2.Location = new Point(144, 1);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.Anchor = AnchorStyles.Bottom;
+            btnAgregar.Location = new Point(79, 283);
+            btnAgregar.Margin = new Padding(4, 5, 4, 5);
+            btnAgregar.Click += btnAgregar_Click;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Anchor = AnchorStyles.Bottom;
+            btnCancelar.Location = new Point(291, 283);
+            btnCancelar.Margin = new Padding(4, 5, 4, 5);
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(310, 120);
-            txtNombre.Margin = new Padding(4, 5, 4, 5);
+            txtNombre.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtNombre.Location = new Point(217, 72);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(141, 31);
+            txtNombre.Size = new Size(100, 23);
             txtNombre.TabIndex = 0;
             // 
             // txtApellido
             // 
-            txtApellido.Location = new Point(310, 200);
-            txtApellido.Margin = new Padding(4, 5, 4, 5);
+            txtApellido.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtApellido.Location = new Point(217, 120);
             txtApellido.Name = "txtApellido";
-            txtApellido.Size = new Size(141, 31);
+            txtApellido.Size = new Size(100, 23);
             txtApellido.TabIndex = 1;
             // 
             // txtDni
             // 
-            txtDni.Location = new Point(310, 280);
-            txtDni.Margin = new Padding(4, 5, 4, 5);
+            txtDni.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtDni.Location = new Point(217, 168);
             txtDni.Name = "txtDni";
-            txtDni.Size = new Size(141, 31);
+            txtDni.Size = new Size(100, 23);
             txtDni.TabIndex = 2;
             // 
             // txtEdad
             // 
-            txtEdad.Location = new Point(310, 368);
-            txtEdad.Margin = new Padding(4, 5, 4, 5);
+            txtEdad.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtEdad.Location = new Point(217, 221);
+            txtEdad.MaximumSize = new Size(28, 23);
             txtEdad.Name = "txtEdad";
-            txtEdad.Size = new Size(38, 31);
+            txtEdad.Size = new Size(28, 23);
             txtEdad.TabIndex = 3;
             // 
             // lblNombre
             // 
+            lblNombre.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(143, 133);
-            lblNombre.Margin = new Padding(4, 0, 4, 0);
+            lblNombre.Location = new Point(100, 80);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(82, 25);
+            lblNombre.Size = new Size(54, 15);
             lblNombre.TabIndex = 6;
             lblNombre.Text = "Nombre:";
             // 
             // lblApellido
             // 
+            lblApellido.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblApellido.AutoSize = true;
-            lblApellido.Location = new Point(143, 213);
-            lblApellido.Margin = new Padding(4, 0, 4, 0);
+            lblApellido.Location = new Point(100, 128);
             lblApellido.Name = "lblApellido";
-            lblApellido.Size = new Size(82, 25);
+            lblApellido.Size = new Size(54, 15);
             lblApellido.TabIndex = 7;
             lblApellido.Text = "Apellido:";
             // 
             // lblDni
             // 
+            lblDni.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblDni.AutoSize = true;
-            lblDni.Location = new Point(143, 293);
-            lblDni.Margin = new Padding(4, 0, 4, 0);
+            lblDni.Location = new Point(100, 176);
             lblDni.Name = "lblDni";
-            lblDni.Size = new Size(43, 25);
+            lblDni.Size = new Size(28, 15);
             lblDni.TabIndex = 8;
             lblDni.Text = "Dni:";
             // 
             // lblEdad
             // 
+            lblEdad.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblEdad.AutoSize = true;
-            lblEdad.Location = new Point(143, 382);
-            lblEdad.Margin = new Padding(4, 0, 4, 0);
+            lblEdad.Location = new Point(100, 229);
             lblEdad.Name = "lblEdad";
-            lblEdad.Size = new Size(56, 25);
+            lblEdad.Size = new Size(36, 15);
             lblEdad.TabIndex = 9;
             lblEdad.Text = "Edad:";
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.BackColor = SystemColors.HotTrack;
-            label1.Location = new Point(-4, 543);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(-3, 326);
             label1.Name = "label1";
-            label1.Size = new Size(641, 17);
+            label1.Size = new Size(449, 10);
             label1.TabIndex = 41;
             // 
             // FrmAgregarPasajero
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(636, 557);
+            AutoScaleMode = AutoScaleMode.Inherit;
+            ClientSize = new Size(445, 334);
             Controls.Add(label1);
             Controls.Add(lblEdad);
             Controls.Add(lblDni);
@@ -159,7 +162,7 @@
             Controls.Add(txtDni);
             Controls.Add(txtApellido);
             Controls.Add(txtNombre);
-            Margin = new Padding(6, 8, 6, 8);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmAgregarPasajero";
             Text = "FrmAgregarPasajero";
             Load += FrmAgregarPasajero_Load;

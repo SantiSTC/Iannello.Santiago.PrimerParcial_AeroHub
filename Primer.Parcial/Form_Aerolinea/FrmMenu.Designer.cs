@@ -40,6 +40,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.BackColor = SystemColors.HotTrack;
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.ForeColor = SystemColors.ControlText;
@@ -51,6 +52,7 @@
             // 
             // lblUsuarioMenu
             // 
+            lblUsuarioMenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblUsuarioMenu.AutoSize = true;
             lblUsuarioMenu.BackColor = SystemColors.HotTrack;
             lblUsuarioMenu.ForeColor = SystemColors.Window;
@@ -62,6 +64,7 @@
             // 
             // lblFecha
             // 
+            lblFecha.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             lblFecha.AutoSize = true;
             lblFecha.BackColor = SystemColors.HotTrack;
             lblFecha.ForeColor = SystemColors.Window;
@@ -73,6 +76,7 @@
             // 
             // lblHora
             // 
+            lblHora.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             lblHora.AutoSize = true;
             lblHora.BackColor = SystemColors.HotTrack;
             lblHora.ForeColor = SystemColors.Window;
@@ -84,6 +88,7 @@
             // 
             // lblPerfilMenu
             // 
+            lblPerfilMenu.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblPerfilMenu.AutoSize = true;
             lblPerfilMenu.BackColor = SystemColors.HotTrack;
             lblPerfilMenu.ForeColor = SystemColors.Window;
@@ -95,6 +100,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox1.BackColor = SystemColors.HotTrack;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
@@ -116,7 +122,6 @@
             Controls.Add(lblHora);
             Controls.Add(lblPerfilMenu);
             Controls.Add(label1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmMenu";
             StartPosition = FormStartPosition.CenterScreen;

@@ -290,6 +290,8 @@ namespace Form_Aerolinea
                         string matricula = fila.Cells["Matricula"].Value.ToString();
 
                         FrmModificarAvion fm = new FrmModificarAvion(matricula);
+                        fm.FormClosed += FrmCRUD_FormClosed;
+                        this.Hide();
                         fm.ShowDialog();
                     }
                     else
@@ -314,6 +316,8 @@ namespace Form_Aerolinea
                         Viaje viaje = new Viaje(fila.Cells["CiudadDePartida"].Value.ToString(), fila.Cells["CiudadDeDestino"].Value.ToString(), new DateTime(int.Parse(fecha[2]), int.Parse(fecha[1]), int.Parse(fecha[0])), avion, avion.CantidadAsientos, avion.Pasajeros);
 
                         FrmModificarViaje fm = new FrmModificarViaje(viaje);
+                        fm.FormClosed += FrmCRUD_FormClosed;
+                        this.Hide();
                         fm.ShowDialog();
                     }
                     else
@@ -328,6 +332,8 @@ namespace Form_Aerolinea
                         int dni = int.Parse(fila.Cells["Dni"].Value.ToString());
 
                         FrmModificarPasajero fm = new FrmModificarPasajero(dni);
+                        fm.FormClosed += FrmCRUD_FormClosed;
+                        this.Hide();
                         fm.ShowDialog();
                     }
                     else

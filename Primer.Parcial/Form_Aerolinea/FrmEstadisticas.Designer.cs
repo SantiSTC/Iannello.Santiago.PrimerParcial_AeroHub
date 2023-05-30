@@ -75,10 +75,9 @@
             // 
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(-1, 20);
-            pictureBox1.Margin = new Padding(4, 5, 4, 5);
+            pictureBox1.Location = new Point(-1, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(340, 83);
+            pictureBox1.Size = new Size(238, 50);
             pictureBox1.TabIndex = 25;
             pictureBox1.TabStop = false;
             // 
@@ -88,17 +87,16 @@
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Calibri", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = SystemColors.ActiveCaptionText;
-            lblLogin.Location = new Point(467, 33);
-            lblLogin.Margin = new Padding(4, 0, 4, 0);
+            lblLogin.Location = new Point(332, 23);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(217, 50);
+            lblLogin.Size = new Size(144, 33);
             lblLogin.TabIndex = 24;
             lblLogin.Text = "Estadísticas";
             lblLogin.TextAlign = ContentAlignment.TopCenter;
             // 
             // panel1
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.AutoScroll = true;
             panel1.Controls.Add(lblDescFrecuentes);
             panel1.Controls.Add(lblDescHoras);
@@ -128,10 +126,9 @@
             panel1.Controls.Add(lblFondoDestino);
             panel1.Controls.Add(lblFondoPasajeros);
             panel1.Controls.Add(lblfondoRecaudacion);
-            panel1.Location = new Point(-1, 113);
-            panel1.Margin = new Padding(4, 5, 4, 5);
+            panel1.Location = new Point(-1, 68);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1146, 617);
+            panel1.Size = new Size(796, 430);
             panel1.TabIndex = 26;
             // 
             // lblDescFrecuentes
@@ -140,9 +137,10 @@
             lblDescFrecuentes.Cursor = Cursors.Hand;
             lblDescFrecuentes.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescFrecuentes.ForeColor = SystemColors.ControlDarkDark;
-            lblDescFrecuentes.Location = new Point(113, 907);
+            lblDescFrecuentes.Location = new Point(79, 544);
+            lblDescFrecuentes.Margin = new Padding(2, 0, 2, 0);
             lblDescFrecuentes.Name = "lblDescFrecuentes";
-            lblDescFrecuentes.Size = new Size(565, 28);
+            lblDescFrecuentes.Size = new Size(396, 19);
             lblDescFrecuentes.TabIndex = 43;
             lblDescFrecuentes.Text = "Lista de pasajeros ordenada segun cantidad de viajes realizados";
             lblDescFrecuentes.Click += lblFondoFrecuentes_Click;
@@ -155,9 +153,10 @@
             lblDescHoras.Cursor = Cursors.Hand;
             lblDescHoras.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescHoras.ForeColor = SystemColors.ControlDarkDark;
-            lblDescHoras.Location = new Point(113, 772);
+            lblDescHoras.Location = new Point(79, 463);
+            lblDescHoras.Margin = new Padding(2, 0, 2, 0);
             lblDescHoras.Name = "lblDescHoras";
-            lblDescHoras.Size = new Size(477, 28);
+            lblDescHoras.Size = new Size(334, 19);
             lblDescHoras.TabIndex = 42;
             lblDescHoras.Text = "Cantidad de horas de vuelo realizadas por cada avion";
             lblDescHoras.Click += lblFondoHoras_Click;
@@ -170,9 +169,10 @@
             lblDescGananciaPS.Cursor = Cursors.Hand;
             lblDescGananciaPS.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescGananciaPS.ForeColor = SystemColors.ControlDarkDark;
-            lblDescGananciaPS.Location = new Point(113, 633);
+            lblDescGananciaPS.Location = new Point(79, 380);
+            lblDescGananciaPS.Margin = new Padding(2, 0, 2, 0);
             lblDescGananciaPS.Name = "lblDescGananciaPS";
-            lblDescGananciaPS.Size = new Size(557, 28);
+            lblDescGananciaPS.Size = new Size(389, 19);
             lblDescGananciaPS.TabIndex = 41;
             lblDescGananciaPS.Text = "Cantidad recaudada segun servicio de cabotaje o internacional";
             lblDescGananciaPS.Click += lblFondoGananciaPS_Click;
@@ -185,9 +185,10 @@
             lblDescFacturacion.Cursor = Cursors.Hand;
             lblDescFacturacion.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescFacturacion.ForeColor = SystemColors.ControlDarkDark;
-            lblDescFacturacion.Location = new Point(113, 498);
+            lblDescFacturacion.Location = new Point(79, 299);
+            lblDescFacturacion.Margin = new Padding(2, 0, 2, 0);
             lblDescFacturacion.Name = "lblDescFacturacion";
-            lblDescFacturacion.Size = new Size(339, 28);
+            lblDescFacturacion.Size = new Size(237, 19);
             lblDescFacturacion.TabIndex = 40;
             lblDescFacturacion.Text = "Cantidad recaudada por cada destino";
             lblDescFacturacion.Click += lblFondoFacturacion_Click;
@@ -200,9 +201,10 @@
             lblDescDestino.Cursor = Cursors.Hand;
             lblDescDestino.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescDestino.ForeColor = SystemColors.ControlDarkDark;
-            lblDescDestino.Location = new Point(113, 360);
+            lblDescDestino.Location = new Point(79, 216);
+            lblDescDestino.Margin = new Padding(2, 0, 2, 0);
             lblDescDestino.Name = "lblDescDestino";
-            lblDescDestino.Size = new Size(344, 28);
+            lblDescDestino.Size = new Size(240, 19);
             lblDescDestino.TabIndex = 39;
             lblDescDestino.Text = "El destino mas elegido por los clientes";
             lblDescDestino.Click += lblFondoDestino_Click;
@@ -215,9 +217,10 @@
             lblDescPasajeros.Cursor = Cursors.Hand;
             lblDescPasajeros.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescPasajeros.ForeColor = SystemColors.ControlDarkDark;
-            lblDescPasajeros.Location = new Point(113, 222);
+            lblDescPasajeros.Location = new Point(79, 133);
+            lblDescPasajeros.Margin = new Padding(2, 0, 2, 0);
             lblDescPasajeros.Name = "lblDescPasajeros";
-            lblDescPasajeros.Size = new Size(294, 28);
+            lblDescPasajeros.Size = new Size(206, 19);
             lblDescPasajeros.TabIndex = 38;
             lblDescPasajeros.Text = "Cantidad de pasajeros por vuelo";
             lblDescPasajeros.Click += lblFondoPasajeros_Click;
@@ -230,9 +233,10 @@
             lblDescRecaudacion.Cursor = Cursors.Hand;
             lblDescRecaudacion.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             lblDescRecaudacion.ForeColor = SystemColors.ControlDarkDark;
-            lblDescRecaudacion.Location = new Point(113, 87);
+            lblDescRecaudacion.Location = new Point(79, 52);
+            lblDescRecaudacion.Margin = new Padding(2, 0, 2, 0);
             lblDescRecaudacion.Name = "lblDescRecaudacion";
-            lblDescRecaudacion.Size = new Size(317, 28);
+            lblDescRecaudacion.Size = new Size(222, 19);
             lblDescRecaudacion.TabIndex = 37;
             lblDescRecaudacion.Text = "Total recaudado en todos los viajes";
             lblDescRecaudacion.Click += lblfondoRecaudacion_Click;
@@ -244,9 +248,10 @@
             lblFrecuentes.AutoSize = true;
             lblFrecuentes.Cursor = Cursors.Hand;
             lblFrecuentes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblFrecuentes.Location = new Point(113, 867);
+            lblFrecuentes.Location = new Point(79, 520);
+            lblFrecuentes.Margin = new Padding(2, 0, 2, 0);
             lblFrecuentes.Name = "lblFrecuentes";
-            lblFrecuentes.Size = new Size(248, 32);
+            lblFrecuentes.Size = new Size(166, 21);
             lblFrecuentes.TabIndex = 36;
             lblFrecuentes.Text = "Pasajeros frecuentes";
             lblFrecuentes.Click += lblFondoFrecuentes_Click;
@@ -258,9 +263,10 @@
             lblHoras.AutoSize = true;
             lblHoras.Cursor = Cursors.Hand;
             lblHoras.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblHoras.Location = new Point(113, 732);
+            lblHoras.Location = new Point(79, 439);
+            lblHoras.Margin = new Padding(2, 0, 2, 0);
             lblHoras.Name = "lblHoras";
-            lblHoras.Size = new Size(345, 32);
+            lblHoras.Size = new Size(229, 21);
             lblHoras.TabIndex = 35;
             lblHoras.Text = "Horas de vuelo por aeronave";
             lblHoras.Click += lblFondoHoras_Click;
@@ -272,9 +278,10 @@
             lblGananciaPS.AutoSize = true;
             lblGananciaPS.Cursor = Cursors.Hand;
             lblGananciaPS.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGananciaPS.Location = new Point(113, 593);
+            lblGananciaPS.Location = new Point(79, 356);
+            lblGananciaPS.Margin = new Padding(2, 0, 2, 0);
             lblGananciaPS.Name = "lblGananciaPS";
-            lblGananciaPS.Size = new Size(386, 32);
+            lblGananciaPS.Size = new Size(258, 21);
             lblGananciaPS.TabIndex = 34;
             lblGananciaPS.Text = "Ganancias totales segun servicio";
             lblGananciaPS.Click += lblFondoGananciaPS_Click;
@@ -286,9 +293,10 @@
             lblFacturacion.AutoSize = true;
             lblFacturacion.Cursor = Cursors.Hand;
             lblFacturacion.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblFacturacion.Location = new Point(113, 458);
+            lblFacturacion.Location = new Point(79, 275);
+            lblFacturacion.Margin = new Padding(2, 0, 2, 0);
             lblFacturacion.Name = "lblFacturacion";
-            lblFacturacion.Size = new Size(284, 32);
+            lblFacturacion.Size = new Size(190, 21);
             lblFacturacion.TabIndex = 33;
             lblFacturacion.Text = "Facturacion de destinos";
             lblFacturacion.Click += lblFondoFacturacion_Click;
@@ -300,9 +308,10 @@
             lblDestino.AutoSize = true;
             lblDestino.Cursor = Cursors.Hand;
             lblDestino.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDestino.Location = new Point(113, 320);
+            lblDestino.Location = new Point(79, 192);
+            lblDestino.Margin = new Padding(2, 0, 2, 0);
             lblDestino.Name = "lblDestino";
-            lblDestino.Size = new Size(247, 32);
+            lblDestino.Size = new Size(166, 21);
             lblDestino.TabIndex = 32;
             lblDestino.Text = "Destino mas elegido";
             lblDestino.Click += lblFondoDestino_Click;
@@ -314,9 +323,10 @@
             lblPasajeros.AutoSize = true;
             lblPasajeros.Cursor = Cursors.Hand;
             lblPasajeros.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPasajeros.Location = new Point(113, 182);
+            lblPasajeros.Location = new Point(79, 109);
+            lblPasajeros.Margin = new Padding(2, 0, 2, 0);
             lblPasajeros.Name = "lblPasajeros";
-            lblPasajeros.Size = new Size(238, 32);
+            lblPasajeros.Size = new Size(159, 21);
             lblPasajeros.TabIndex = 31;
             lblPasajeros.Text = "Pasajeros por vuelo";
             lblPasajeros.Click += lblFondoPasajeros_Click;
@@ -329,9 +339,10 @@
             iconoFrecuentes.BackgroundImage = (Image)resources.GetObject("iconoFrecuentes.BackgroundImage");
             iconoFrecuentes.BackgroundImageLayout = ImageLayout.Zoom;
             iconoFrecuentes.Cursor = Cursors.Hand;
-            iconoFrecuentes.Location = new Point(30, 867);
+            iconoFrecuentes.Location = new Point(21, 520);
+            iconoFrecuentes.Margin = new Padding(2);
             iconoFrecuentes.Name = "iconoFrecuentes";
-            iconoFrecuentes.Size = new Size(77, 72);
+            iconoFrecuentes.Size = new Size(54, 43);
             iconoFrecuentes.TabIndex = 30;
             iconoFrecuentes.TabStop = false;
             iconoFrecuentes.Click += lblFondoFrecuentes_Click;
@@ -344,9 +355,10 @@
             iconoHoras.BackgroundImage = (Image)resources.GetObject("iconoHoras.BackgroundImage");
             iconoHoras.BackgroundImageLayout = ImageLayout.Zoom;
             iconoHoras.Cursor = Cursors.Hand;
-            iconoHoras.Location = new Point(30, 732);
+            iconoHoras.Location = new Point(21, 439);
+            iconoHoras.Margin = new Padding(2);
             iconoHoras.Name = "iconoHoras";
-            iconoHoras.Size = new Size(77, 72);
+            iconoHoras.Size = new Size(54, 43);
             iconoHoras.TabIndex = 29;
             iconoHoras.TabStop = false;
             iconoHoras.Click += lblFondoHoras_Click;
@@ -359,9 +371,10 @@
             iconoGananciaPS.BackgroundImage = (Image)resources.GetObject("iconoGananciaPS.BackgroundImage");
             iconoGananciaPS.BackgroundImageLayout = ImageLayout.Zoom;
             iconoGananciaPS.Cursor = Cursors.Hand;
-            iconoGananciaPS.Location = new Point(30, 593);
+            iconoGananciaPS.Location = new Point(21, 356);
+            iconoGananciaPS.Margin = new Padding(2);
             iconoGananciaPS.Name = "iconoGananciaPS";
-            iconoGananciaPS.Size = new Size(77, 72);
+            iconoGananciaPS.Size = new Size(54, 43);
             iconoGananciaPS.TabIndex = 28;
             iconoGananciaPS.TabStop = false;
             iconoGananciaPS.Click += lblFondoGananciaPS_Click;
@@ -374,9 +387,10 @@
             iconoFacturacion.BackgroundImage = (Image)resources.GetObject("iconoFacturacion.BackgroundImage");
             iconoFacturacion.BackgroundImageLayout = ImageLayout.Zoom;
             iconoFacturacion.Cursor = Cursors.Hand;
-            iconoFacturacion.Location = new Point(30, 458);
+            iconoFacturacion.Location = new Point(21, 275);
+            iconoFacturacion.Margin = new Padding(2);
             iconoFacturacion.Name = "iconoFacturacion";
-            iconoFacturacion.Size = new Size(77, 72);
+            iconoFacturacion.Size = new Size(54, 43);
             iconoFacturacion.TabIndex = 27;
             iconoFacturacion.TabStop = false;
             iconoFacturacion.Click += lblFondoFacturacion_Click;
@@ -389,9 +403,10 @@
             iconoRecaudacion.BackgroundImage = (Image)resources.GetObject("iconoRecaudacion.BackgroundImage");
             iconoRecaudacion.BackgroundImageLayout = ImageLayout.Zoom;
             iconoRecaudacion.Cursor = Cursors.Hand;
-            iconoRecaudacion.Location = new Point(30, 47);
+            iconoRecaudacion.Location = new Point(21, 28);
+            iconoRecaudacion.Margin = new Padding(2);
             iconoRecaudacion.Name = "iconoRecaudacion";
-            iconoRecaudacion.Size = new Size(77, 72);
+            iconoRecaudacion.Size = new Size(54, 43);
             iconoRecaudacion.TabIndex = 23;
             iconoRecaudacion.TabStop = false;
             iconoRecaudacion.Click += lblfondoRecaudacion_Click;
@@ -404,9 +419,10 @@
             iconoPasajeros.BackgroundImage = (Image)resources.GetObject("iconoPasajeros.BackgroundImage");
             iconoPasajeros.BackgroundImageLayout = ImageLayout.Zoom;
             iconoPasajeros.Cursor = Cursors.Hand;
-            iconoPasajeros.Location = new Point(30, 182);
+            iconoPasajeros.Location = new Point(21, 109);
+            iconoPasajeros.Margin = new Padding(2);
             iconoPasajeros.Name = "iconoPasajeros";
-            iconoPasajeros.Size = new Size(77, 72);
+            iconoPasajeros.Size = new Size(54, 43);
             iconoPasajeros.TabIndex = 22;
             iconoPasajeros.TabStop = false;
             iconoPasajeros.Click += lblFondoPasajeros_Click;
@@ -419,9 +435,10 @@
             iconoDestino.BackgroundImage = (Image)resources.GetObject("iconoDestino.BackgroundImage");
             iconoDestino.BackgroundImageLayout = ImageLayout.Zoom;
             iconoDestino.Cursor = Cursors.Hand;
-            iconoDestino.Location = new Point(30, 320);
+            iconoDestino.Location = new Point(21, 192);
+            iconoDestino.Margin = new Padding(2);
             iconoDestino.Name = "iconoDestino";
-            iconoDestino.Size = new Size(77, 72);
+            iconoDestino.Size = new Size(54, 43);
             iconoDestino.TabIndex = 21;
             iconoDestino.TabStop = false;
             iconoDestino.Click += lblFondoDestino_Click;
@@ -433,9 +450,10 @@
             lblRecaudacion.AutoSize = true;
             lblRecaudacion.Cursor = Cursors.Hand;
             lblRecaudacion.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblRecaudacion.Location = new Point(113, 47);
+            lblRecaudacion.Location = new Point(79, 28);
+            lblRecaudacion.Margin = new Padding(2, 0, 2, 0);
             lblRecaudacion.Name = "lblRecaudacion";
-            lblRecaudacion.Size = new Size(159, 32);
+            lblRecaudacion.Size = new Size(108, 21);
             lblRecaudacion.TabIndex = 19;
             lblRecaudacion.Text = "Recaudación";
             lblRecaudacion.Click += lblfondoRecaudacion_Click;
@@ -447,9 +465,10 @@
             lblFondoFrecuentes.BackColor = SystemColors.Window;
             lblFondoFrecuentes.BorderStyle = BorderStyle.FixedSingle;
             lblFondoFrecuentes.Cursor = Cursors.Hand;
-            lblFondoFrecuentes.Location = new Point(13, 850);
+            lblFondoFrecuentes.Location = new Point(9, 510);
+            lblFondoFrecuentes.Margin = new Padding(2, 0, 2, 0);
             lblFondoFrecuentes.Name = "lblFondoFrecuentes";
-            lblFondoFrecuentes.Size = new Size(1079, 114);
+            lblFondoFrecuentes.Size = new Size(756, 69);
             lblFondoFrecuentes.TabIndex = 17;
             lblFondoFrecuentes.Click += lblFondoFrecuentes_Click;
             lblFondoFrecuentes.MouseEnter += lblFondoFrecuentes_MouseEnter;
@@ -460,9 +479,10 @@
             lblFondoHoras.BackColor = SystemColors.Window;
             lblFondoHoras.BorderStyle = BorderStyle.FixedSingle;
             lblFondoHoras.Cursor = Cursors.Hand;
-            lblFondoHoras.Location = new Point(13, 712);
+            lblFondoHoras.Location = new Point(9, 427);
+            lblFondoHoras.Margin = new Padding(2, 0, 2, 0);
             lblFondoHoras.Name = "lblFondoHoras";
-            lblFondoHoras.Size = new Size(1079, 114);
+            lblFondoHoras.Size = new Size(756, 69);
             lblFondoHoras.TabIndex = 16;
             lblFondoHoras.Click += lblFondoHoras_Click;
             lblFondoHoras.MouseEnter += lblFondoHoras_MouseEnter;
@@ -473,9 +493,10 @@
             lblFondoGananciaPS.BackColor = SystemColors.Window;
             lblFondoGananciaPS.BorderStyle = BorderStyle.FixedSingle;
             lblFondoGananciaPS.Cursor = Cursors.Hand;
-            lblFondoGananciaPS.Location = new Point(13, 572);
+            lblFondoGananciaPS.Location = new Point(9, 343);
+            lblFondoGananciaPS.Margin = new Padding(2, 0, 2, 0);
             lblFondoGananciaPS.Name = "lblFondoGananciaPS";
-            lblFondoGananciaPS.Size = new Size(1079, 114);
+            lblFondoGananciaPS.Size = new Size(756, 69);
             lblFondoGananciaPS.TabIndex = 15;
             lblFondoGananciaPS.Click += lblFondoGananciaPS_Click;
             lblFondoGananciaPS.MouseEnter += lblFondoGananciaPS_MouseEnter;
@@ -486,9 +507,10 @@
             lblFondoFacturacion.BackColor = SystemColors.Window;
             lblFondoFacturacion.BorderStyle = BorderStyle.FixedSingle;
             lblFondoFacturacion.Cursor = Cursors.Hand;
-            lblFondoFacturacion.Location = new Point(13, 437);
+            lblFondoFacturacion.Location = new Point(9, 262);
+            lblFondoFacturacion.Margin = new Padding(2, 0, 2, 0);
             lblFondoFacturacion.Name = "lblFondoFacturacion";
-            lblFondoFacturacion.Size = new Size(1079, 114);
+            lblFondoFacturacion.Size = new Size(756, 69);
             lblFondoFacturacion.TabIndex = 14;
             lblFondoFacturacion.Click += lblFondoFacturacion_Click;
             lblFondoFacturacion.MouseEnter += lblFondoFacturacion_MouseEnter;
@@ -499,9 +521,10 @@
             lblFondoDestino.BackColor = SystemColors.Window;
             lblFondoDestino.BorderStyle = BorderStyle.FixedSingle;
             lblFondoDestino.Cursor = Cursors.Hand;
-            lblFondoDestino.Location = new Point(13, 298);
+            lblFondoDestino.Location = new Point(9, 179);
+            lblFondoDestino.Margin = new Padding(2, 0, 2, 0);
             lblFondoDestino.Name = "lblFondoDestino";
-            lblFondoDestino.Size = new Size(1079, 114);
+            lblFondoDestino.Size = new Size(756, 69);
             lblFondoDestino.TabIndex = 13;
             lblFondoDestino.Click += lblFondoDestino_Click;
             lblFondoDestino.MouseEnter += lblFondoDestino_MouseEnter;
@@ -512,9 +535,10 @@
             lblFondoPasajeros.BackColor = SystemColors.Window;
             lblFondoPasajeros.BorderStyle = BorderStyle.FixedSingle;
             lblFondoPasajeros.Cursor = Cursors.Hand;
-            lblFondoPasajeros.Location = new Point(13, 163);
+            lblFondoPasajeros.Location = new Point(9, 98);
+            lblFondoPasajeros.Margin = new Padding(2, 0, 2, 0);
             lblFondoPasajeros.Name = "lblFondoPasajeros";
-            lblFondoPasajeros.Size = new Size(1079, 114);
+            lblFondoPasajeros.Size = new Size(756, 69);
             lblFondoPasajeros.TabIndex = 12;
             lblFondoPasajeros.Click += lblFondoPasajeros_Click;
             lblFondoPasajeros.MouseEnter += lblFondoPasajeros_MouseEnter;
@@ -522,13 +546,14 @@
             // 
             // lblfondoRecaudacion
             // 
-            lblfondoRecaudacion.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            lblfondoRecaudacion.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblfondoRecaudacion.BackColor = SystemColors.Window;
             lblfondoRecaudacion.BorderStyle = BorderStyle.FixedSingle;
             lblfondoRecaudacion.Cursor = Cursors.Hand;
-            lblfondoRecaudacion.Location = new Point(13, 25);
+            lblfondoRecaudacion.Location = new Point(9, 15);
+            lblfondoRecaudacion.Margin = new Padding(2, 0, 2, 0);
             lblfondoRecaudacion.Name = "lblfondoRecaudacion";
-            lblfondoRecaudacion.Size = new Size(1079, 114);
+            lblfondoRecaudacion.Size = new Size(756, 69);
             lblfondoRecaudacion.TabIndex = 11;
             lblfondoRecaudacion.Click += lblfondoRecaudacion_Click;
             lblfondoRecaudacion.MouseEnter += lblfondoRecaudacion_MouseEnter;
@@ -536,16 +561,15 @@
             // 
             // FrmEstadisticas
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
-            ClientSize = new Size(1143, 750);
+            ClientSize = new Size(797, 510);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
             Controls.Add(lblLogin);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmEstadisticas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Estadisticas";

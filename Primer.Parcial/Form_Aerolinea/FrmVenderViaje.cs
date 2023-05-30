@@ -271,7 +271,7 @@ namespace Form_Aerolinea
             else
             {
                 this.txtPeso.Enabled = false;
-                this.txtPeso.Text = string.Empty;
+                this.txtPeso.Text = "0";
             }
         }
 

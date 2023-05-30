@@ -156,6 +156,7 @@
             // 
             // lblFondoEstadistica
             // 
+            lblFondoEstadistica.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblFondoEstadistica.BackColor = SystemColors.Window;
             lblFondoEstadistica.BorderStyle = BorderStyle.FixedSingle;
             lblFondoEstadistica.Cursor = Cursors.Hand;
@@ -170,6 +171,7 @@
             // 
             // lblfondoPasajero
             // 
+            lblfondoPasajero.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblfondoPasajero.BackColor = SystemColors.Window;
             lblfondoPasajero.BorderStyle = BorderStyle.FixedSingle;
             lblfondoPasajero.Cursor = Cursors.Hand;
