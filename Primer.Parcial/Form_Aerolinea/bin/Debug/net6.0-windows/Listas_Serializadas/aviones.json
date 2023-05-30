@@ -10,7 +10,7 @@
     "Pasajeros": [
       {
         "Dni": 33333333,
-        "Edad": 90,
+        "Edad": 60,
         "TipoEquipaje": 3,
         "PesoEquipaje": 0,
         "EsPremium": false,
@@ -59,7 +59,7 @@
       },
       {
         "Dni": 33333333,
-        "Edad": 90,
+        "Edad": 60,
         "TipoEquipaje": 3,
         "PesoEquipaje": 0,
         "EsPremium": false,

@@ -50,13 +50,14 @@
             dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvLista.BackgroundColor = SystemColors.Window;
             dgvLista.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLista.Location = new Point(35, 71);
+            dgvLista.Location = new Point(50, 118);
+            dgvLista.Margin = new Padding(4, 5, 4, 5);
             dgvLista.Name = "dgvLista";
             dgvLista.ReadOnly = true;
             dgvLista.RowHeadersWidth = 62;
             dgvLista.RowTemplate.Height = 25;
             dgvLista.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvLista.Size = new Size(731, 346);
+            dgvLista.Size = new Size(1044, 577);
             dgvLista.TabIndex = 1;
             dgvLista.DoubleClick += dgvLista_DoubleClick;
             // 
@@ -64,9 +65,10 @@
             // 
             btnCancelar.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnCancelar.FlatStyle = FlatStyle.Popup;
-            btnCancelar.Location = new Point(691, 428);
+            btnCancelar.Location = new Point(987, 713);
+            btnCancelar.Margin = new Padding(4, 5, 4, 5);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(75, 23);
+            btnCancelar.Size = new Size(107, 38);
             btnCancelar.TabIndex = 2;
             btnCancelar.Text = "Volver";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -75,10 +77,11 @@
             // txtBuscador
             // 
             txtBuscador.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            txtBuscador.Location = new Point(548, 27);
+            txtBuscador.Location = new Point(783, 45);
+            txtBuscador.Margin = new Padding(4, 5, 4, 5);
             txtBuscador.Name = "txtBuscador";
             txtBuscador.PlaceholderText = " Buscar destino";
-            txtBuscador.Size = new Size(218, 23);
+            txtBuscador.Size = new Size(310, 31);
             txtBuscador.TabIndex = 3;
             txtBuscador.TextChanged += txtBuscador_TextChanged;
             // 
@@ -86,9 +89,10 @@
             // 
             btnAceptar.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             btnAceptar.FlatStyle = FlatStyle.Popup;
-            btnAceptar.Location = new Point(595, 428);
+            btnAceptar.Location = new Point(850, 713);
+            btnAceptar.Margin = new Padding(4, 5, 4, 5);
             btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new Size(75, 23);
+            btnAceptar.Size = new Size(107, 38);
             btnAceptar.TabIndex = 6;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
@@ -100,10 +104,9 @@
             label2.AutoSize = true;
             label2.Enabled = false;
             label2.ForeColor = SystemColors.ControlDarkDark;
-            label2.Location = new Point(35, 420);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(50, 700);
             label2.Name = "label2";
-            label2.Size = new Size(258, 15);
+            label2.Size = new Size(393, 25);
             label2.TabIndex = 7;
             label2.Text = "Doble click sobre un viaje para ver sus pasajeros";
             // 
@@ -112,9 +115,10 @@
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(523, 26);
+            pictureBox1.Location = new Point(747, 41);
+            pictureBox1.Margin = new Padding(4, 5, 4, 5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(19, 25);
+            pictureBox1.Size = new Size(27, 42);
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
             // 
@@ -122,9 +126,10 @@
             // 
             pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
             pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox2.Location = new Point(35, 12);
+            pictureBox2.Location = new Point(50, 20);
+            pictureBox2.Margin = new Padding(4, 5, 4, 5);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(165, 52);
+            pictureBox2.Size = new Size(236, 87);
             pictureBox2.TabIndex = 27;
             pictureBox2.TabStop = false;
             // 
@@ -132,17 +137,18 @@
             // 
             label1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.BackColor = SystemColors.HotTrack;
-            label1.Location = new Point(-2, 461);
+            label1.Location = new Point(-3, 768);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(804, 7);
+            label1.Size = new Size(1149, 12);
             label1.TabIndex = 42;
             // 
             // FrmListar
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
-            ClientSize = new Size(800, 467);
+            ClientSize = new Size(1143, 778);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -152,6 +158,7 @@
             Controls.Add(btnCancelar);
             Controls.Add(dgvLista);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FrmListar";
             Text = "FrmListar";
             Load += FrmListar_Load;

@@ -4,7 +4,7 @@
     <Apellido>Martinez</Apellido>
     <Nombre>Emiliano</Nombre>
     <Dni>33333333</Dni>
-    <Edad>90</Edad>
+    <Edad>60</Edad>
     <TipoEquipaje>Ninguno</TipoEquipaje>
     <PesoEquipaje>0</PesoEquipaje>
     <EsPremium>false</EsPremium>

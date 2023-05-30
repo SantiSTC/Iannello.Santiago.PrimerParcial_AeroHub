@@ -1,5 +1,6 @@
 ﻿using Entidades;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -201,16 +202,12 @@ namespace Form_Aerolinea
                     }
                 }
 
-                //avion.Pasajeros.Add(new Pasajero("Santiago", "Ianello", 43212312, 22, ETipoEquipaje.Ambos, 12));
-
                 FrmListar fm2 = new FrmListar(1, avion.Pasajeros);
                 fm2.label1.Text = "";
                 fm2.txtBuscador.Visible = false;
-                fm2.txtBuscador.Location = new Point(133, 25);
+                fm2.pictureBox1.Visible = false;
+                fm2.txtBuscador.Location = new Point(783, 45);
                 fm2.dgvLista.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-
-                fm2.txtBuscador.TextChanged -= txtBuscador_TextChanged;
-                fm2.txtBuscador.TextChanged += (sender, e) => { };
 
                 fm2.ShowDialog();
             }
