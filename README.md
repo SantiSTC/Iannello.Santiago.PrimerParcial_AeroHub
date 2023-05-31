@@ -13,6 +13,9 @@ La aplicación cuenta con una interfaz intuitiva y fácil de usar, que permite a
 - Generación de informes: Ofrece la capacidad de generar informes detallados sobre vuelos, pasajeros, ingresos, ocupación de aviones y otros aspectos clave de la operación de la aerolinea.
 - Venta de vuelos: Permite ofrecer a un cliente los vuelos disponibles brindando informacion como precios, capacidad restante, fechas y destinos.
 
+## Diagrama de clases
+![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/1b0bb9b7-9027-46c2-9f51-2b6206263bdc)
+
 ## Justificacion técnica
 Dentro del programa se aplican todos los temas vistos en clase hasta la fecha de entrega del mismo, ademas de algunos otros vistos posteriormente.
 Se utiliza en muchas ocasiones la herencia de clases, tanto en las entidades como en los formularios (herencia grafica).
