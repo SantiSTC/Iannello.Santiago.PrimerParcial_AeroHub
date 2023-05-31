@@ -13,6 +13,22 @@ La aplicación cuenta con una interfaz intuitiva y fácil de usar, que permite a
 - Generación de informes: Ofrece la capacidad de generar informes detallados sobre vuelos, pasajeros, ingresos, ocupación de aviones y otros aspectos clave de la operación de la aerolinea.
 - Venta de vuelos: Permite ofrecer a un cliente los vuelos disponibles brindando informacion como precios, capacidad restante, fechas y destinos.
 
+## Principales funciones
+Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las otras 4 en el de Vendedor y Supervisor.
+_Menú de Administrador:_
+![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/ccabd7a9-7caf-40e7-b18c-06c70facd946)
+_Menú de Vendedor:_
+![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/fe66f388-f371-4ad7-95d6-f88e8d805600)
+
+Aviones
+![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/b5febc2e-d1a7-4093-9460-980fa4dd4a53)
+Agregar avion
+Viajes
+![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/43ce6094-8f26-4b0d-b5ec-f5e643c31733)
+Agregar viaje
+![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2bfd0460-e638-4dd6-87ee-323a58386992)
+
+
 ## Diagrama de clases
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/1b0bb9b7-9027-46c2-9f51-2b6206263bdc)
 
