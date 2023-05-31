@@ -48,6 +48,10 @@ Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las 
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/601e7e5f-37b7-4125-8a2f-6929203fb205)
 
+#### _Agregar Pasajero:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/1d4aab2b-7f38-49d1-84ff-35d7c228315d)
+
 #### _Viajes:_
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/8fa35d9d-0802-48df-919c-9a7a08adef18)
@@ -59,6 +63,10 @@ Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las 
 #### _Estadísticas:_
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/91d71580-01f1-443e-b5df-cf2a5c851699)
+
+#### _Resultado de estadisticas:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/9b3f204f-2d79-4984-90a5-6b6ebbea02a3)
 
 
 ## Diagrama de clases
