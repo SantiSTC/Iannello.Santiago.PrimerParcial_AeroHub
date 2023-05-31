@@ -17,9 +17,9 @@ La aplicación cuenta con una interfaz intuitiva y fácil de usar, que permite a
 Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las otras 4 en el de Vendedor y Supervisor.
 
 #### _Menú de Administrador:_
-
+```
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/ccabd7a9-7caf-40e7-b18c-06c70facd946)
-
+```
 
 #### _Aviones:_
 
