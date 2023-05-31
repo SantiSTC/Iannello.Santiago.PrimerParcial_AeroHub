@@ -13,6 +13,68 @@ La aplicación cuenta con una interfaz intuitiva y fácil de usar, que permite a
 - Generación de informes: Ofrece la capacidad de generar informes detallados sobre vuelos, pasajeros, ingresos, ocupación de aviones y otros aspectos clave de la operación de la aerolinea.
 - Venta de vuelos: Permite ofrecer a un cliente los vuelos disponibles brindando informacion como precios, capacidad restante, fechas y destinos.
 
+## Principales funciones
+Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las otras 4 en el de Vendedor y Supervisor.
+
+### _Menú de Administrador:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/ccabd7a9-7caf-40e7-b18c-06c70facd946)
+
+
+#### _Aeronaves:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/b5febc2e-d1a7-4093-9460-980fa4dd4a53)
+
+
+#### _Viajes:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/43ce6094-8f26-4b0d-b5ec-f5e643c31733)
+
+
+#### _Agregar avion:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/88668d1d-26af-4f5b-9483-6ca4a58524fa)
+
+
+#### _Agregar viaje:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2bfd0460-e638-4dd6-87ee-323a58386992)
+
+### _Menú de Vendedor:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/fe66f388-f371-4ad7-95d6-f88e8d805600)
+
+#### _Pasajeros:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/601e7e5f-37b7-4125-8a2f-6929203fb205)
+
+#### _Agregar Pasajero:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/1d4aab2b-7f38-49d1-84ff-35d7c228315d)
+
+#### _Viajes:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/8fa35d9d-0802-48df-919c-9a7a08adef18)
+
+#### _Venta:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2050ed04-7543-4166-9ccb-272919118cdc)
+
+#### _Estadísticas:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/91d71580-01f1-443e-b5df-cf2a5c851699)
+
+#### _Resultado de estadisticas:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/9b3f204f-2d79-4984-90a5-6b6ebbea02a3)
+
+### _Menú de Supervisor:_
+
+#### El menú de supervisor repite las opciones de 'Estadisticas' y "Pasajeros" del menu de _Vendedor_.
+
+## Diagrama de clases
+![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/1b0bb9b7-9027-46c2-9f51-2b6206263bdc)
+
 ## Justificacion técnica
 Dentro del programa se aplican todos los temas vistos en clase hasta la fecha de entrega del mismo, ademas de algunos otros vistos posteriormente.
 Se utiliza en muchas ocasiones la herencia de clases, tanto en las entidades como en los formularios (herencia grafica).
