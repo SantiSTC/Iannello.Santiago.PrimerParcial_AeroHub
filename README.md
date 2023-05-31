@@ -92,3 +92,6 @@ Se implementan en el programa funcionalidades como el uso de `manejo de excepcio
 
 ## Aclaraciones
 No sera necesario la implementacion de ningun archivo de extension .json o .xml ya que el programa los contiene dentro de sus propios directorios.
+
+###### Realizado por Santiago Iannello
+
