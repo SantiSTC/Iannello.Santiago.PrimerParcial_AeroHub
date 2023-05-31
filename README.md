@@ -16,33 +16,33 @@ La aplicación cuenta con una interfaz intuitiva y fácil de usar, que permite a
 ## Principales funciones
 Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las otras 4 en el de Vendedor y Supervisor.
 
-_Menú de Administrador:_
+#### _Menú de Administrador:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/ccabd7a9-7caf-40e7-b18c-06c70facd946)
 
 
-_Aviones:_
+#### _Aviones:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/b5febc2e-d1a7-4093-9460-980fa4dd4a53)
 
 
-_Viajes:_
+#### _Viajes:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/43ce6094-8f26-4b0d-b5ec-f5e643c31733)
 
 
-_Agregar avion:_
+#### _Agregar avion:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/88668d1d-26af-4f5b-9483-6ca4a58524fa)
 
 
-_Agregar viaje:_
+#### _Agregar viaje:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2bfd0460-e638-4dd6-87ee-323a58386992)
 
 
 
-_Menú de Vendedor:_
+#### _Menú de Vendedor:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/fe66f388-f371-4ad7-95d6-f88e8d805600)
 
