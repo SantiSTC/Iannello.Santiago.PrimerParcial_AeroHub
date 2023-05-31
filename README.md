@@ -28,9 +28,13 @@ _Menú de Vendedor:_
 Aviones
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/b5febc2e-d1a7-4093-9460-980fa4dd4a53)
 
-Agregar avion
 Viajes
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/43ce6094-8f26-4b0d-b5ec-f5e643c31733)
+
+
+Agregar avion
+
+
 Agregar viaje
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2bfd0460-e638-4dd6-87ee-323a58386992)
 
