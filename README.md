@@ -21,7 +21,7 @@ Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/ccabd7a9-7caf-40e7-b18c-06c70facd946)
 
 
-#### _Aviones:_
+#### _Aeronaves:_
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/b5febc2e-d1a7-4093-9460-980fa4dd4a53)
 
@@ -43,6 +43,23 @@ Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las 
 ### _Menú de Vendedor:_
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/fe66f388-f371-4ad7-95d6-f88e8d805600)
+
+####_Pasajeros:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/601e7e5f-37b7-4125-8a2f-6929203fb205)
+
+####_Viajes:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/60fdf10f-ba0c-4eda-8fdf-c6fb21cb5a59)
+
+####_Venta:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2050ed04-7543-4166-9ccb-272919118cdc)
+
+####_Estadísticas:_
+
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2892f95e-d5a9-4cae-915f-e53c167cd397)
+
 
 ## Diagrama de clases
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/1b0bb9b7-9027-46c2-9f51-2b6206263bdc)
