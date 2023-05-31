@@ -44,19 +44,19 @@ Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las 
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/fe66f388-f371-4ad7-95d6-f88e8d805600)
 
-####_Pasajeros:_
+#### _Pasajeros:_
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/601e7e5f-37b7-4125-8a2f-6929203fb205)
 
-####_Viajes:_
+#### _Viajes:_
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/60fdf10f-ba0c-4eda-8fdf-c6fb21cb5a59)
 
-####_Venta:_
+#### _Venta:_
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2050ed04-7543-4166-9ccb-272919118cdc)
 
-####_Estadísticas:_
+#### _Estadísticas:_
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2892f95e-d5a9-4cae-915f-e53c167cd397)
 
