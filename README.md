@@ -50,7 +50,7 @@ Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las 
 
 #### _Viajes:_
 
->![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/60fdf10f-ba0c-4eda-8fdf-c6fb21cb5a59)
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/8fa35d9d-0802-48df-919c-9a7a08adef18)
 
 #### _Venta:_
 
@@ -58,7 +58,7 @@ Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las 
 
 #### _Estadísticas:_
 
->![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2892f95e-d5a9-4cae-915f-e53c167cd397)
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/91d71580-01f1-443e-b5df-cf2a5c851699)
 
 
 ## Diagrama de clases
