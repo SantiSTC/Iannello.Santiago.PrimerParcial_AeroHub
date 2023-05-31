@@ -21,11 +21,6 @@ _Menú de Administrador:_
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/ccabd7a9-7caf-40e7-b18c-06c70facd946)
 
 
-_Menú de Vendedor:_
-
-![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/fe66f388-f371-4ad7-95d6-f88e8d805600)
-
-
 _Aviones:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/b5febc2e-d1a7-4093-9460-980fa4dd4a53)
@@ -37,12 +32,18 @@ _Viajes:_
 
 
 _Agregar avion:_
+![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/88668d1d-26af-4f5b-9483-6ca4a58524fa)
 
 
 _Agregar viaje:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2bfd0460-e638-4dd6-87ee-323a58386992)
 
+
+
+_Menú de Vendedor:_
+
+![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/fe66f388-f371-4ad7-95d6-f88e8d805600)
 
 ## Diagrama de clases
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/1b0bb9b7-9027-46c2-9f51-2b6206263bdc)
