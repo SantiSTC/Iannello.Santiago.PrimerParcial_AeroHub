@@ -68,6 +68,9 @@ Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las 
 
 >![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/9b3f204f-2d79-4984-90a5-6b6ebbea02a3)
 
+### _Menú de Supervisor:_
+
+#### El menú de supervisor repite las opciones de 'Estadisticas' y "Pasajeros" del menu de _Vendedor_.
 
 ## Diagrama de clases
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/1b0bb9b7-9027-46c2-9f51-2b6206263bdc)
