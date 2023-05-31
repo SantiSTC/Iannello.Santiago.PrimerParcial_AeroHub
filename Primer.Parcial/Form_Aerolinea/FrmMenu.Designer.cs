@@ -44,10 +44,10 @@
             label1.BackColor = SystemColors.HotTrack;
             label1.BorderStyle = BorderStyle.Fixed3D;
             label1.ForeColor = SystemColors.ControlText;
-            label1.Location = new Point(0, 411);
+            label1.Location = new Point(-4, 411);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(814, 47);
+            label1.Size = new Size(822, 52);
             label1.TabIndex = 6;
             // 
             // lblUsuarioMenu
@@ -56,7 +56,7 @@
             lblUsuarioMenu.AutoSize = true;
             lblUsuarioMenu.BackColor = SystemColors.HotTrack;
             lblUsuarioMenu.ForeColor = SystemColors.Window;
-            lblUsuarioMenu.Location = new Point(50, 422);
+            lblUsuarioMenu.Location = new Point(50, 419);
             lblUsuarioMenu.Name = "lblUsuarioMenu";
             lblUsuarioMenu.Size = new Size(47, 15);
             lblUsuarioMenu.TabIndex = 10;
@@ -69,7 +69,7 @@
             lblFecha.AutoSize = true;
             lblFecha.BackColor = SystemColors.HotTrack;
             lblFecha.ForeColor = SystemColors.Window;
-            lblFecha.Location = new Point(729, 437);
+            lblFecha.Location = new Point(729, 434);
             lblFecha.Name = "lblFecha";
             lblFecha.Size = new Size(38, 15);
             lblFecha.TabIndex = 9;
@@ -81,7 +81,7 @@
             lblHora.AutoSize = true;
             lblHora.BackColor = SystemColors.HotTrack;
             lblHora.ForeColor = SystemColors.Window;
-            lblHora.Location = new Point(750, 422);
+            lblHora.Location = new Point(750, 419);
             lblHora.Name = "lblHora";
             lblHora.Size = new Size(33, 15);
             lblHora.TabIndex = 8;
@@ -93,7 +93,7 @@
             lblPerfilMenu.AutoSize = true;
             lblPerfilMenu.BackColor = SystemColors.HotTrack;
             lblPerfilMenu.ForeColor = SystemColors.Window;
-            lblPerfilMenu.Location = new Point(50, 437);
+            lblPerfilMenu.Location = new Point(50, 434);
             lblPerfilMenu.Name = "lblPerfilMenu";
             lblPerfilMenu.Size = new Size(34, 15);
             lblPerfilMenu.TabIndex = 7;
@@ -106,7 +106,7 @@
             pictureBox1.BackColor = SystemColors.HotTrack;
             pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
             pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox1.Location = new Point(8, 424);
+            pictureBox1.Location = new Point(8, 420);
             pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(36, 28);

@@ -1,4 +1,6 @@
 using Entidades;
+using System.IO;
+using System.Windows.Forms;
 
 namespace Form_Aerolinea
 {
@@ -13,14 +15,24 @@ namespace Form_Aerolinea
         {
             bool validar = false;
             List<Usuario> usuarios = Serializacion<Usuario>.Deserializar(Application.StartupPath + @"\Usuarios_Serializados\MOCK_DATA.json");
+            FrmMenu fm = new FrmMenu();
 
             foreach (Usuario usuario in usuarios)
             {
-                if (!(txtUsuario.Text == usuario.Correo && txtContrasenia.Text == usuario.Clave))
+                if (txtUsuario.Text == usuario.Correo && txtContrasenia.Text == usuario.Clave)
                 {
-                    usuario.Perfil = EPerfil.Vendedor;//
+                    string path = Application.StartupPath + @"\Registro_De_Usuario\usuarios.log";
+                    try
+                    {
+                        string mensaje = usuario.ToString() + " - Hora de ingreso: " + DateTime.Now.ToString() + "\n";
+                        File.AppendAllText(path, mensaje);
+                    }
+                    catch 
+                    {
+                        File.AppendAllText(path, "Usuario no registrado" + DateTime.Now.ToString());
+                    }
+
                     validar = true;
-                    FrmMenu fm = new FrmMenu();
 
                     switch (usuario.Perfil)
                     {
@@ -35,14 +47,17 @@ namespace Form_Aerolinea
                             break;
                     }
 
-                    this.Hide();
-
-                    if (fm.ShowDialog() is DialogResult.Cancel)
-                    {
-                        this.Close();
-                    }
+                    break;
                 }
             }
+
+            this.Hide();
+
+            if (fm.ShowDialog() is DialogResult.Cancel)
+            {
+                this.Close();
+            }
+
             if (!validar)
             {
                 MessageBox.Show("El usuario o la contraseña son incorrectos...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);

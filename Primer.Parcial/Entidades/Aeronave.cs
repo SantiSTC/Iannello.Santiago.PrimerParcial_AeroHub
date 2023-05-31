@@ -26,9 +26,9 @@ namespace Entidades
 
         public bool Ocupado { get => this.ocupado; set => this.ocupado = value; }
 
-        public List<Pasajero> Pasajeros { get { return this.pasajeros; }  set { this.pasajeros = value; } }
+        public List<Pasajero> Pasajeros { get { return this.pasajeros; } set { this.pasajeros = value; } }
 
-        public Aeronave() 
+        public Aeronave()
         {
             this.matricula = " ";
             this.cantAsientos = 0;
@@ -50,7 +50,7 @@ namespace Entidades
             this.capacidadBodega = capacidadBodega;
         }
 
-        public Aeronave (string matricula, int cantAsientos, int cantBanios, bool internet, bool comida, float capacidadBodega, List<Pasajero>? lista) : this()
+        public Aeronave(string matricula, int cantAsientos, int cantBanios, bool internet, bool comida, float capacidadBodega, List<Pasajero>? lista) : this()
         {
             this.matricula = matricula;
             this.cantAsientos = cantAsientos;
@@ -60,24 +60,24 @@ namespace Entidades
             this.capacidadBodega = capacidadBodega;
         }
 
-        public static List<Aeronave> AgregarAeronave(List<Aeronave> lista, string matricula, int cantAsientos, int cantBanios, bool internet, bool comida, float capacidadBodega) 
+        public static List<Aeronave> AgregarAeronave(List<Aeronave> lista, string matricula, int cantAsientos, int cantBanios, bool internet, bool comida, float capacidadBodega)
         {
             if (lista != null)
             {
                 Aeronave avion = new Aeronave(matricula, cantAsientos, cantBanios, internet, comida, capacidadBodega);
                 lista.Add(avion);
             }
-            else 
+            else
             {
                 lista = new List<Aeronave>();
             }
-            
+
             return lista;
         }
 
-        public List<Aeronave> EliminarAeronave(List<Aeronave> lista, Aeronave avion) 
+        public List<Aeronave> EliminarAeronave(List<Aeronave> lista, Aeronave avion)
         {
-            if (lista.Contains(avion)) 
+            if (lista.Contains(avion))
             {
                 lista.Remove(avion);
             }
@@ -85,7 +85,7 @@ namespace Entidades
             return lista;
         }
 
-        private string Mostrar() 
+        private string Mostrar()
         {
             return $"{this.matricula}";
         }
@@ -105,7 +105,7 @@ namespace Entidades
             return !(a1 == a2);
         }
 
-        public static Aeronave operator +(Aeronave a1, Pasajero p1) 
+        public static Aeronave operator +(Aeronave a1, Pasajero p1)
         {
             a1.pasajeros.Add(p1);
             return a1;
@@ -129,8 +129,4 @@ namespace Entidades
             return rta;
         }
     }
-
-    
-
-    
 }
