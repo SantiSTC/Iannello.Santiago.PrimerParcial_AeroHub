@@ -26,20 +26,20 @@ _Menú de Vendedor:_
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/fe66f388-f371-4ad7-95d6-f88e8d805600)
 
 
-Aviones
+_Aviones:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/b5febc2e-d1a7-4093-9460-980fa4dd4a53)
 
 
-Viajes
+_Viajes:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/43ce6094-8f26-4b0d-b5ec-f5e643c31733)
 
 
-Agregar avion
+_Agregar avion:_
 
 
-Agregar viaje
+_Agregar viaje:_
 
 ![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/2bfd0460-e638-4dd6-87ee-323a58386992)
 
