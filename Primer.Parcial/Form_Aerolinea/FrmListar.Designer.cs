@@ -155,7 +155,7 @@
             MinimumSize = new Size(816, 506);
             Name = "FrmListar";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FrmListar";
+            Text = "Listado";
             Load += FrmListar_Load;
             ((System.ComponentModel.ISupportInitialize)dgvLista).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

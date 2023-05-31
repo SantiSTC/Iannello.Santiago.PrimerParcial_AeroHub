@@ -134,7 +134,14 @@ namespace Form_Aerolinea
                     }
                     else
                     {
-                        fila[i] = (item.GetType().GetProperty(dgvLista.Columns[i].Name).GetValue(item)).ToString();
+                        if (dgvLista.Columns[i].Name is not "Pasajeros")
+                        {
+                            fila[i] = (item.GetType().GetProperty(dgvLista.Columns[i].Name).GetValue(item)).ToString();
+                        }
+                        else
+                        {
+                            dgvLista.Columns.RemoveAt(i);
+                        }
                     }
                 }
 
@@ -215,6 +222,11 @@ namespace Form_Aerolinea
             {
                 MessageBox.Show("Se debera elegir un viaje...", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
         }
     }
 }

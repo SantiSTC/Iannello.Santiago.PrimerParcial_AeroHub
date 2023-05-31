@@ -47,15 +47,15 @@ namespace Form_Aerolinea
                             break;
                     }
 
+                    this.Hide();
+
+                    if (fm.ShowDialog() is DialogResult.Cancel)
+                    {
+                        this.Close();
+                    }
+
                     break;
                 }
-            }
-
-            this.Hide();
-
-            if (fm.ShowDialog() is DialogResult.Cancel)
-            {
-                this.Close();
             }
 
             if (!validar)
