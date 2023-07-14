@@ -28,7 +28,7 @@ Las principales funciones son 6, 2 aparecen en el perfil de Administador, y las 
 
 #### _Viajes:_
 
->![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial/assets/89161674/43ce6094-8f26-4b0d-b5ec-f5e643c31733)
+>![image](https://github.com/SantiSTC/Iannello.Santiago.PrimerParcial_AeroHub/assets/89161674/43ce6094-8f26-4b0d-b5ec-f5e643c31733)
 
 
 #### _Agregar avion:_
